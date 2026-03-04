@@ -43,25 +43,21 @@ class TemporalValidator:
 
     def validate_date_formats(self, sample_size: int = None) -> Dict[str, Any]:
         """
-        Validate ISO 8601 date format compliance.
-        
-        Note: EventKG stores temporal data on Relations, not directly on Events.
-        This queries relations that reference events.
+        Validate ISO 8601 date format compliance on events.
         
         Args:
-            sample_size: Number of relations to sample, uses config default if None
+            sample_size: Number of events to sample, uses config default if None
         """
         if sample_size is None:
             sample_size = self.parameters.temporal_sample_size
         
         query = f"""
         PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        PREFIX ekgs: <https://eventkg.l3s.uni-hannover.de/schema/>
         
-        SELECT ?relation ?date
+        SELECT ?event ?date
         WHERE {{
-            ?relation a ekgs:Relation ;
-                      sem:hasBeginTimeStamp ?date .
+            ?event a sem:Event ;
+                   sem:hasBeginTimeStamp ?date .
         }}
         LIMIT {sample_size}
         """
@@ -96,25 +92,24 @@ class TemporalValidator:
 
     def analyze_temporal_granularity(self, sample_size: int = None) -> Dict[str, Any]:
         """
-        Analyze temporal granularity distribution.
+        Analyze temporal granularity distribution of event dates.
         
-        Note: Queries relations that have temporal data.
+        Determines granularity by parsing date string format:
+        YYYY = year, YYYY-MM = month, YYYY-MM-DD = day, contains T = timestamp.
         
         Args:
-            sample_size: Number of relations to sample, uses config default if None
+            sample_size: Number of events to sample, uses config default if None
         """
         if sample_size is None:
             sample_size = self.parameters.temporal_sample_size
         
         query = f"""
         PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        PREFIX ekgs: <https://eventkg.l3s.uni-hannover.de/schema/>
         
-        SELECT ?relation ?date ?unitType
+        SELECT ?event ?date
         WHERE {{
-            ?relation a ekgs:Relation ;
-                      sem:hasBeginTimeStamp ?date .
-            OPTIONAL {{ ?relation ekgs:startUnitType ?unitType }}
+            ?event a sem:Event ;
+                   sem:hasBeginTimeStamp ?date .
         }}
         LIMIT {sample_size}
         """
@@ -131,17 +126,8 @@ class TemporalValidator:
         
         for r in results:
             date_str = r['date']['value']
-            unit_type = r.get('unitType', {}).get('value', '')
             
-            # Check unit type first
-            if 'unitYear' in unit_type:
-                granularity_counts['year'] += 1
-            elif 'unitMonth' in unit_type:
-                granularity_counts['month'] += 1
-            elif 'unitDay' in unit_type:
-                granularity_counts['day'] += 1
-            # Fallback to date string analysis
-            elif 'T' in date_str:
+            if 'T' in date_str:
                 granularity_counts['timestamp'] += 1
             elif len(date_str) == 10:  # YYYY-MM-DD
                 granularity_counts['day'] += 1
@@ -268,18 +254,14 @@ class TemporalValidator:
         """
         Measure event distribution across time.
         
-        Note: Queries relations with temporal data and extracts years from dates.
+        Queries events directly for temporal data.
         """
         query = """
         PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        PREFIX ekgs: <https://eventkg.l3s.uni-hannover.de/schema/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         
         SELECT ?date (COUNT(DISTINCT ?event) AS ?count) WHERE {
-            ?relation a ekgs:Relation ;
-                      rdf:subject ?event ;
-                      sem:hasBeginTimeStamp ?date .
-            ?event a sem:Event .
+            ?event a sem:Event ;
+                   sem:hasBeginTimeStamp ?date .
         } GROUP BY ?date ORDER BY ?date
         """
         

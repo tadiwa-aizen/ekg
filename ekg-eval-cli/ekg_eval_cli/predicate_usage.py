@@ -52,7 +52,7 @@ class PredicateUsageAnalyzer:
         # Calculate cumulative sum weighted by position
         cumsum = 0
         for i, val in enumerate(sorted_vals):
-            cumsum += (n - i) * val
+            cumsum += (i + 1) * val
         
         total_sum = sum(sorted_vals)
         if total_sum == 0:

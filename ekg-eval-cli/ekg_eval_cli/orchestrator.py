@@ -569,7 +569,7 @@ class EvaluationOrchestrator:
         except Exception as e:
             self._log(f"Warning: SHACL validation failed: {e}")
             return {
-                'available': True,
+                'available': False,
                 'error': str(e)
             }
 

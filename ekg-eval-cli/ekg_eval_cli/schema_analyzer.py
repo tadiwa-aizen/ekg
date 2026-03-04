@@ -79,14 +79,13 @@ class SchemaAnalyzer:
         query = """
         PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX schema: <http://schema.org/>
         
         SELECT (COUNT(DISTINCT ?event) AS ?count)
         WHERE {
             ?event a sem:Event ;
                    rdfs:label ?label ;
-                   sem:hasBeginTimeStamp ?date .
-            OPTIONAL { ?event sem:hasPlace ?location }
+                   sem:hasBeginTimeStamp ?date ;
+                   sem:hasPlace ?location .
         }
         """
         results = self._execute_query(query)
@@ -117,7 +116,7 @@ class SchemaAnalyzer:
         return {r['p']['value']: int(r['count']['value']) for r in results}
 
     def count_external_vocabulary_usage(self) -> Dict[str, int]:
-        """Count usage of external vocabularies."""
+        """Count events linked to external vocabularies via properties or owl:sameAs."""
         vocabs = {
             'schema.org': 'http://schema.org/',
             'dbpedia': 'http://dbpedia.org/',
@@ -133,7 +132,7 @@ class SchemaAnalyzer:
             WHERE {{
                 ?event a sem:Event ;
                        ?p ?o .
-                FILTER(STRSTARTS(STR(?p), "{prefix}"))
+                FILTER(STRSTARTS(STR(?p), "{prefix}") || STRSTARTS(STR(?o), "{prefix}"))
             }}
             """
             results = self._execute_query(query)

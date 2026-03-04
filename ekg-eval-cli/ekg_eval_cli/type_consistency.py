@@ -139,6 +139,8 @@ class TypeConsistencyAnalyzer:
         property_results = []
         total_domain_conformity = 0
         total_range_conformity = 0
+        domain_checked_count = 0
+        range_checked_count = 0
         properties_with_violations = 0
         
         for prop_uri, domain, range_val in property_defs:
@@ -157,6 +159,7 @@ class TypeConsistencyAnalyzer:
                     result['domain_violations'] = violations
                     result['domain_total'] = total
                     total_domain_conformity += domain_conformity
+                    domain_checked_count += 1
                     if violations > 0:
                         properties_with_violations += 1
             
@@ -169,16 +172,16 @@ class TypeConsistencyAnalyzer:
                     result['range_violations'] = violations
                     result['range_total'] = total
                     total_range_conformity += range_conformity
+                    range_checked_count += 1
             
             property_results.append(result)
         
-        num_props = len(property_results)
-        avg_domain = (total_domain_conformity / num_props) if num_props > 0 else 100.0
-        avg_range = (total_range_conformity / num_props) if num_props > 0 else 100.0
+        avg_domain = (total_domain_conformity / domain_checked_count) if domain_checked_count > 0 else 100.0
+        avg_range = (total_range_conformity / range_checked_count) if range_checked_count > 0 else 100.0
         overall = (avg_domain + avg_range) / 2
         
         return {
-            'properties_analyzed': num_props,
+            'properties_analyzed': len(property_results),
             'properties_with_violations': properties_with_violations,
             'average_domain_conformity': round(avg_domain, 2),
             'average_range_conformity': round(avg_range, 2),
