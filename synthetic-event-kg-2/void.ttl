@@ -1,0 +1,234 @@
+# EventKG
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset>  .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://xmlns.com/foaf/0.1/homepage> <http://eventkg.l3s.uni-hannover.de/>  .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://xmlns.com/foaf/0.1/page> <https://doi.org/10.5281/zenodo.1112284/>  .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://rdfs.org/ns/void#sparqlEndpoint> <http://eventkginterface.l3s.uni-hannover.de/sparql> .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/title> "EventKG"  .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/description> "The EventKG is a multilingual resource incorporating event-centric and temporal information extracted from several large-scale knowledge graphs and semi-structured sources."  .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/publisher> <https://www.l3s.de/home>  .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/creator> <https://www.l3s.de/~gottschalk/> .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/creator> <https://demidova.wordpress.com/> .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/created> "2018-03-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/modified> "2023-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
+
+# Wikipedia Current Events Portal
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <http://eventKG.l3s.uni-hannover.de/graph/wce_en> .
+<http://eventKG.l3s.uni-hannover.de/graph/wce_en> <http://purl.org/dc/terms/title> "Wikipedia Current Events Portal"  .
+<http://eventKG.l3s.uni-hannover.de/graph/wce_en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://eventKG.l3s.uni-hannover.de/graph/wce_en> <http://purl.org/dc/terms/language> "en" .
+<http://eventKG.l3s.uni-hannover.de/graph/wce_en> <http://xmlns.com/foaf/0.1/homepage> <https://en.wikipedia.org/wiki/Portal:Current_events> .
+
+# YAGO
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <http://eventKG.l3s.uni-hannover.de/graph/yago> .
+<http://eventKG.l3s.uni-hannover.de/graph/yago> <http://purl.org/dc/terms/title> "YAGO"  .
+<http://eventKG.l3s.uni-hannover.de/graph/yago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://eventKG.l3s.uni-hannover.de/graph/yago> <http://xmlns.com/foaf/0.1/homepage> <https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/>  .
+
+# Wikidata
+<http://eventKG.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <http://eventKG.l3s.uni-hannover.de/graph/wikidata> .
+<http://eventKG.l3s.uni-hannover.de/graph/wikidata> <http://purl.org/dc/terms/title> "Wikidata"  .
+<http://eventKG.l3s.uni-hannover.de/graph/wikidata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://eventKG.l3s.uni-hannover.de/graph/wikidata> <http://xmlns.com/foaf/0.1/homepage> <https://www.wikidata.org/>  .
+<http://eventKG.l3s.uni-hannover.de/graph/wikidata> <http://purl.org/dc/terms/modified> "2023-02-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+
+# Wikipedias
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_en> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_en> <http://purl.org/dc/terms/language> "en" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_en> <http://purl.org/dc/terms/description> "English Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_en> <http://xmlns.com/foaf/0.1/homepage> <https://en.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_en> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_de> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_de> <http://purl.org/dc/terms/language> "de" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_de> <http://purl.org/dc/terms/description> "German Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_de> <http://xmlns.com/foaf/0.1/homepage> <https://de.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_de> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ru> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ru> <http://purl.org/dc/terms/language> "ru" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ru> <http://purl.org/dc/terms/description> "Russian Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ru> <http://xmlns.com/foaf/0.1/homepage> <https://ru.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ru> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_fr> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_fr> <http://purl.org/dc/terms/language> "fr" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_fr> <http://purl.org/dc/terms/description> "French Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_fr> <http://xmlns.com/foaf/0.1/homepage> <https://fr.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_fr> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pt> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pt> <http://purl.org/dc/terms/language> "pt" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pt> <http://purl.org/dc/terms/description> "Portuguese Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pt> <http://xmlns.com/foaf/0.1/homepage> <https://pt.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pt> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_it> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_it> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_it> <http://purl.org/dc/terms/language> "it" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_it> <http://purl.org/dc/terms/description> "Italian Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_it> <http://xmlns.com/foaf/0.1/homepage> <https://it.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_it> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_da> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_da> <http://purl.org/dc/terms/language> "da" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_da> <http://purl.org/dc/terms/description> "Danish Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_da> <http://xmlns.com/foaf/0.1/homepage> <https://da.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_da> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_hr> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_hr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_hr> <http://purl.org/dc/terms/language> "hr" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_hr> <http://purl.org/dc/terms/description> "Croatian Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_hr> <http://xmlns.com/foaf/0.1/homepage> <https://hr.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_hr> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_nl> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_nl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_nl> <http://purl.org/dc/terms/language> "nl" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_nl> <http://purl.org/dc/terms/description> "Dutch Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_nl> <http://xmlns.com/foaf/0.1/homepage> <https://nl.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_nl> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_es> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_es> <http://purl.org/dc/terms/language> "es" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_es> <http://purl.org/dc/terms/description> "Spanish Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_es> <http://xmlns.com/foaf/0.1/homepage> <https://es.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_es> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_bg> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_bg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_bg> <http://purl.org/dc/terms/language> "bg" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_bg> <http://purl.org/dc/terms/description> "Bulgarian Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_bg> <http://xmlns.com/foaf/0.1/homepage> <https://bg.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_bg> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_no> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_no> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_no> <http://purl.org/dc/terms/language> "no" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_no> <http://purl.org/dc/terms/description> "Norwegian (BokmÃ¥l) Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_no> <http://xmlns.com/foaf/0.1/homepage> <https://no.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_no> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_sl> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_sl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_sl> <http://purl.org/dc/terms/language> "sl" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_sl> <http://purl.org/dc/terms/description> "Slovene Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_sl> <http://xmlns.com/foaf/0.1/homepage> <https://sl.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_sl> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ro> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ro> <http://purl.org/dc/terms/language> "ro" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ro> <http://purl.org/dc/terms/description> "Romanian Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ro> <http://xmlns.com/foaf/0.1/homepage> <https://ro.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_ro> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pl> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pl> <http://purl.org/dc/terms/language> "pl" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pl> <http://purl.org/dc/terms/description> "Polish Wikipedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pl> <http://xmlns.com/foaf/0.1/homepage> <https://pl.wikipedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/wikipedia_pl> <http://purl.org/dc/terms/modified> "2023-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+# DBpedias
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_en> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_en> <http://purl.org/dc/terms/language> "en" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_en> <http://purl.org/dc/terms/description> "English DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_en> <http://xmlns.com/foaf/0.1/homepage> <http://dbpedia.org/> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_en> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_de> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_de> <http://purl.org/dc/terms/language> "de" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_de> <http://purl.org/dc/terms/description> "German DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_de> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ru> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ru> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ru> <http://purl.org/dc/terms/language> "ru" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ru> <http://purl.org/dc/terms/description> "Russian DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ru> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_fr> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_fr> <http://purl.org/dc/terms/language> "fr" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_fr> <http://purl.org/dc/terms/description> "French DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_fr> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pt> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pt> <http://purl.org/dc/terms/language> "pt" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pt> <http://purl.org/dc/terms/description> "Portuguese DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pt> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_it> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_it> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_it> <http://purl.org/dc/terms/language> "it" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_it> <http://purl.org/dc/terms/description> "Italian DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_it> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_da> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_da> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_da> <http://purl.org/dc/terms/language> "da" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_da> <http://purl.org/dc/terms/description> "Danish DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_da> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_hr> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_hr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_hr> <http://purl.org/dc/terms/language> "hr" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_hr> <http://purl.org/dc/terms/description> "Croatian DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_hr> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_nl> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_nl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_nl> <http://purl.org/dc/terms/language> "nl" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_nl> <http://purl.org/dc/terms/description> "Dutch DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_nl> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_es> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_es> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_es> <http://purl.org/dc/terms/language> "es" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_es> <http://purl.org/dc/terms/description> "Spanish DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_es> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_bg> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_bg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_bg> <http://purl.org/dc/terms/language> "bg" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_bg> <http://purl.org/dc/terms/description> "Bulgarian DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_bg> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_no> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_no> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_no> <http://purl.org/dc/terms/language> "no" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_no> <http://purl.org/dc/terms/description> "Norwegian (BokmÃ¥l) DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_no> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_sl> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_sl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_sl> <http://purl.org/dc/terms/language> "sl" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_sl> <http://purl.org/dc/terms/description> "Slovene DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_sl> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ro> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ro> <http://purl.org/dc/terms/language> "ro" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ro> <http://purl.org/dc/terms/description> "Romanian DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_ro> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<https://eventkg.l3s.uni-hannover.de/graph/event_kg> <http://purl.org/dc/terms/source> <https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pl> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pl> <http://purl.org/dc/terms/language> "pl" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pl> <http://purl.org/dc/terms/description> "Polish DBpedia" .
+<https://eventkg.l3s.uni-hannover.de/graph/dbpedia_pl> <http://purl.org/dc/terms/modified> "2022-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+

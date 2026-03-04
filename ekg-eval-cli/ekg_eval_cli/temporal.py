@@ -183,15 +183,11 @@ class TemporalValidator:
         # Count events with temporal relations
         dated_query = """
         PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        PREFIX ekgs: <https://eventkg.l3s.uni-hannover.de/schema/>
-        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         
         SELECT (COUNT(DISTINCT ?event) AS ?total)
         WHERE {
-            ?event a sem:Event .
-            ?relation a ekgs:Relation ;
-                      rdf:subject ?event ;
-                      sem:hasBeginTimeStamp ?date .
+            ?event a sem:Event ;
+                   sem:hasBeginTimeStamp ?date .
         }
         """
         

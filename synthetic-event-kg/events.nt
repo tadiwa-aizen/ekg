@@ -1,0 +1,447 @@
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595270> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595270> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q652231> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595270> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Stock_Market_Crash> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595270> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595270> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595271> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595271> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q493571> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595271> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595271> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595271> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595272> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595272> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q936869> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595272> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595272> <http://www.w3.org/2000/01/rdf-schema#label> "Treaty Signing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595273> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595273> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q688806> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595273> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595273> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595274> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595274> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q512063> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595274> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595274> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595275> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595275> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q363905> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595275> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595275> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595275> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595276> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595276> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q369229> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595276> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595276> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595277> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q991691> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595277> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595277> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595278> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595278> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q295338> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595278> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595278> <http://www.w3.org/2000/01/rdf-schema#label> "Treaty Signing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595279> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595279> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q116061> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595279> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595279> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595280> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595280> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q464091> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595280> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Scientific_Discovery> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595280> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Discovery"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595280> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Discovery (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595281> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595281> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q714379> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595281> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Stock_Market_Crash> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595281> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595282> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595282> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q471044> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595282> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_War_II> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595282> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595283> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595283> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q170365> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595283> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Stock_Market_Crash> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595283> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595283> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595284> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595284> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q629254> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595284> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595284> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595285> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595285> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q161946> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595285> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Olympic_Games> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595285> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595286> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595286> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q719959> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595286> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595286> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595287> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q663949> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595287> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Independence_Day> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595287> <http://www.w3.org/2000/01/rdf-schema#label> "Independence Day"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595288> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595288> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q270368> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595288> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595288> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595288> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595289> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595289> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q686619> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595289> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Earthquake> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595289> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595290> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q191452> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595290> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595290> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595290> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595291> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q108260> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595291> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595291> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595292> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q889855> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595292> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_War_II> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595292> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595292> <http://www.w3.org/2000/01/rdf-schema#label> "World War II (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595293> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595293> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q380802> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595293> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595293> <http://www.w3.org/2000/01/rdf-schema#label> "Treaty Signing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595294> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q626913> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595294> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Independence_Day> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595294> <http://www.w3.org/2000/01/rdf-schema#label> "Independence Day"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595295> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595295> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q693251> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595295> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Independence_Day> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595295> <http://www.w3.org/2000/01/rdf-schema#label> "Independence Day"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595295> <http://www.w3.org/2000/01/rdf-schema#label> "Independence Day (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595296> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595296> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q735324> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595296> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595296> <http://www.w3.org/2000/01/rdf-schema#label> "Treaty Signing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595296> <http://www.w3.org/2000/01/rdf-schema#label> "Treaty Signing (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595297> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595297> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q174247> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595297> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595297> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595297> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595298> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595298> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q547937> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595298> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595298> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595299> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595299> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q186263> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595299> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595299> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595299> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595300> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q892309> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595300> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595300> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595300> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595301> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595301> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q192136> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595301> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595301> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595302> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q824571> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595302> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595302> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595302> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595303> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595303> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q313171> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595303> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595303> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595304> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595304> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q721712> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595304> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_War_II> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595304> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595305> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595305> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q623922> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595305> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Earthquake> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595305> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595305> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595306> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595306> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q764308> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595306> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Olympic_Games> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595306> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595307> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q932815> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595307> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Fall_of_Berlin_Wall> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595307> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595307> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595308> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595308> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q962406> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595308> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/French_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595308> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595309> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595309> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q613057> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595309> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Stock_Market_Crash> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595309> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595309> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595310> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q444501> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595310> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595310> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595311> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q171462> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595311> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Fall_of_Berlin_Wall> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595311> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595312> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q824228> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595312> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595312> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595312> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595313> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595313> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q938143> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595313> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595313> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595313> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595314> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595314> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q655190> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595314> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595314> <http://www.w3.org/2000/01/rdf-schema#label> "Treaty Signing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595315> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595315> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q864259> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595315> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595315> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595315> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595316> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595316> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q951159> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595316> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595316> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595316> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595317> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595317> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q510955> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595317> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Fall_of_Berlin_Wall> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595317> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595317> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595318> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595318> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q65511> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595318> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595318> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595318> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595319> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595319> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q902970> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595319> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Independence_Day> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595319> <http://www.w3.org/2000/01/rdf-schema#label> "Independence Day"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595319> <http://www.w3.org/2000/01/rdf-schema#label> "Independence Day (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595320> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q993711> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595320> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595320> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595320> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595321> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595321> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q222665> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595321> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Earthquake> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595321> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595322> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595322> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q234974> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595322> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595322> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595322> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595323> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595323> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q424197> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595323> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595323> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595324> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595324> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q785296> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595324> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595324> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595324> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595325> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595325> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q725339> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595325> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595325> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595325> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595326> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595326> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q135079> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595326> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595326> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595326> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595327> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595327> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q909303> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595327> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595327> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595328> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595328> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q386071> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595328> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Fall_of_Berlin_Wall> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595328> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595329> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q532892> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595329> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595329> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595330> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q63783> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595330> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595330> <http://www.w3.org/2000/01/rdf-schema#label> "Treaty Signing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595331> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q970515> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595331> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595331> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595331> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595332> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595332> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q53455> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595332> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595332> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595333> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595333> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q776907> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595333> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Scientific_Discovery> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595333> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Discovery"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595333> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Discovery (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595334> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q803550> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595334> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Scientific_Discovery> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595334> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Discovery"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595335> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595335> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q14833> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595335> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Earthquake> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595335> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595336> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595336> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q291324> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595336> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Moon_Landing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595336> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595336> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595337> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595337> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q542765> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595337> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_War_II> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595337> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595338> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595338> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q354705> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595338> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595338> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595338> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595339> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595339> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q744549> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595339> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595339> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595340> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q946833> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595340> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595340> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595340> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595341> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q495948> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595341> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595341> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595342> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595342> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q366249> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595342> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595342> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595342> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595343> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q275852> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595343> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595343> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595344> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q336310> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595344> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_Cup> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595344> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595344> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595345> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595345> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q468681> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595345> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Fall_of_Berlin_Wall> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595345> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595345> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595346> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595346> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q62880> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595346> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595346> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595346> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595347> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595347> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q296960> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595347> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595347> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595348> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595348> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q751743> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595348> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Cold_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595348> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595349> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595349> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q539776> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595349> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Scientific_Discovery> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595349> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Discovery"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595350> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q354240> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595350> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/French_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595350> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595351> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595351> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q949645> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595351> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_Cup> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595351> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595351> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595352> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595352> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q872093> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595352> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/French_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595352> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595352> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595353> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q964826> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595353> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Earthquake> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595353> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595354> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q637850> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595354> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595354> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595355> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595355> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q92696> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595355> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595355> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595356> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595356> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q285142> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595356> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Earthquake> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595356> <http://www.w3.org/2000/01/rdf-schema#label> "Earthquake"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595357> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595357> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q640310> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595357> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595357> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595358> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595358> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q560697> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595358> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595358> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595358> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595359> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595359> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q863333> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595359> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595359> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595360> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q714845> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595360> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595360> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595360> <http://www.w3.org/2000/01/rdf-schema#label> "Space Mission (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595361> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595361> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q334559> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595361> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Stock_Market_Crash> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595361> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595361> <http://www.w3.org/2000/01/rdf-schema#label> "Stock Market Crash (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595362> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595362> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q107033> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595362> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/French_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595362> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595363> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595363> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q281548> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595363> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595363> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595363> <http://www.w3.org/2000/01/rdf-schema#label> "Hurricane (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595364> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595364> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q458630> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595364> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Scientific_Discovery> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595364> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Discovery"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595365> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595365> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q762130> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595365> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Independence_Day> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595365> <http://www.w3.org/2000/01/rdf-schema#label> "Independence Day"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595366> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595366> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q398922> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595366> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595366> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595366> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595367> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595367> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q431619> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595367> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595367> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595367> <http://www.w3.org/2000/01/rdf-schema#label> "Volcanic Eruption (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595368> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595368> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q845083> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595368> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_War_II> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595368> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595368> <http://www.w3.org/2000/01/rdf-schema#label> "World War II (de)"@de .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595369> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q382942> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595369> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2595369> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .

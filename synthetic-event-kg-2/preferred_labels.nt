@@ -1,0 +1,400 @@
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000000> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000001> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000002> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000003> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000004> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000005> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000006> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000007> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000008> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000009> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000010> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000011> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000012> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000013> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000014> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000015> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000016> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000017> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000018> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000019> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000020> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000021> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000022> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000023> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000024> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000025> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000026> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000027> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000028> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000029> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000030> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000031> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000032> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000033> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000034> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000035> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000036> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000037> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000038> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000039> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000040> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000041> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000042> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000043> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000044> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000045> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000046> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000047> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000048> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000049> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000050> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000051> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000052> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000053> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000054> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000055> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000056> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000057> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000058> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000059> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000060> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000061> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000062> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000063> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000064> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000065> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000066> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000067> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000068> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000069> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000070> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000071> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000072> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000073> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000074> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000075> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000076> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000077> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000078> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000079> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000080> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000081> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000082> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000083> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000084> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000085> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000086> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000087> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000088> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000089> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000090> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000091> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000092> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000093> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000094> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000095> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000096> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000097> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000098> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000099> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000100> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000101> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000102> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000103> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000104> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000105> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000106> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000107> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000108> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000109> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000110> <http://www.w3.org/2000/01/rdf-schema#label> "Cold War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000111> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000112> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000113> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000114> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000115> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000116> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000117> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000118> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000119> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000120> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000121> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000122> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000123> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000124> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000125> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000126> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000127> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000128> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000129> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000130> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000131> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000132> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000133> <http://www.w3.org/2000/01/rdf-schema#label> "Moon Landing"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000134> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000135> <http://www.w3.org/2000/01/rdf-schema#label> "World War II"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000136> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000137> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000138> <http://www.w3.org/2000/01/rdf-schema#label> "French Revolution"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000139> <http://www.w3.org/2000/01/rdf-schema#label> "Presidential Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000140> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000141> <http://www.w3.org/2000/01/rdf-schema#label> "Royal Wedding"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000142> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000143> <http://www.w3.org/2000/01/rdf-schema#label> "American Civil War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000144> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000145> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic Games"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000146> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000147> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000148> <http://www.w3.org/2000/01/rdf-schema#label> "Fall of Berlin Wall"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_3000149> <http://www.w3.org/2000/01/rdf-schema#label> "Renaissance"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_0> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_1> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_2> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_3> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_4> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_5> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_6> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_7> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_8> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_9> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_10> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_11> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_12> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_13> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_14> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_15> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_16> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_17> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_18> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_19> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_20> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_21> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_22> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_23> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_24> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_25> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_26> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_27> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_28> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_29> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_30> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_31> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_32> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_33> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_34> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_35> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_36> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_37> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_38> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_39> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_40> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_41> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_42> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_43> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_44> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_45> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_46> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_47> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_48> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_49> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_50> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_51> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_52> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_53> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_54> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_55> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_56> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_57> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_58> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_59> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_60> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_61> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_62> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_63> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_64> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_65> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_66> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_67> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_68> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_69> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_70> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_71> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_72> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_73> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_74> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_75> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_76> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_77> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_78> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_79> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_80> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_81> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_82> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_83> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_84> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_85> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_86> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_87> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_88> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_89> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_90> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_91> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_92> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_93> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_94> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_95> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_96> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_97> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_98> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_99> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_100> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_101> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_102> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_103> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_104> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_105> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_106> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_107> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_108> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_109> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_110> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_111> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_112> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_113> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_114> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_115> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_116> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_117> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_118> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_119> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_120> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_121> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_122> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_123> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_124> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_125> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_126> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_127> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_128> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_129> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_130> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_131> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_132> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_133> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_134> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_135> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_136> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_137> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_138> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_139> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_140> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_141> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_142> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_143> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_144> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_145> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_146> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_147> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_148> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_149> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_150> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_151> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_152> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_153> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_154> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_155> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_156> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_157> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_158> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_159> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_160> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_161> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_162> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_163> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_164> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_165> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_166> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_167> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_168> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_169> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_170> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_171> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_172> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_173> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_174> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_175> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_176> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_177> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_178> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_179> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_180> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_181> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_182> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_183> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_184> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_185> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_186> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_187> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_188> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_189> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_190> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_191> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_192> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_193> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_194> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_195> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_196> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_197> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_198> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_199> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_200> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_201> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_202> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_203> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_204> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_205> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_206> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_207> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_208> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_209> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_210> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_211> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_212> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_213> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_214> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_215> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_216> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_217> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_218> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_219> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_220> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_221> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_222> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_223> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_224> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_225> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_226> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_227> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_228> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_229> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_230> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_231> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_232> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_233> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_234> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_235> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_236> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_237> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_238> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_239> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_240> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_241> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_242> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_243> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_244> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_245> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_246> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_247> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_248> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_249> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .

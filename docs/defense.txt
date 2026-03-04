@@ -1,0 +1,211 @@
+
+15
+
+Automatic Zoom
+6
+CURRENT EKG EVALUATIONS
+EKG evaluations often rely on precision, recall, and F1
+scores, focusing narrowly on event relationships while
+overlooking broader system features like semantic
+richness and multilingual adaptability.
+Frameworks such as Discovering Event Evolution Graphs
+from News Corpora depend heavily on manually
+annotated relationships and predefined event sets,
+limiting their applicability.
+These evaluations make assumptions that restrict their
+ability to capture evolving, complex, and context-rich
+event systems effectively.
+Fragmented evaluation approaches fail to
+capture critical EKG features such as causality,
+event evolution, and interconnectivity.
+The absence of comprehensive frameworks
+limits understanding of EKG’s.
+This gap undermines efforts to enhance EKGs'
+effectiveness across various domains.
+EKG evaluation methodologies are often disjointed,
+lacking an integrated framework to holistically assess
+their multifaceted nature.
+While certain models, such as EventKG, explore
+completeness and coverage of temporal information,
+others, such as OEKG and ASER, either overlook key
+evaluation metrics or focus on isolated aspects
+without tying them into a cohesive analysis.
+PROBLEM
+Despite their growing significance, current evaluation methods are often fragmented,
+addressing only a subset of the features that define an EKG. For instance, existing methods
+may focus on the accuracy of event representation or temporal relationships but fail to
+provide a comprehensive assessment that considers all the critical dimensions of an EKG,
+such as causal links, contextual information, and the ability to handle complex queries
+involving multiple events.
+7
+There is a lack of a standardized and comprehensive evaluation
+framework to fully capture the features of EKGs.
+In Short .....
+RESEARCH OBJECTIVE
+8
+Develop a comprehensive evaluation framework for EKGs
+Primary Aim
+Integrate existing evaluation methods (Precision, recall,
+temporal).
+Introduce new metrics for reasoning and inference capabilities,
+Event Granularity, Contextual Completenes... and more
+Enhance accuracy and relevance of EKG evaluations.
+Specific Objectives
+PRIOR WORK ON KG EVALUTION
+FRAMEWORKS
+1
+2
+KGrEaT Framework:[6]
+Evaluation Method: Focuses on task-based metrics (classification, clustering, recommendation)
+instead of intrinsic metrics like accuracy and completeness.
+Strengths: Modular design allows for easy extension with new tasks and datasets, offering flexibility
+and practical insights.
+Limitations for EKGs:
+Ineffective for dynamic, temporal, and causal relationships in EKG’s.
+Requires significant adaptations to handle EKG-specific complexities.
+Chen et al.'s Framework:[7]
+Methodology: Utilises scalable approaches like schema validation and sampling to meet practical
+application needs.
+Strengths: Effective for evaluating static knowledge graphs.
+Limitations for EKGs:
+Lacks metrics for temporal reasoning, event sequence accuracy, and causal relationships.
+Completeness evaluation does not address the evolving nature of EKGs.
+Overlooks coherence and reasoning capabilities, critical for dynamic event-based systems. 9
+PROPOSED APPROACH
+10
+Identify essential evaluation criteria
+Define core evaluation dimensions - features for EKG’s
+Develop a conceptual model: Establish relationships among evaluation criteria to guide metric
+development.
+Framework Design
+Integrate existing metrics: Use Precision, Recall, Temporal Consistency, and other metrics
+Introduce novel metrics: Introduce metrics for measuring :Reasoning and inference capabilities, Event
+Granularity, Contextual Completenes... and more
+Focus on utility: Ensure metrics evaluate practical applications like event prediction and risk assessment.
+Development of Metrics
+Develop algorithms and models for (EKG) analysis
+Create evaluation workflows: Define step-by-step processes for applying criteria, running metrics,
+and interpreting results.
+Build a framework implementation tool: Include a user-friendly interface to generate evaluation
+reports for EKGs.
+Implementation
+METHODOLOGY
+11
+Analyse current evaluation methods for EKGs,
+focusing on strengths and gaps.
+Systematic Analysis
+Framework Development
+Prototype testing with benchmark EKGs.
+Iterative refinement based on feedback.
+Testing and Iteration:
+Identify Essential Evaluation Criteria
+Review the unique characteristics of EKGs to pinpoint essential
+evaluation criteria
+Define Evaluation Dimensions:
+Establish core dimensions
+Outline specific aspects to measure within each dimension,
+Integrate Existing Metrics:
+Incorporate well-established metrics like Precision, Recall,
+Temporal Consistency into the framework to assess various EKG
+features holistically.
+Incorporate metrics for other features often neglected
+by EKG evaluations:
+Expand the framework to include additional evaluation criteria
+that address underrepresented aspects of EKG performance.
+Ensure the metrics comprehensively capture the
+multidimensional nature of EKG features and their applications.
+Prototype Testing with Benchmark EKGs:
+Select Test Datasets: Use well-known EKGs like EventKG or ASER for
+testing.
+Run Evaluations:
+Apply the framework to these EKGs to see if it works as expected.
+Identify Issues: Look for any problems or inaccuracies in the results.
+Iterative Refinement:
+Perform Comparative Analysis:
+Compare with Other Methods: Evaluate the same EKGs using traditional methods.
+Analyze Differences: See how the results from the new framework differ from the
+old methods.
+Highlight Improvements: Point out areas where the new framework provides better
+or more detailed insights.
+Create Evaluation Workflows:
+Design step-by-step workflows detailing how to apply the
+evaluation criteria, run metrics, and interpret results for
+consistent assessment processes.
+Comprehensiveness of Evaluation
+How well does the framework assess the full range of EKG features, including temporal, causal, spatial, and
+contextual dimensions?
+Does it evaluate both event-entity and event-event relationships effectively?
+Causal Relationships
+How effectively does the framework assess the accuracy and depth of causal connections between events?
+Can it evaluate indirect or complex causality?
+Contextual Richness
+How robust is the evaluation of contextual integration, such as location, participants, and event-specific attributes?
+Does it measure the semantic richness and completeness of contextual information?
+Evaluation Metrics Validation
+How does the framework ensure the validity and reliability of its metrics?
+Are the metrics meaningful, measurable, and aligned with real-world outcomes?
+12
+EVALUATION QUESTIONS
+Comparison Across Models
+How effectively does the framework compare different EKG models?
+Does it highlight strengths and limitations across models using standardised benchmarks?
+EVALUATION
+Objectives
+Validate the framework’s ability to assess key
+EKG dimensions, including temporal accuracy,
+causal inference, and contextual richness.
+Demonstrate the robustness of new metrics
+such for features such as event granularity,
+contextual completeness and more
+Benchmark the framework against existing
+evaluation methods, showcasing its
+advantages.
+Outcome
+A comprehensive understanding
+of the framework's performance,
+including its strengths, limitations,
+and areas for improvement.
+Benchmarks for accuracy,
+efficiency, and usability
+compared to existing methods.
+13
+EVALUATION
+Methodology
+Phase 1: Prototype Testing
+Test the framework with benchmark datasets (EventKG, AugGKG, ASER).
+Assess performance across dimensions such as temporal consistency, contextual richness, and
+task-specific adaptability and others.
+Phase 2: Iterative Refinement
+Refine metrics and algorithms based on initial testing results.
+Ensure flexibility to accommodate diverse EKG types and applications.
+Phase 3: Comparative Analysis
+Compare the framework with traditional evaluation methods on multiple EKG models.
+Highlight advantages in capturing EKG complexities like causal relationships and multimodal
+integration.
+14
+POTENTIAL CHALLENGES
+Development of Novel Metrics:
+Defining meaningful and
+applicable metrics.
+Defining TSPS and TAR requires
+aligning theoretical and practical
+aspects for universal applicability.
+Limited access to high-quality
+datasets like EventKG can restrict
+robust testing and validation.
+Access to high-quality benchmark
+datasets.
+Comparative Analysis Difficulties
+Aligning evaluation criteria with existing
+methods poses challenges in ensuring
+fairness and consistency.
+Aligning evaluation criteria across methods.
+Validation Across Domains:
+Balancing domain-specific
+requirements while maintaining
+framework standardization is
+complex.
+Balancing diverse domain
+requirements.
+14
+Data Availability and Quality

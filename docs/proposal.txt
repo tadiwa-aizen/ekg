@@ -1,0 +1,150 @@
+
+1
+
+Automatic Zoom
+Project Proposal: Developing A Standard Evaluation Framework for
+Event-Centric Knowledge Graphs
+Tadiwa Magwenzi
+University Of Cape Town
+MGWTAD001@myuct.ac.za
+ABSTRACT
+Event knowledge graphs (EKGs) are critical for representing
+complex event-related data and capturing temporal and causal
+relationships among events and entities. High-quality evaluations
+of EKGs are crucial for ensuring their effectiveness and reliability
+in real-world applications. EKG’s are designed to capture and
+represent the complex relationships and sequences of events,
+which are vital for tasks like event prediction, and causal analysis.
+Due to this, a robust evaluation framework is needed assess how
+accurately an EKG models these events, their temporal dynamics,
+and interdependencies. Without rigorous evaluation, the EKG
+may provide misleading insights, potentially leading to faulty
+decision-making in critical domains such as finance, healthcare,
+and cybersecurity. Despite the growing body of research and
+applications of EKGs, a significant gap remains in their
+evaluation. Current measures often address only a subset of
+necessary features, varying significantly between studies and
+projects. This which results in incomplete assessments that fail to
+encapsulate all critical aspects of EKGs.
+My research aims to address this gap by developing a
+comprehensive evaluation framework specifically tailored for
+event knowledge graphs. This framework integrates existing
+evaluation methods while introducing new metrics to address
+gaps in traditional assessments, ensuring a comprehensive and
+simultaneous evaluation of the temporal, causal, contextual, and
+several other critical nuances inherent to EKGs. By systematically
+analyzing existing evaluation methods, identifying their
+limitations, and proposing a more suitable approach, this project
+seeks to enhance the accuracy and relevance of EKG evaluations.
+The proposed framework will facilitate more robust assessments,
+guiding future research and applications in the domain of event-
+centric knowledge representation
+Keywords
+Knowledge Graphs, Event-Centric Knowledge Graphs
+1. RESEARCH DESCRIPTION
+Event knowledge graphs (EKGs) are advanced data structures
+designed to represent and organize information around events
+ratherthan static entities.[1] Unlike traditional knowledge graphs,
+which focus primarily on entities and their relationships, EKGs
+emphasize the temporal, causal, and contextual connections
+between events and the entities involved. This makes EKGs
+particularly effective in domains where understanding the
+sequence, cause, and impact of events is crucial, such as in news
+analytics, historical data analysis, and event-driven systems. For
+instance, ECKGs constructed from news articles can capture
+dynamic changes over time, helping users reconstruct complex
+storylines and explore hidden patterns that are often overlooked in
+traditional knowledge graphs [2].
+Traditional Knowledge Graphs are designed to represent factual
+information about entities (such as people, places, organizations,
+etc.) and their relationships. The primary goal is to provide a
+comprehensive and structured representation of knowledge, often
+used for tasks like semantic search, question answering, and
+information retrieval. While EKG’s focus specifically on
+representing events and the relationships between them. The aim
+is to capture the temporal, spatial, and causal relationships
+between events, providing a dynamic understanding of sequences
+and interactions that occur over time. [1] The two types of
+knowledge graphs differ in a myriad of ways, one of the most
+important is the way they represent relationships. Traditional KGs
+emphasize static relationships between entities, such as "Person A
+works at Company B" or "City X is in Country Y." The
+relationships are often more static and do not inherently
+incorporate time as a dimension. In contrast, EKG’s emphasize
+dynamic relationships, including temporal (when events happen),
+causal (what causes what), and spatial (where events occur)
+relationships. For example, "Event A leads to Event B," "Event X
+occurs after Event Y," or "Event Z happens at Location L." [4].
+EKGs solve several critical issues by capturing the dynamic
+nature of information. They provide a more nuanced
+understanding of how events unfold over time and how they
+influence each other, offering insights into causality and sequence
+that are often missed by entity- centric models. For example, in
+news analytics [2] EKGs can help trace the development of a
+story, identify pivotal moments, and understand the relationships
+between different news events and entities involved. This enables
+more accurate trend analysis, event prediction, and contextual
+understanding.
+Traditional KGs emphasize static factual relationships (e.g.,
+"Person A works at Company B"). They do not capture complex
+event relationships such as causality, temporality, or sequence of
+events (e.g., "Event X causes Event Y, which happens after Event
+Z"). This makes it difficult to use them for applications like
+decision-making or scenario planning that rely on understanding
+the progression and dependencies of events. To address this,
+EKGs go beyond simple entity-entity relationships by
+incorporating event-event relationships (such as causal, temporal,
+and conditional relationships) and event- entity relationships. This
+makes them more suitable for applications requiring deep
+reasoning about events, such as predicting outcomes,
+understanding causality, and generating timelines. [1]
+Traditional KGs are also not well-suited to incorporate the
+context surrounding events, such as the circumstances under
+which an event occurred or its impact. This makes it challenging
+to perform more nuanced reasoning or to extract insights that
+depend on understanding the full context of an event sequence.
+EKG’s, however, provide a framework to represent the context
+and attributes associated with each event, such as participants,
+locations, and time frames. This enhanced contextual
+understanding allows for more accurate and nuanced reasoning,
+improving the quality of insights that can be extracted. [4]
+The current evaluation methods for Event Knowledge Graphs
+tend to focus on assessing specific features, such as accuracy of
+event representation, temporal relations, or completeness of
+spatio-temporal queries, in isolation rather than providing a
+comprehensive evaluation of all relevant aspects. Metrics like
+Precision and Recall are often used to evaluate the accuracy of
+event relationships by comparing system-generated graphs with
+manually annotated ones, while other methods, like the use of
+Cohen’s Kappa Coefficient or Specific Triple Accuracy, assess
+the consistency and semantic richness of event references in
+news data [2]. Some approaches, like the ones used to evaluate
+AugGKG[5], evaluate completeness and efficiency in handling
+complex queries within geographic contexts. However, these
+methods usually address one or two dimensions—such as
+event sequencing, causal relationship extraction, or multilingual
+support—without encompassing the full set of features that define
+an ECKG. Thus, while existing evaluation techniques provide
+valuable insights, there is a need for more holistic approaches that
+consider the diverse and interconnected attributes of ECKGs to
+ensure a balanced and thorough assessment of their capabilities.
+Given these limitations, there is a clear need for a novel
+evaluation framework tailored specifically for ECKGs that can
+comprehensively assess their multifaceted nature. A robust
+evaluation framework must go beyond traditional metrics to
+incorporate new measures that capture the graph’s ability to
+handle dynamic event evolution, support inferential reasoning,
+maintain consistency across diverse data sources, and represent
+events in a way that is both semantically rich and contextually
+accurate. Such a framework would enable a more nuanced
+understanding of an ECKG’s strengths and weaknesses, guiding
+improvements in their construction and application. It would also
+provide a standardized way to compare different models, fostering
+advancements in ECKG research and development by
+highlighting which features are being successfully addressed and
+which require further innovation.
+Ultimately, a comprehensive evaluation framework would ensure
+that ECKGs are fully capable of supporting the complex decision-
+making and analytical needs of real-world applications.
+Thus, the primary objective of this research is to develop a
+comprehensive evaluation framework for event knowledge

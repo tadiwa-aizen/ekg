@@ -1,0 +1,2 @@
+<http://dbpedia.org/ontology/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<http://dbpedia.org/ontology/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .

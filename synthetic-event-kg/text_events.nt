@@ -1,0 +1,341 @@
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892396> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892396> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892396> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1913-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892396> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892396> <http://purl.org/dc/terms/description> "Description of Presidential Election."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892396> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_135> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892397> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/World_Cup> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892397> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1994-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892397> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892397> <http://purl.org/dc/terms/description> "Description of World Cup."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892397> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_274> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892397> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_74> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1926-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <http://purl.org/dc/terms/description> "Description of Treaty Signing."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_40> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_129> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892398> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_112> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892399> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892399> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892399> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2002-02-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892399> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892399> <http://purl.org/dc/terms/description> "Description of Industrial Revolution."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892399> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_36> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892400> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892400> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1967-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892400> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892400> <http://purl.org/dc/terms/description> "Description of Royal Wedding."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892400> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_152> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892400> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_233> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892401> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892401> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892401> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1974-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892401> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892401> <http://purl.org/dc/terms/description> "Description of Volcanic Eruption."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892401> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_178> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892401> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_103> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892402> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892402> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Olympic_Games> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892402> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1954-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892402> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892402> <http://purl.org/dc/terms/description> "Description of Olympic Games."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892402> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_131> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892403> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892403> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Stock_Market_Crash> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892403> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1903-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892403> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892403> <http://purl.org/dc/terms/description> "Description of Stock Market Crash."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892403> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_278> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892403> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_150> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892404> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892404> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/World_War_II> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892404> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2023-05-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892404> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892404> <http://purl.org/dc/terms/description> "Description of World War II."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892404> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_14> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892404> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_255> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892405> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892405> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892405> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1922-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892405> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892405> <http://purl.org/dc/terms/description> "Description of Presidential Election."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892405> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_32> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892406> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892406> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892406> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2010-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892406> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892406> <http://purl.org/dc/terms/description> "Description of Space Mission."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892406> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_150> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892407> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892407> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/World_Cup> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892407> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1934-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892407> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892407> <http://purl.org/dc/terms/description> "Description of World Cup."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892407> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_71> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892407> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_201> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892408> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892408> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892408> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2016-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892408> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892408> <http://purl.org/dc/terms/description> "Description of Volcanic Eruption."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892408> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_110> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Fall_of_Berlin_Wall> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1938-06-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <http://purl.org/dc/terms/description> "Description of Fall of Berlin Wall."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_59> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_82> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892409> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_209> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892410> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892410> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/World_Cup> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892410> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1976-02-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892410> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892410> <http://purl.org/dc/terms/description> "Description of World Cup."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892410> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_52> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892410> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_173> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892411> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Olympic_Games> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892411> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1938-10-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892411> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892411> <http://purl.org/dc/terms/description> "Description of Olympic Games."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892411> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_50> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892411> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_226> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1939-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <http://purl.org/dc/terms/description> "Description of Royal Wedding."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_109> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_204> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892412> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_72> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892413> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892413> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892413> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2010-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892413> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892413> <http://purl.org/dc/terms/description> "Description of Presidential Election."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892413> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_118> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1997-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <http://purl.org/dc/terms/description> "Description of Industrial Revolution."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_265> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_258> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892414> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_43> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892415> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892415> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/French_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892415> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1986-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892415> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892415> <http://purl.org/dc/terms/description> "Description of French Revolution."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892415> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_2> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892416> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Moon_Landing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892416> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1903-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892416> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892416> <http://purl.org/dc/terms/description> "Description of Moon Landing."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892416> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_280> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892416> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_209> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892417> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892417> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Stock_Market_Crash> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892417> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2006-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892417> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892417> <http://purl.org/dc/terms/description> "Description of Stock Market Crash."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892417> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_95> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2012-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <http://purl.org/dc/terms/description> "Description of American Civil War."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_299> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_160> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892418> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_30> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892419> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/American_Civil_War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892419> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1946-06-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892419> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892419> <http://purl.org/dc/terms/description> "Description of American Civil War."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892419> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_28> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892420> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892420> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2019-10-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892420> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892420> <http://purl.org/dc/terms/description> "Description of Renaissance."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892420> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_124> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892420> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_156> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892421> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892421> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1902-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892421> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892421> <http://purl.org/dc/terms/description> "Description of Industrial Revolution."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892421> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_249> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892421> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_121> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892422> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Moon_Landing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892422> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1962-03-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892422> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892422> <http://purl.org/dc/terms/description> "Description of Moon Landing."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892422> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_257> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892422> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_90> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892423> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892423> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1960-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892423> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892423> <http://purl.org/dc/terms/description> "Description of Space Mission."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892423> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_242> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892424> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892424> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892424> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1996-02-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892424> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892424> <http://purl.org/dc/terms/description> "Description of Hurricane."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892424> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_234> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892425> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892425> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892425> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1965-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892425> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892425> <http://purl.org/dc/terms/description> "Description of Volcanic Eruption."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892425> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_63> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892425> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_77> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892426> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892426> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892426> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1980-08-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892426> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892426> <http://purl.org/dc/terms/description> "Description of Presidential Election."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892426> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_286> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Presidential_Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1930-05-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <http://purl.org/dc/terms/description> "Description of Presidential Election."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_135> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_134> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892427> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_111> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892428> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892428> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/French_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892428> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1961-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892428> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892428> <http://purl.org/dc/terms/description> "Description of French Revolution."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892428> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_22> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892429> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892429> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892429> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1912-12-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892429> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892429> <http://purl.org/dc/terms/description> "Description of Space Mission."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892429> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_128> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892429> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_104> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Renaissance> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1950-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <http://purl.org/dc/terms/description> "Description of Renaissance."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_186> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_238> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892430> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_183> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892431> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Olympic_Games> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892431> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1975-11-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892431> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892431> <http://purl.org/dc/terms/description> "Description of Olympic Games."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892431> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_264> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892432> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892432> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1992-09-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892432> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892432> <http://purl.org/dc/terms/description> "Description of Volcanic Eruption."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892432> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_117> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892432> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_260> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Hurricane> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1913-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <http://purl.org/dc/terms/description> "Description of Hurricane."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_80> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_38> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892433> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_158> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892434> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892434> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892434> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1903-01-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892434> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892434> <http://purl.org/dc/terms/description> "Description of Industrial Revolution."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892434> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_97> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892434> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_267> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892435> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892435> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Space_Mission> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892435> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1990-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892435> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892435> <http://purl.org/dc/terms/description> "Description of Space Mission."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892435> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_248> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892435> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_96> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892436> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892436> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Moon_Landing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892436> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2021-04-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892436> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892436> <http://purl.org/dc/terms/description> "Description of Moon Landing."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892436> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_16> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892437> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892437> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Royal_Wedding> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892437> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1924-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892437> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitMonth> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892437> <http://purl.org/dc/terms/description> "Description of Royal Wedding."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892437> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_232> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892437> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_121> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892438> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892438> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892438> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1948-10-31"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892438> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892438> <http://purl.org/dc/terms/description> "Description of Treaty Signing."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892438> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_212> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892438> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_238> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Moon_Landing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1996-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <http://purl.org/dc/terms/description> "Description of Moon Landing."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_73> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_176> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892439> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_226> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892440> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892440> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Volcanic_Eruption> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892440> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1963-06-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892440> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892440> <http://purl.org/dc/terms/description> "Description of Volcanic Eruption."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892440> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_99> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892441> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892441> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Treaty_Signing> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892441> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1997-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892441> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892441> <http://purl.org/dc/terms/description> "Description of Treaty Signing."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892441> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_78> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892442> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892442> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Independence_Day> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892442> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1943-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892442> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892442> <http://purl.org/dc/terms/description> "Description of Independence Day."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892442> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_267> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892442> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_60> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892443> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Industrial_Revolution> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892443> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1917-10-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892443> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892443> <http://purl.org/dc/terms/description> "Description of Industrial Revolution."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892443> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_169> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892443> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_231> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892444> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/World_War_II> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892444> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2023-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892444> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892444> <http://purl.org/dc/terms/description> "Description of World War II."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892444> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_105> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892444> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_298> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892445> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892445> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Olympic_Games> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892445> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1986-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892445> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892445> <http://purl.org/dc/terms/description> "Description of Olympic Games."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892445> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_192> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_2892445> <http://semanticweb.cs.vu.nl/2009/11/sem/hasActor> <https://eventkg.l3s.uni-hannover.de/resource/entity_125> .

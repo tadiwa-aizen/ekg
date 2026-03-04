@@ -1,0 +1,219 @@
+elow is a practical, UCT‑compatible guide for your front matter, Chapter 1 (Intro), Chapter 2 (Lit Review), and Chapter 3 (Methodology), assuming a ~20–25k word CS MSc dissertation.
+
+I’ll give you: purpose, rough word counts, and suggested subheadings for each.
+
+Front matter
+Purpose: Give all administrative and navigational info before the actual argument starts.
+
+Include, in this order (no word count stress here):
+
+Title page (per UCT template: title, name, degree, department, supervisors, date).
+
+Declaration (UCT plagiarism/declaration text as required by Faculty of Science or School of IT guidelines).
+
+Abstract (200–300 words, written last):
+
+1–2 sentences: context and problem.
+
+1–2 sentences: approach/methods at high level.
+
+2–3 sentences: key results and what they show.
+
+1 sentence: main contribution and implication.
+
+Acknowledgements (optional, 0.5–1 page).
+
+Table of contents.
+
+List of figures and list of tables.
+
+List of abbreviations and symbols (especially for ML/graph terms).
+​
+
+Chapter 1 – Introduction (about 10–15% of total, say 2,000–3,000 words)
+Goal: Set up the problem, why it matters, what you’ll do, and how the thesis is structured.
+
+Suggested structure:
+
+1.1 Background and context
+
+Introduce the broad area (e.g., event‑centric knowledge graphs / information extraction / evaluation).
+
+Briefly describe real‑world or research context motivating this (e.g., need for robust evaluation frameworks).
+
+1.2 Problem statement
+
+Clearly state the core problem as 1–2 tight paragraphs: what is missing or broken in current practice/literature.
+
+Make the “gap” explicit: “Although X, Y, and Z exist, there is no …”.
+
+1.3 Research aim, objectives, and questions
+
+One overall aim: a single sentence capturing what your thesis wants to achieve.
+
+3–5 objectives, each starting with a strong verb (design, implement, compare, evaluate).
+
+1–3 research questions, each answerable by your methods and results.
+
+1.4 Scope and delimitations
+
+Clarify what you do and do not cover: datasets, task types, languages, metrics, systems, etc.
+
+Briefly justify key exclusions (e.g., “deep learning model design is out of scope; we focus on evaluation frameworks”).
+​
+
+1.5 Significance and contributions
+
+Explain why solving this problem matters: to research, industry, or specific application domains.
+
+List 2–4 concrete contributions, for example:
+
+“A conceptual framework for evaluating event‑centric knowledge graphs …”
+
+“An implementation and open‑source toolkit for …”
+
+“An empirical comparison of metrics A, B, C on datasets D, E, F …”.
+
+1.6 Thesis structure
+
+One paragraph per chapter, 1–2 sentences each, explaining what’s in Chapters 2–6.
+
+Keep this synced with any later re‑ordering.
+
+Tips:
+
+Write a rough version early, then refine once methods and results are clearer.
+
+Keep technical detail light; that’s for Chapters 2–3.
+
+Chapter 2 – Literature review (about 20–25%, say 4,000–5,000 words)
+Goal: Show what is known, what is missing, and how your work fits and fills a gap.
+
+Overall shape: short intro, structured body (by themes), and a synthesis that leads directly to your research questions.
+
+Suggested structure:
+
+2.1 Introduction to the literature review
+
+1–2 paragraphs explaining what this chapter will do and how it is organised (by themes, methodology, or chronology).
+
+2.2 Conceptual and theoretical foundations
+
+Define core concepts and terminology used throughout: events, knowledge graphs, ontologies, evaluation metrics, etc.
+
+Briefly outline any theoretical frameworks or taxonomies you will rely on later.
+
+2.3 Prior work on [your main topic]
+Break this into clear subsections, for example:
+
+2.3.1 Construction of event‑centric knowledge graphs (data sources, extraction methods, representations).
+
+2.3.2 Evaluation of knowledge graphs (intrinsic vs extrinsic, standard metrics, benchmarks).
+
+2.3.3 Frameworks and toolkits related to evaluation (any existing evaluation frameworks or platforms).
+Within each subsection:
+
+Group related studies together (by approach, methodology, or use‑case).
+
+Critically compare: who did what, with which methods, strengths/limitations, how results relate.
+
+2.4 Methodological patterns in the literature
+
+Summarise common research designs (e.g., experimental set‑ups, datasets, baselines, evaluation practices) that similar studies use.
+
+Highlight methodological weaknesses (e.g., small datasets, inconsistent metrics, missing baselines) that motivate your own choices.
+
+2.5 Identified gaps and research opportunities
+
+Explicitly unpack where the literature falls short: missing frameworks, inconsistent evaluation, lack of standardised metrics, etc.
+
+Link each gap to one or more of your research questions/objectives.
+
+2.6 Chapter summary
+
+1–3 paragraphs that:
+
+Summarise the key themes.
+
+Re‑state the main gaps.
+
+Transition to methodology: “Given these gaps, the next chapter describes the research design used to develop and evaluate …”.
+
+Tips:
+
+Keep it critical (compare, contrast, evaluate), not just descriptive.
+
+Use consistent citation style per UCT CS / library guide, and maintain a reference manager from day one.
+
+Chapter 3 – Methodology (about 15–20%, say 3,000–4,000 words)
+Goal: Explain how you designed and executed the study, and why those choices are appropriate, in enough detail for another researcher to reproduce or extend it.
+
+Suggested structure (adapt to your specific design, e.g., framework design + experimental evaluation):
+
+3.1 Research design and approach
+
+State the overall design: experimental, design‑science, case study, or mixed.
+
+Briefly describe whether your study is primarily qualitative, quantitative, or mixed, and why this is suitable.
+
+Optionally mention research philosophy or paradigm if your supervisor cares about that language (e.g., positivist, pragmatist).
+
+3.2 Data, corpora, and study context
+
+Describe datasets or corpora (e.g., event datasets, text sources, existing KGs, benchmarks): origin, size, characteristics, preprocessing.
+
+Explain why each dataset is appropriate for your research questions (coverage, difficulty, representativeness).
+
+3.3 System design and implementation
+
+High‑level architecture of your framework / system / pipeline (can reference a figure).
+
+Key components and technologies (databases, libraries, graph stores, evaluation tools).
+
+Design decisions that are critical to understanding the later results (e.g., how events are represented, how metrics are computed).
+
+3.4 Experimental setup and procedures
+
+Define baselines and comparison systems, if applicable, and justify selection.
+
+Describe procedures step by step so they are replicable:
+
+How you construct or ingest data.
+
+How you run experiments (number of runs, random seeds, cross‑validation, etc.).
+
+How you log and store results.
+
+Specify any hyper‑parameters, environment details (hardware, OS, major library versions) that affect reproducibility.
+
+3.5 Evaluation metrics and analysis methods
+
+Clearly define all metrics (e.g., precision, recall, F1, graph‑specific metrics, task‑specific measures) with formulas where helpful.
+
+Explain any composite scores or frameworks you propose.
+
+Outline statistical tests or analysis procedures you’ll use (e.g., significance testing, effect sizes, error analysis).
+
+3.6 Validity, reliability, and limitations
+
+Discuss potential threats to internal, external, construct, and conclusion validity, where relevant for your design.
+
+Explain how you mitigated or monitored them (e.g., using multiple datasets, robust baselines, ablations).
+
+3.7 Ethical considerations
+
+If using real‑world or potentially sensitive data, mention consent, anonymisation, and adherence to UCT’s ethics requirements.
+
+Confirm that you follow academic integrity and data‑handling guidelines.
+
+3.8 Chapter summary
+
+Brief recap of design, data, implementation, and evaluation approach.
+
+Short lead‑in to the results chapter: “The next chapter presents the results of applying this framework to …”.
+
+Tips:
+
+Err slightly on the side of too much detail for methods and environment; you can push code/configs to an appendix or Git repo, but the main text must be enough to follow.
+
+Use diagrams or tables to summarise pipelines, datasets, or experiment grids where they would otherwise be wordy.

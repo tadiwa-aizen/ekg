@@ -1,0 +1,692 @@
+<https://eventkg.l3s.uni-hannover.de/resource/entity_0> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q339599> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_0> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_1> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q839902> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_1> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_2> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q438024> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_2> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_3> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q750590> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_3> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_4> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q218074> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_4> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_5> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q917337> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_5> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_6> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q58135> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_6> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_7> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q390588> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_7> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_8> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q822554> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_8> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_9> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q155469> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_9> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_10> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q35891> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_10> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_11> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q961490> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_11> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_12> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q919347> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_12> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_13> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q613510> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_13> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_14> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q408449> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_14> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_15> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q416518> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_15> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_16> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q885742> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_16> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_17> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q406968> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_17> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_18> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q944951> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_18> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_19> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q402510> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_19> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_20> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q633475> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_20> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_21> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q769598> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_21> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_22> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q185574> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_22> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_23> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q583652> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_23> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_24> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q228226> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_24> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_25> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q733695> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_25> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_26> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q382753> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_26> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_27> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q509971> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_27> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_28> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q449018> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_28> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_29> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q737067> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_29> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_30> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q679475> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_30> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_31> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q858570> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_31> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_32> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_32> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q904250> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_32> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_33> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q116979> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_33> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_34> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q949039> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_34> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_35> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q366568> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_35> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_36> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q129434> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_36> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_37> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q568847> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_37> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_38> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q255392> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_38> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_39> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q906470> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_39> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_40> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q365270> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_40> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_41> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q998072> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_41> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_42> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q930705> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_42> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_43> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q496075> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_43> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_44> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q43059> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_44> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_45> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_45> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q683610> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_45> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_46> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q251118> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_46> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_47> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q122573> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_47> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_48> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_48> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q679167> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_48> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_49> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q33972> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_49> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_50> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q446148> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_50> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_51> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q957968> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_51> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_52> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q492147> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_52> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_53> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q633595> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_53> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_54> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_54> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q167591> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_54> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_55> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_55> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q372786> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_55> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_56> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q8186> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_56> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_57> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_57> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q769571> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_57> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_58> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q449986> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_58> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_59> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_59> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q765942> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_59> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_60> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q476736> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_60> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_61> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_61> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q557210> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_61> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_62> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q782774> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_62> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_63> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_63> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q767615> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_63> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_64> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q856626> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_64> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_65> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_65> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q101417> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_65> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_66> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_66> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q233677> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_66> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_67> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q828531> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_67> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_68> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q297177> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_68> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_69> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_69> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q223713> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_69> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_70> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q56857> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_70> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_71> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q40089> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_71> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_72> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q358146> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_72> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_73> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q693509> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_73> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_74> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q962259> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_74> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_75> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q848583> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_75> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_76> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q679276> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_76> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_77> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_77> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q86436> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_77> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_78> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_78> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q937732> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_78> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_79> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q821897> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_79> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_80> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q40052> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_80> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_81> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q477490> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_81> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_82> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q459270> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_82> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_83> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q82701> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_83> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_84> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q985791> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_84> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_85> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q717348> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_85> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_86> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q730434> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_86> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_87> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q123602> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_87> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_88> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q15845> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_88> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_89> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q227463> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_89> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_90> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q266003> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_90> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_91> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_91> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q59880> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_91> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_92> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_92> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q810314> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_92> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_93> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q872640> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_93> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_94> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q762839> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_94> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_95> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_95> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q53003> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_95> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_96> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q877625> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_96> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_97> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_97> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q48582> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_97> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_98> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_98> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q215397> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_98> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_99> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_99> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q47371> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_99> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_100> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q616770> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_100> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_101> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q768167> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_101> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_102> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q967738> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_102> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_103> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q674640> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_103> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_104> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q120318> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_104> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_105> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q94796> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_105> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_106> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q86556> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_106> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_107> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q168514> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_107> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_108> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q305531> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_108> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_109> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q130590> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_109> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_110> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q482223> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_110> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_111> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q338974> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_111> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_112> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q14712> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_112> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_113> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q55261> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_113> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_114> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q199871> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_114> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_115> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q693165> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_115> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_116> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q492922> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_116> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_117> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q952729> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_117> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_118> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q961097> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_118> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_119> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q621971> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_119> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_120> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q989441> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_120> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_121> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q636416> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_121> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_122> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q206616> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_122> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_123> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q800882> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_123> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_124> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_124> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q188722> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_124> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_125> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q517580> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_125> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_126> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q604526> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_126> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_127> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q255979> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_127> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_128> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q195407> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_128> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_129> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_129> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q117626> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_129> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_130> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q403111> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_130> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_131> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q105529> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_131> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_132> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q368042> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_132> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_133> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q267595> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_133> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_134> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_134> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q319724> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_134> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_135> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q774077> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_135> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_136> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_136> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q255158> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_136> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_137> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_137> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q108997> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_137> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_138> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_138> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q741673> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_138> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_139> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q279403> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_139> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_140> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_140> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q416879> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_140> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_141> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_141> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q783714> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_141> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_142> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_142> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q695862> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_142> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_143> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_143> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q512405> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_143> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_144> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q941906> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_144> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_145> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q848868> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_145> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_146> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q894762> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_146> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_147> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q870841> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_147> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_148> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q118048> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_148> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_149> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q217737> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_149> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_150> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q918523> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_150> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_151> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q637887> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_151> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_152> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q562925> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_152> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_153> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_153> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q19183> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_153> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_154> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q488825> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_154> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_155> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q454598> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_155> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_156> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q853453> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_156> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_157> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_157> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q408522> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_157> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_158> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_158> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q164452> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_158> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_159> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_159> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q482781> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_159> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_160> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_160> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q144465> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_160> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_161> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q619758> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_161> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_162> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_162> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q547094> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_162> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_163> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_163> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q168927> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_163> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_164> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_164> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q88761> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_164> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_165> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q375099> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_165> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_166> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q382357> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_166> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_167> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_167> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q359538> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_167> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_168> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q74828> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_168> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_169> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_169> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q508600> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_169> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_170> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q718975> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_170> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_171> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_171> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q868319> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_171> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_172> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q707319> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_172> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_173> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_173> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q984107> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_173> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_174> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_174> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q299912> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_174> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_175> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_175> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q992601> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_175> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_176> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_176> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q816027> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_176> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_177> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_177> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q135683> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_177> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_178> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q439170> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_178> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_179> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_179> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q870996> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_179> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_180> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_180> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q85098> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_180> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_181> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q396187> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_181> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_182> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q853248> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_182> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_183> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_183> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q793483> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_183> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_184> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q42963> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_184> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_185> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_185> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q870329> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_185> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_186> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_186> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q817499> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_186> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_187> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q803019> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_187> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_188> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_188> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q767611> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_188> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_189> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q915069> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_189> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_190> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q93333> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_190> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_191> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q683555> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_191> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_192> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_192> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q606471> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_192> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_193> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q334164> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_193> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_194> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q434708> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_194> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_195> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q470373> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_195> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_196> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_196> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q727001> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_196> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_197> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_197> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q716556> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_197> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_198> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q933499> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_198> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_199> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_199> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q308701> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_199> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_200> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q484543> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_200> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_201> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q688220> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_201> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_202> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q515760> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_202> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_203> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q604463> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_203> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_204> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q82177> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_204> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_205> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q808098> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_205> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_206> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q999591> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_206> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_207> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_207> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q925454> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_207> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_208> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_208> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q477730> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_208> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_209> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q98982> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_209> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_210> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q713377> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_210> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_211> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q200278> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_211> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_212> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_212> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q401250> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_212> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_213> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q726847> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_213> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_214> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q270198> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_214> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_215> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_215> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q403569> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_215> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_216> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q293700> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_216> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_217> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_217> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q217868> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_217> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_218> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q716345> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_218> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_219> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_219> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q836462> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_219> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_220> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q768145> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_220> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_221> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q196984> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_221> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_222> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_222> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q291662> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_222> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_223> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_223> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q92064> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_223> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_224> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_224> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q698735> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_224> <http://www.w3.org/2000/01/rdf-schema#label> "Tokyo"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_225> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q443994> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_225> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_226> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_226> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q447365> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_226> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_227> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_227> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q620083> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_227> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_228> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_228> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q779212> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_228> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_229> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q601321> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_229> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_230> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q768400> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_230> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_231> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q743619> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_231> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_232> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_232> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q445955> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_232> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_233> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q597006> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_233> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_234> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q591994> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_234> <http://www.w3.org/2000/01/rdf-schema#label> "Paris"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_235> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q677397> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_235> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_236> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q290506> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_236> <http://www.w3.org/2000/01/rdf-schema#label> "London"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_237> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q937126> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_237> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_238> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_238> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q592417> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_238> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_239> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_239> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q542756> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_239> <http://www.w3.org/2000/01/rdf-schema#label> "Nelson Mandela"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_240> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q236099> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_240> <http://www.w3.org/2000/01/rdf-schema#label> "New York"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_241> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q613999> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_241> <http://www.w3.org/2000/01/rdf-schema#label> "Moscow"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_242> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q874418> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_242> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_243> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q348258> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_243> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_244> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q157144> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_244> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_245> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_245> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q424280> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_245> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_246> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_246> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q65133> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_246> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_247> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q655030> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_247> <http://www.w3.org/2000/01/rdf-schema#label> "Winston Churchill"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_248> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_248> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q837147> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_248> <http://www.w3.org/2000/01/rdf-schema#label> "Albert Einstein"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_249> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Actor> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_249> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q715611> .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_249> <http://www.w3.org/2000/01/rdf-schema#label> "Marie Curie"@en .
