@@ -1,39 +1,42 @@
-# Kiro settings
-.kiro/
-
-# Large EventKG datasets
+# Large datasets (downloadable, not our code)
 event-kg/
 oekg/
 
-# Fuseki runtime directory
+# Apache Jena/Fuseki installations (downloadable)
+apache-jena-*/
+
+# TDB2 databases (generated)
+databases/
+
+# Fuseki runtime
 run/
+
+# Evaluation output (regenerable)
+ekg_results/
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
-
-# Virtual environments
+build/
+dist/
+*.so
 venv/
-ENV/
 env/
+.venv/
+
+# Binary docs
+docs/*.pdf
+docs/*.docx
+
+# Old draft
+docs/thesis/thesis-long.tex
+
+# OS
+.DS_Store
+Thumbs.db
 
 # IDE
 .vscode/
@@ -42,13 +45,8 @@ env/
 *.swo
 *~
 
-# Evaluation results
-ekg_results/
-databases/
+# Kiro
+.kiro/
 
 # Logs
 *.log
-
-# OS
-.DS_Store
-Thumbs.db

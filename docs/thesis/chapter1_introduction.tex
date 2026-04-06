@@ -2,29 +2,27 @@
 
 \section{Background and Context}
 
-Knowledge graphs have become fundamental infrastructure for organizing and reasoning about complex information across domains ranging from web search to biomedical research \cite{kgquality2024}. Traditional knowledge graphs focus on representing static relationships between entities—for instance, that a person works at a company or that a city is located in a country. While effective for many applications, this entity-centric approach struggles to capture the dynamic, temporal nature of real-world phenomena where understanding \textit{when}, \textit{why}, and \textit{how} events unfold is critical.
+Knowledge graphs have become fundamental infrastructure for organizing and reasoning about complex information across domains ranging from web search to biomedical research \citep{kgquality2024}. Traditional knowledge graphs focus on representing static relationships between entities—for instance, that a person works at a company or that a city is located in a country. While effective for many applications, this entity-centric approach struggles to capture the dynamic, temporal nature of real-world phenomena where understanding \textit{when} and \textit{how} events unfold and relate to each other is critical.
 
-Event-centric knowledge graphs (EKGs) address this limitation by placing events at the center of representation \cite{sem2011}. Rather than merely connecting entities through static relationships, EKGs model the temporal sequences, causal dependencies, and contextual circumstances surrounding events. An EKG might represent not just that a company exists, but that it was founded on a specific date, underwent a merger that caused market changes, and subsequently launched products in particular locations. This event-centric perspective enables applications that require understanding of causality, temporal progression, and context—capabilities essential for domains such as news analytics, financial forecasting, historical analysis, and crisis management \cite{newsreader2016}.
+Event-centric knowledge graphs (EKGs) address this limitation by placing events at the center of representation \citep{sem2011}. Rather than merely connecting entities through static relationships, EKGs model the temporal sequences, causal dependencies, and contextual attributes such as participants and associated entities surrounding events. An EKG might represent not just that a company exists, but that it was founded on a specific date (temporal dimension), that the founding led to a market shift (causal dimension), and that specific people and organisations were involved in these events (contextual dimension). This event-centric perspective enables applications that require understanding of causality, temporal progression, and context—capabilities essential for domains such as news analytics, financial forecasting, historical analysis, and crisis management \citep{newsreader2016}.
 
-The shift from entity-centric to event-centric knowledge representation introduces significant complexity. Events have temporal extent (start and end times), participants (entities involved), locations, causal relationships with other events, and rich contextual attributes. Several EKG systems have emerged to address different aspects of this challenge. EventKG integrates event information from multiple sources including Wikipedia, Wikidata, and YAGO, providing temporal and spatial context for millions of events \cite{eventkg2018}. ASER (Activities, States, Events, and their Relations) focuses on extracting eventuality knowledge from text, capturing relationships between activities and states \cite{aser2019}. The Open Event Knowledge Graph (OEKG) emphasizes multilingual event representation and cross-lingual linking \cite{oekg2023}.
+The shift from entity-centric to event-centric knowledge representation introduces significant complexity. Events have temporal extent (start and end times), participants (entities involved), locations, causal relationships with other events, and rich contextual attributes. Several EKG systems have emerged to address different aspects of this challenge. EventKG integrates event information from multiple sources including Wikipedia, Wikidata, and YAGO, providing temporal and spatial context for millions of events \citep{eventkg2018}. ASER (Activities, States, Events, and their Relations) focuses on extracting eventuality knowledge from text, capturing relationships between activities and states \citep{aser2019}. The Open Event Knowledge Graph (OEKG) emphasizes multilingual event representation and cross-lingual linking \citep{oekg2023}.
 
-Despite these advances in EKG construction, a critical gap remains in how we evaluate these systems. The complexity that makes EKGs powerful also makes them difficult to assess comprehensively. Current evaluation approaches tend to focus on narrow aspects—measuring precision and recall of extracted relationships, or assessing temporal consistency in isolation—without providing a holistic view of EKG quality \cite{kgquality2021}. This fragmentation means we lack systematic ways to compare different EKG systems, identify their strengths and weaknesses across multiple dimensions, or guide improvements in their design and construction.
+Despite these advances in EKG construction, a critical gap remains in how we evaluate these systems. The complexity that makes EKGs powerful also makes them difficult to assess comprehensively. Current evaluation approaches tend to focus on narrow aspects—measuring precision and recall of extracted relationships, or assessing temporal consistency in isolation—without providing a holistic view of EKG quality \citep{kgquality2021}. This fragmentation means we lack systematic ways to compare different EKG systems, identify their strengths and weaknesses across multiple dimensions, or guide improvements in their design and construction. For example, EventKG reports temporal coverage and completeness \citep{eventkg2018}, while ASER reports extraction accuracy using crowdsourced judgments \citep{aser2019}---these incompatible metrics make it impossible to determine which system produces a higher-quality event knowledge graph overall.
 
 The need for comprehensive evaluation frameworks extends beyond academic interest. Organizations deploying EKGs for decision-making need confidence that these systems accurately represent temporal relationships, maintain logical consistency, provide sufficient contextual information, and support the reasoning tasks required by their applications. Without robust evaluation, EKGs risk providing misleading insights that could lead to flawed decisions in critical domains such as financial risk assessment, public health monitoring, or security analysis.
 
 \section{Problem Statement}
 
-Current evaluation methods for event-centric knowledge graphs are fundamentally fragmented. Existing approaches typically assess isolated features—such as the accuracy of event extraction using precision and recall, or the completeness of temporal information—without considering how these dimensions interact or contribute to overall EKG utility. For example, a system might achieve high precision in extracting event relationships while failing to capture sufficient contextual information to support causal reasoning. Another system might excel at temporal consistency but lack the entity richness needed for complex queries involving multiple participants.
+As established above, current evaluation methods for event-centric knowledge graphs are fundamentally fragmented, assessing isolated features using incompatible metrics that prevent systematic comparison across systems. This fragmentation leaves critical dimensions of EKG quality---such as temporal density, event granularity, and entity richness---without standardised measures, while existing metrics borrowed from traditional knowledge graphs fail to capture event-specific features.
 
-This fragmentation manifests in several ways. First, different EKG systems are evaluated using incompatible metrics, making systematic comparison impossible. EventKG evaluations focus heavily on coverage and completeness of temporal information, while ASER evaluations emphasize the accuracy of eventuality extraction from text, and OEKG evaluations prioritize multilingual consistency. Second, critical dimensions of EKG quality—such as temporal density, the granularity of event representation, or the semantic richness of contextual information—are often overlooked entirely because no standardized metrics exist to measure them. Third, existing evaluation frameworks borrowed from traditional knowledge graphs fail to capture event-specific features like temporal density, event evolution patterns, or entity richness.
-
-Although precision, recall, and F1 scores provide useful measures of extraction accuracy, and temporal consistency checks validate date formats, there is no comprehensive framework that simultaneously evaluates the temporal, causal, contextual, structural, and semantic dimensions that define EKG quality. This gap undermines our ability to understand what makes an EKG effective, to identify which construction approaches produce higher-quality results, and to guide the development of improved EKG systems. Without such a framework, researchers and practitioners lack the tools to make informed decisions about which EKG to use for their applications or how to improve existing systems.
+The core problem is that no comprehensive framework exists that simultaneously evaluates the temporal, contextual, structural, and semantic dimensions that define EKG quality. While precision, recall, and F1 scores provide useful measures of extraction accuracy, and temporal consistency checks validate date formats, these address only isolated aspects. This gap undermines our ability to understand what makes an EKG effective, to identify which construction approaches produce higher-quality results, and to guide the development of improved EKG systems. Without such a framework, researchers and practitioners lack the tools to make informed decisions about which EKG to use for their applications or how to improve existing systems.
 
 \section{Research Aim, Objectives, and Questions}
 
 \subsection{Research Aim}
 
-The aim of this research is to develop and validate a comprehensive evaluation framework that holistically assesses the quality of event-centric knowledge graphs across multiple dimensions including temporal accuracy, contextual richness, structural integrity, and semantic consistency.
+The aim of this research is to develop and validate a comprehensive evaluation framework that holistically assesses the quality of event-centric knowledge graphs across multiple dimensions---including temporal coverage, structural connectivity, redundancy, entity richness, and external mapping coverage---identified through systematic analysis of gaps in existing evaluation approaches.
 
 \subsection{Research Objectives}
 
@@ -37,9 +35,9 @@ To achieve this aim, the research pursues the following specific objectives:
     
     \item \textbf{Implement} an open-source evaluation toolkit that operationalizes the framework, providing automated assessment of EKGs through SPARQL-based analysis, graph-theoretic measures, and semantic validation.
     
-    \item \textbf{Validate} the framework through empirical evaluation of multiple EKG systems and synthetic datasets, demonstrating its ability to reveal quality differences across dimensions and provide actionable insights for system improvement.
+    \item \textbf{Validate} the framework through empirical evaluation of three synthetic EventKG-format datasets spanning a quality spectrum (high, mixed, and low quality) and scalability testing on the real EventKG (993,268 events), demonstrating its ability to reveal quality differences across dimensions and provide actionable insights for system improvement.
     
-    \item \textbf{Compare} the proposed framework against existing evaluation approaches, highlighting its advantages in capturing EKG-specific features and providing more comprehensive quality assessment.
+    \item \textbf{Compare} the proposed framework against single-dimension evaluation approaches by applying both to the same datasets and demonstrating that the multidimensional framework reveals quality differences---such as trade-offs between entity richness and redundancy---that narrow approaches miss entirely.
 \end{enumerate}
 
 \subsection{Research Questions}
@@ -47,31 +45,16 @@ To achieve this aim, the research pursues the following specific objectives:
 The research addresses three primary questions:
 
 \begin{enumerate}
-    \item \textbf{RQ1:} What are the essential dimensions of quality for event-centric knowledge graphs, and how can they be systematically measured?
+    \item \textbf{RQ1:} What dimensions of quality are relevant for event-centric knowledge graphs, and how can they be systematically measured?
     
     \item \textbf{RQ2:} Can a comprehensive evaluation framework reveal quality differences across EKG systems that are missed by traditional, narrow evaluation approaches?
     
-    \item \textbf{RQ3:} How do different EKG construction approaches perform across multiple quality dimensions, and what trade-offs exist between dimensions?
+    \item \textbf{RQ3:} How do EKGs of varying quality perform across multiple dimensions, and what trade-offs exist between dimensions?
 \end{enumerate}
 
-\section{Scope and Delimitations}
+\section{Scope}
 
-This research focuses specifically on the evaluation of event-centric knowledge graphs represented using standard semantic web technologies (RDF, OWL, SPARQL). The framework is designed to assess EKGs that follow common event representation ontologies such as the Simple Event Model (SEM) and related vocabularies.
-
-\subsection{Inclusions}
-
-The scope includes:
-
-\begin{itemize}
-    \item Evaluation of temporal dimensions: coverage, consistency, granularity, and density of temporal information
-    \item Assessment of structural properties: graph connectivity, redundancy, and schema conformance
-    \item Analysis of semantic quality: entity richness, type consistency, and predicate usage patterns
-    \item Measurement of external integration: mapping coverage to external knowledge bases
-    \item Validation against formal constraints using SHACL shapes
-    \item Application to both synthetic datasets with known ground truth and real-world EKG data (EventKG) for scalability validation
-\end{itemize}
-
-\subsection{Exclusions}
+This research focuses specifically on the evaluation of event-centric knowledge graphs represented using standard semantic web technologies (RDF, OWL, SPARQL). The framework is designed to assess EKGs that follow common event representation ontologies such as the Simple Event Model (SEM) and related vocabularies. The framework evaluates temporal dimensions (coverage, consistency, granularity, and density), structural properties (graph connectivity, redundancy, and schema conformance), semantic quality (entity richness, type consistency, and predicate usage patterns), and external integration (mapping coverage to external knowledge bases). Formal constraint validation using SHACL shapes is supported as an optional dimension. The framework is validated on three synthetic datasets with known ground truth and real-world EKG data (EventKG) for scalability.
 
 Several important topics fall outside the scope of this work:
 
@@ -95,9 +78,9 @@ This research addresses a critical gap in event-centric knowledge graph research
 
 \subsection{Research Significance}
 
-For the research community, this work provides the first comprehensive framework for EKG evaluation that moves beyond narrow, task-specific metrics to assess the multidimensional nature of event-centric knowledge representation. By establishing standardized evaluation criteria and metrics, the framework enables systematic comparison of different EKG systems and construction approaches. This comparability is essential for advancing the field—researchers can identify which methods produce higher-quality results across different dimensions, understand trade-offs between quality aspects, and make informed decisions about system design.
+For the research community, this work provides the first comprehensive framework for EKG evaluation that moves beyond narrow, task-specific metrics to assess the multidimensional nature of event-centric knowledge representation. By establishing standardized evaluation criteria and metrics, the framework enables systematic comparison of different EKG systems. This comparability is essential for advancing the field—researchers can identify which methods produce higher-quality results across different dimensions, understand trade-offs between quality aspects, and make informed decisions about system design.
 
-The framework also reveals previously hidden quality issues. Traditional evaluation approaches might indicate that an EKG has high precision in event extraction while missing problems with temporal density, contextual sparsity, or causal inconsistency. By evaluating multiple dimensions simultaneously, the framework provides a more complete picture of EKG strengths and weaknesses, guiding targeted improvements.
+The framework also reveals previously hidden quality issues. Traditional evaluation approaches might indicate that an EKG has high precision in event extraction while missing problems with temporal density or contextual sparsity. By evaluating multiple dimensions simultaneously, the framework provides a more complete picture of EKG strengths and weaknesses, guiding targeted improvements.
 
 \subsection{Practical Significance}
 
@@ -110,13 +93,13 @@ The framework's comprehensive nature also helps practitioners select appropriate
 This research makes four primary contributions:
 
 \begin{enumerate}
-    \item \textbf{A conceptual evaluation framework} that identifies nine core dimensions of EKG quality (temporal coverage, temporal consistency, schema conformance, completeness, type consistency, entity richness, external mapping coverage, redundancy, predicate usage, and structural connectivity) and establishes how these dimensions relate to EKG effectiveness. An optional tenth dimension (SHACL constraint validation) is supported when additional dependencies are available.
+    \item \textbf{A conceptual evaluation framework} that identifies nine core dimensions of EKG quality (graph connectivity and structure, redundancy, temporal consistency, schema conformance, completeness, type consistency, entity richness, external mapping coverage, and predicate usage) and establishes how these dimensions relate to EKG effectiveness. An optional tenth dimension (SHACL constraint validation) is supported when additional dependencies are available.
     
     \item \textbf{A comprehensive metric suite} that operationalizes the conceptual framework through 32 specific evaluation metrics across nine dimensions, integrating established knowledge graph quality measures and adapting them for EKG-specific assessment. These metrics are formally defined with clear semantics and computational procedures.
     
     \item \textbf{An open-source evaluation toolkit (ekg-eval-cli)} that implements the framework as a practical tool for EKG assessment. The toolkit provides automated evaluation through SPARQL queries, graph analysis, and semantic validation, generating detailed reports in multiple formats. The implementation is released as open-source software to enable reproducibility and community adoption.
     
-    \item \textbf{Empirical validation and comparative analysis} demonstrating the framework's effectiveness through evaluation of multiple EKG systems and synthetic datasets. The validation reveals quality differences across dimensions, identifies specific issues in existing systems, and shows how the comprehensive approach provides insights that narrow evaluation methods miss.
+    \item \textbf{Empirical validation and comparative analysis} demonstrating the framework's effectiveness through evaluation of three synthetic EventKG-format datasets spanning a quality spectrum and scalability testing on the real EventKG. The validation reveals quality differences across dimensions and shows how the comprehensive approach provides insights that narrow evaluation methods miss.
 \end{enumerate}
 
 These contributions collectively advance the state of EKG evaluation from fragmented, incomparable assessments to systematic, comprehensive quality measurement.
@@ -129,8 +112,8 @@ The remainder of this thesis is organized as follows:
 
 \textbf{Chapter 3: Methodology} describes the research design and methods used to develop and validate the evaluation framework. It details the systematic analysis of EKG characteristics that informed framework design, explains the development of evaluation metrics and their formal definitions, and outlines the implementation approach for the evaluation toolkit. The chapter also describes the experimental design for framework validation, including dataset selection, baseline comparisons, and analysis procedures.
 
-\textbf{Chapter 4: Results} presents the evaluation results from applying the framework to two synthetic datasets with known ground truth. It reports the full results across all nine dimensions, compares the datasets to demonstrate multidimensional quality assessment, analyses cross-dimensional trade-offs, and documents the ground truth validation process including the eight implementation bugs discovered and corrected.
+\textbf{Chapter 4: Results} presents the evaluation results from applying the framework to three synthetic datasets with known ground truth spanning a quality spectrum from high to low. It reports the full results across all nine dimensions, compares the datasets to demonstrate multidimensional quality assessment, analyses cross-dimensional trade-offs, and documents the ground truth validation process including the eight implementation bugs discovered and corrected.
 
-\textbf{Chapter 5: Results and Evaluation} reports the empirical validation of the framework through evaluation of multiple EKG systems and synthetic datasets. It presents detailed results across all evaluation dimensions, compares findings with traditional evaluation approaches, and analyzes the insights gained from comprehensive assessment. The chapter includes case studies demonstrating how the framework reveals quality issues and guides system improvement.
+\textbf{Chapter 5: Discussion} interprets the results from Chapter 4, comparing the framework's capabilities with prior work, discussing the implications for EKG evaluation practice, and examining the limitations of the current approach.
 
 \textbf{Chapter 6: Conclusion} summarizes the research contributions, discusses limitations of the current work, and outlines directions for future research. It reflects on the implications of comprehensive EKG evaluation for both research and practice, and considers how the framework might evolve to address emerging challenges in event-centric knowledge representation.

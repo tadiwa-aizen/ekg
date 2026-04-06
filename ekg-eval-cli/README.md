@@ -1,6 +1,6 @@
 # ekg-eval-cli
 
-A command-line tool for evaluating the quality of Event-Centric Knowledge Graphs (EKGs). Point it at a folder of N-Triples files and it produces a comprehensive quality report across 10 evaluation dimensions.
+A command-line tool for evaluating the quality of Event-Centric Knowledge Graphs (EKGs). Point it at a folder of N-Triples files and it produces a comprehensive quality report across 9 evaluation dimensions with 32 metrics.
 
 ## How It Works
 
@@ -99,27 +99,26 @@ Each run produces three outputs:
 ```
 
 ### JSON — `ekg_results/ekg_metrics_YYYYMMDD_HHMMSS.json`
-Full structured results with all 114 data points.
+Full structured results with 32 evaluation metrics and supporting data points.
 
 ### CSV — `ekg_results/ekg_metrics_YYYYMMDD_HHMMSS.csv`
 Flat key-value format for spreadsheet analysis.
 
 ## Evaluation Dimensions
 
-The tool evaluates 10 quality dimensions:
+The tool evaluates 9 quality dimensions (32 metrics):
 
 | # | Dimension | Module | Key Metrics |
 |---|-----------|--------|-------------|
-| 1 | Graph Connectivity | `analyzer.py` | Nodes, edges, components, giant component ratio, clustering coefficient, edge connectivity |
-| 2 | Graph Density | `analyzer.py` | Average degree, graph density |
-| 3 | Redundancy | `redundancy.py` | Exact duplicates, owl:sameAs duplicates, fuzzy duplicates (RapidFuzz), label uniqueness |
-| 4 | Temporal Consistency | `temporal.py` | ISO 8601 compliance, temporal granularity, temporal coverage, semantic validation (end ≥ start) |
-| 5 | Schema Conformance | `schema_analyzer.py` | Label coverage, date coverage, schema conformance, non-standard property detection |
-| 6 | Completeness | `completeness.py` | Schema coverage, population completeness, class usage efficiency |
-| 7 | Type Consistency | `type_consistency.py` | Domain/range conformity with RDFS subclass inference |
-| 8 | Entity Richness | `entity_richness.py` | Avg/median/stddev properties per event, sparse entity detection |
-| 9 | Mapping Coverage | `mapping_coverage.py` | External link rate, Wikidata coverage, DBpedia coverage |
-| 10 | Predicate Usage | `predicate_usage.py` | Unique predicates, top-10 concentration, Gini coefficient |
+| 1 | Graph Connectivity & Structure | `analyzer.py` | Nodes, edges, components, giant component ratio, clustering coefficient, edge connectivity, average degree, density |
+| 2 | Redundancy | `redundancy.py` | Exact duplicates, owl:sameAs duplicates, fuzzy duplicates (RapidFuzz), label uniqueness |
+| 3 | Temporal Consistency | `temporal.py` | ISO 8601 compliance, temporal granularity, temporal coverage, semantic validation (end ≥ start), temporal density |
+| 4 | Schema Conformance | `schema_analyzer.py` | Label coverage, date coverage, schema conformance, non-standard property detection |
+| 5 | Completeness | `completeness.py` | Schema coverage, population completeness, class usage efficiency |
+| 6 | Type Consistency | `type_consistency.py` | Domain/range conformity with RDFS subclass inference |
+| 7 | Entity Richness | `entity_richness.py` | Avg/median/stddev properties per event, sparse entity detection |
+| 8 | Mapping Coverage | `mapping_coverage.py` | External link rate, Wikidata coverage, DBpedia coverage |
+| 9 | Predicate Usage | `predicate_usage.py` | Unique predicates, top-10 concentration, Gini coefficient |
 
 SHACL validation is available as an optional 11th dimension if `pyshacl` is installed.
 
@@ -189,18 +188,18 @@ output.py               → Console, JSON, CSV output formatting
 |---------|--------|------------|
 | synthetic-event-kg (100 events) | 100 | ~11s |
 | synthetic-event-kg-2 (150 events) | 150 | ~13s |
+| synthetic-event-kg-3 (120 events) | 120 | ~11s |
 | Real EventKG (~1M events) | 993,268 | ~30–40 min |
 
 Database loading is a one-time cost. Subsequent runs reuse the existing TDB2 database.
 
 ## Known Limitations
 
-- **Type consistency** reports 0% conformity when datasets have limited RDFS domain/range declarations
-- **Gini coefficient** can produce negative values (calculation issue)
+- **Type consistency** reports 100% when datasets have no actively used properties with RDFS domain/range declarations (vacuous result)
 - **SHACL validation** requires `pyshacl` to be installed separately
 - **Fuzzy matching** uses O(n²) naive comparison when `datasketch` is not installed; sampling mitigates this
-- **Temporal density** queries the Relations model, which may return empty results for datasets that store dates directly on events
-- **No unit tests** — validation was done against ground truth datasets (see `REPORT.md`)
+- **Format assumption** — expects EventKG format where temporal data is stored directly on event nodes (`sem:hasBeginTimeStamp`); Relations-based temporal models are not supported
+- **No unit tests** — validation was done by comparing tool output against ground truth extracted independently from raw N-Triples files
 
 ## Project Structure
 
