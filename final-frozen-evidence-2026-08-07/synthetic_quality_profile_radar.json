@@ -1,0 +1,36 @@
+{
+  "source_snapshot_sha256": "f5fb9a678e061b9098c78382096f08feb28a1f51dd6e63b614d239ba53898788",
+  "interpretation": "Selected bounded rates only; no averaging or universal aggregate score. Low event sparsity is explicitly computed as 1 minus the sparse-event rate so that larger radial values indicate less sparsity.",
+  "profiles": {
+    "D1 high": {
+      "Giant component": 0.9704,
+      "Label uniqueness": 1.0,
+      "Temporal coverage": 1.0,
+      "Interval consistency": 1.0,
+      "Minimal profile completeness": 0.93,
+      "Type alignment": 1.0,
+      "External mapping": 1.0,
+      "Low event sparsity": 1.0
+    },
+    "D2 mixed": {
+      "Giant component": 0.9637,
+      "Label uniqueness": 0.6989,
+      "Temporal coverage": 0.7083,
+      "Interval consistency": 0.8163,
+      "Minimal profile completeness": 0.2917,
+      "Type alignment": 0.8778,
+      "External mapping": 0.65,
+      "Low event sparsity": 0.9333
+    },
+    "D3 low": {
+      "Giant component": 0.7508,
+      "Label uniqueness": 0.3333,
+      "Temporal coverage": 0.425,
+      "Interval consistency": 0.5217,
+      "Minimal profile completeness": 0.0083,
+      "Type alignment": 0.7,
+      "External mapping": 0.0917,
+      "Low event sparsity": 0.3583
+    }
+  }
+}

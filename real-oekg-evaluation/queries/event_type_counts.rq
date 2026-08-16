@@ -1,0 +1,1 @@
+SELECT ?type (COUNT(*) AS ?count) WHERE { ?s a ?type . FILTER(CONTAINS(LCASE(STR(?type)), "event") || CONTAINS(LCASE(STR(?s)), "event_")) } GROUP BY ?type ORDER BY DESC(?count)

@@ -1,6 +1,7 @@
 """Orchestration of the complete EKG evaluation workflow."""
 
 from dataclasses import dataclass
+from dataclasses import asdict
 from pathlib import Path
 from typing import Dict, Any, Optional, List
 from datetime import datetime
@@ -9,8 +10,9 @@ import sys
 from .path_resolver import PathResolver
 from .database import DatabaseManager
 from .fuseki import FusekiManager
-from .sparql import SPARQLExecutor
+from .sparql import SPARQLExecutor, extract_edges_from_nt_files
 from .analyzer import GraphAnalyzer
+from .large_graph import LargeGraphAnalyzer
 from .redundancy import RedundancyAnalyzer
 from .temporal import TemporalValidator
 from .schema_analyzer import SchemaAnalyzer
@@ -21,12 +23,8 @@ from .mapping_coverage import MappingCoverageAnalyzer
 from .predicate_usage import PredicateUsageAnalyzer
 from .output import OutputHandler
 from .config import EvaluationParameters
-
-try:
-    from .shacl_validator import SHACLValidator
-    SHACL_AVAILABLE = True
-except ImportError:
-    SHACL_AVAILABLE = False
+from .metric_registry import metric_audit
+from .provenance import build_run_provenance, build_source_manifest, git_state
 
 
 @dataclass
@@ -38,6 +36,11 @@ class EvaluationConfig:
     fuseki_home: Optional[Path] = None
     verbose: bool = False
     port: int = 3030
+    large_graph_mode: bool = False
+    graph_structure_only: bool = False
+    large_graph_work_dir: Optional[Path] = None
+    duckdb_memory_limit: str = "8GB"
+    duckdb_temp_dir: Optional[Path] = None
     parameters: Optional[EvaluationParameters] = None
     
     def __post_init__(self):
@@ -88,6 +91,12 @@ class EvaluationOrchestrator:
         # Track state
         self.fuseki_process = None
         self.temp_edge_file: Optional[Path] = None
+        self.nt_files: List[Path] = []
+        self.resolved_jena_home: Optional[Path] = None
+        self.resolved_fuseki_home: Optional[Path] = None
+        self.project_root = Path(__file__).resolve().parent.parent
+        self.source_snapshot = build_source_manifest(self.project_root)
+        self.git_snapshot = git_state(self.project_root)
 
     def run(self) -> Dict[str, Any]:
         """
@@ -112,11 +121,14 @@ class EvaluationOrchestrator:
             # Step 1: Validate EKG folder
             self._log("Step 1: Validating EKG folder...")
             nt_files = self._validate_ekg_folder()
+            self.nt_files = nt_files
             self._log(f"Found {len(nt_files)} .nt files")
 
             # Step 2: Resolve Jena/Fuseki paths
             self._log("\nStep 2: Resolving Jena and Fuseki paths...")
             jena_home, fuseki_home = self._resolve_paths()
+            self.resolved_jena_home = jena_home
+            self.resolved_fuseki_home = fuseki_home
             self._log(f"Jena home: {jena_home}")
             self._log(f"Fuseki home: {fuseki_home}")
 
@@ -124,27 +136,42 @@ class EvaluationOrchestrator:
             self._log("\nStep 3: Checking database...")
             self.db_manager = DatabaseManager(jena_home, self.config.ekg_folder)
             
-            if self.db_manager.database_exists():
+            if self.db_manager.database_exists(nt_files):
                 self._log("Database already exists, skipping load")
             else:
                 self._log("Database not found, loading data...")
                 triples_loaded = self._load_database(nt_files)
                 self._log(f"Loaded {triples_loaded:,} triples")
 
-            # Step 4: Start Fuseki (if needed)
-            self._log("\nStep 4: Starting Fuseki server...")
-            self.fuseki_manager = FusekiManager(fuseki_home, self.db_manager.db_path)
+            # Step 4/5: Analyze graph structure.
+            if self.config.large_graph_mode:
+                self._log("\nStep 4: Analyzing graph structure in large graph mode...")
+                metrics = self._analyze_large_graph(nt_files)
+                self._log("Large graph analysis complete")
+            else:
+                # This streams the same IRI-to-IRI projection as the SPARQL
+                # CONSTRUCT query, without materialising it through Fuseki/Jena.
+                self._log("\nStep 4: Extracting graph edges from N-Triples files...")
+                edge_file = self._extract_edges_from_nt_files(nt_files)
+                self._log(f"Edges saved to: {edge_file}")
+
+                self._log("\nStep 5: Analyzing graph structure with NetworkX...")
+                metrics = self._analyze_graph(edge_file)
+                self._log("Analysis complete")
+
+            if self.config.graph_structure_only:
+                self._log("\nGraph-structure-only mode enabled; skipping endpoint metrics.")
+                metrics_dict = self._prepare_structure_only_metrics_dict(metrics)
+                self._output_results(metrics_dict)
+                self._cleanup()
+                return metrics_dict
+
+            # Step 6: Start Fuseki for the remaining SPARQL metric queries
+            self._log("\nStep 6: Starting Fuseki server...")
+            self.fuseki_manager = FusekiManager(
+                fuseki_home, self.db_manager.db_path, port=self.config.port
+            )
             self._start_fuseki()
-
-            # Step 5: Extract edges via SPARQL
-            self._log("\nStep 5: Extracting graph edges via SPARQL...")
-            edge_file = self._extract_edges()
-            self._log(f"Edges saved to: {edge_file}")
-
-            # Step 6: Analyze with NetworkX
-            self._log("\nStep 6: Analyzing graph structure...")
-            metrics = self._analyze_graph(edge_file)
-            self._log("Analysis complete")
 
             # Step 7: Analyze redundancy
             self._log("\nStep 7: Analyzing redundancy and duplication...")
@@ -186,18 +213,12 @@ class EvaluationOrchestrator:
             predicate_metrics = self._analyze_predicate_usage()
             self._log("Predicate usage analysis complete")
 
-            # Step 15: SHACL validation
-            self._log("\nStep 15: Running SHACL validation...")
-            shacl_metrics = self._validate_shacl()
-            self._log("SHACL validation complete")
-
-            # Step 16: Output results
-            self._log("\nStep 16: Saving results...")
+            # Step 15: Output results
+            self._log("\nStep 15: Saving results...")
             metrics_dict = self._prepare_metrics_dict(
                 metrics, redundancy_metrics, temporal_metrics,
                 schema_metrics, completeness_metrics, type_metrics,
-                richness_metrics, mapping_metrics, predicate_metrics,
-                shacl_metrics
+                richness_metrics, mapping_metrics, predicate_metrics
             )
             self._output_results(metrics_dict)
 
@@ -321,9 +342,11 @@ class EvaluationOrchestrator:
 
         # Check if already running
         if self.fuseki_manager.is_running():
-            self._log("Fuseki is already running, using existing instance")
-            self.sparql_executor = SPARQLExecutor(self.fuseki_manager.endpoint_url)
-            return
+            raise RuntimeError(
+                f"Fuseki is already running on port {self.config.port}. Stop the existing "
+                "Fuseki process before running this evaluation so the CLI does "
+                "not query a database from a previous run."
+            )
 
         # Start Fuseki
         try:
@@ -335,36 +358,48 @@ class EvaluationOrchestrator:
             if not self.fuseki_manager.wait_for_ready(timeout=30):
                 raise RuntimeError(
                     "Fuseki server failed to become ready within 30 seconds.\n"
-                    "Check if the port 3030 is available."
+                    f"Check if port {self.config.port} is available."
                 )
             
             self._log(f"Fuseki server ready at {self.fuseki_manager.endpoint_url}")
             self.sparql_executor = SPARQLExecutor(self.fuseki_manager.endpoint_url)
-            self.redundancy_analyzer = RedundancyAnalyzer(
-                self.fuseki_manager.endpoint_url,
-                self.config.parameters
-            )
-            self.temporal_validator = TemporalValidator(
-                self.fuseki_manager.endpoint_url,
-                self.config.parameters
-            )
-            self.schema_analyzer = SchemaAnalyzer(
-                self.fuseki_manager.endpoint_url,
-                self.config.parameters
-            )
-            self.completeness_analyzer = CompletenessAnalyzer(self.fuseki_manager.endpoint_url)
-            self.type_consistency_analyzer = TypeConsistencyAnalyzer(
-                self.fuseki_manager.endpoint_url,
-                self.config.parameters
-            )
-            self.entity_richness_analyzer = EntityRichnessAnalyzer(self.fuseki_manager.endpoint_url)
-            self.mapping_coverage_analyzer = MappingCoverageAnalyzer(self.fuseki_manager.endpoint_url)
-            self.predicate_usage_analyzer = PredicateUsageAnalyzer(self.fuseki_manager.endpoint_url)
+            self._initialize_endpoint_analyzers()
 
         except Exception as e:
             raise RuntimeError(
                 f"Failed to start Fuseki server.\n{str(e)}"
             ) from e
+
+    def _initialize_endpoint_analyzers(self) -> None:
+        """Initialize analyzers that query the Fuseki endpoint."""
+        if self.fuseki_manager is None:
+            raise RuntimeError("FusekiManager not initialized")
+
+        self.redundancy_analyzer = RedundancyAnalyzer(
+            self.fuseki_manager.endpoint_url,
+            self.config.parameters
+        )
+        self.temporal_validator = TemporalValidator(
+            self.fuseki_manager.endpoint_url,
+            self.config.parameters,
+            self.nt_files
+        )
+        self.schema_analyzer = SchemaAnalyzer(
+            self.fuseki_manager.endpoint_url,
+            self.config.parameters,
+            self.nt_files
+        )
+        self.completeness_analyzer = CompletenessAnalyzer(
+            self.fuseki_manager.endpoint_url,
+            self.nt_files
+        )
+        self.type_consistency_analyzer = TypeConsistencyAnalyzer(
+            self.fuseki_manager.endpoint_url,
+            self.config.parameters
+        )
+        self.entity_richness_analyzer = EntityRichnessAnalyzer(self.fuseki_manager.endpoint_url)
+        self.mapping_coverage_analyzer = MappingCoverageAnalyzer(self.fuseki_manager.endpoint_url)
+        self.predicate_usage_analyzer = PredicateUsageAnalyzer(self.fuseki_manager.endpoint_url)
 
     def _extract_edges(self) -> Path:
         """
@@ -386,6 +421,17 @@ class EvaluationOrchestrator:
         except Exception as e:
             raise RuntimeError(
                 f"Failed to extract edges via SPARQL.\n{str(e)}"
+            ) from e
+
+    def _extract_edges_from_nt_files(self, nt_files: List[Path]) -> Path:
+        """Extract graph edges directly from N-Triples files."""
+        try:
+            edge_file = extract_edges_from_nt_files(nt_files)
+            self.temp_edge_file = edge_file
+            return edge_file
+        except Exception as e:
+            raise RuntimeError(
+                f"Failed to extract edges from N-Triples files.\n{str(e)}"
             ) from e
 
     def _analyze_graph(self, edge_file: Path) -> Dict[str, Any]:
@@ -416,6 +462,24 @@ class EvaluationOrchestrator:
         except Exception as e:
             raise RuntimeError(
                 f"Failed to analyze graph.\n{str(e)}"
+            ) from e
+
+    def _analyze_large_graph(self, nt_files: List[Path]) -> Dict[str, Any]:
+        """Analyze graph structure with out-of-core DuckDB and streaming union-find."""
+        try:
+            work_dir = self.config.large_graph_work_dir
+            if work_dir is None:
+                work_dir = self.config.output_dir / "large_graph_work"
+            analyzer = LargeGraphAnalyzer(
+                work_dir=work_dir,
+                memory_limit=self.config.duckdb_memory_limit,
+                temp_dir=self.config.duckdb_temp_dir,
+                log=self._log,
+            )
+            return analyzer.analyze(nt_files)
+        except Exception as e:
+            raise RuntimeError(
+                f"Failed to analyze graph in large graph mode.\n{str(e)}"
             ) from e
 
     def _analyze_redundancy(self) -> Dict[str, Any]:
@@ -532,47 +596,6 @@ class EvaluationOrchestrator:
         except Exception as e:
             raise RuntimeError(f"Failed to analyze predicate usage.\n{str(e)}") from e
 
-    def _validate_shacl(self) -> Dict[str, Any]:
-        """Run SHACL validation."""
-        if not SHACL_AVAILABLE:
-            self._log("Warning: pyshacl not installed, skipping SHACL validation")
-            return {
-                'available': False,
-                'message': 'pyshacl not installed. Install with: pip install pyshacl'
-            }
-        
-        try:
-            from rdflib import Graph
-            
-            # Load all .nt files into a single graph
-            data_graph = Graph()
-            nt_files = list(self.config.ekg_folder.glob('*.nt'))
-            
-            self._log(f"Loading {len(nt_files)} .nt files for SHACL validation...")
-            for nt_file in nt_files[:5]:  # Limit to first 5 files for performance
-                try:
-                    data_graph.parse(str(nt_file), format='nt')
-                except Exception as e:
-                    self._log(f"Warning: Could not parse {nt_file.name}: {e}")
-            
-            # Run validation
-            validator = SHACLValidator()
-            results = validator.validate(data_graph)
-            
-            return {
-                'available': True,
-                'conforms': results['conforms'],
-                'total_violations': results['total_violations'],
-                'violations_by_shape': results['violations_by_shape'],
-                'conformance_rate': results['conformance_rate']
-            }
-        except Exception as e:
-            self._log(f"Warning: SHACL validation failed: {e}")
-            return {
-                'available': False,
-                'error': str(e)
-            }
-
     def _prepare_metrics_dict(self, metrics: Dict[str, Any], 
                              redundancy: Dict[str, Any],
                              temporal: Dict[str, Any],
@@ -581,8 +604,7 @@ class EvaluationOrchestrator:
                              type_consistency: Dict[str, Any],
                              entity_richness: Dict[str, Any],
                              mapping_coverage: Dict[str, Any],
-                             predicate_usage: Dict[str, Any],
-                             shacl: Dict[str, Any]) -> Dict[str, Any]:
+                             predicate_usage: Dict[str, Any]) -> Dict[str, Any]:
         """Prepare metrics dictionary with metadata."""
         combined = {
             **metrics,
@@ -594,11 +616,51 @@ class EvaluationOrchestrator:
             'entity_richness': entity_richness,
             'mapping_coverage': mapping_coverage,
             'predicate_usage': predicate_usage,
-            'shacl_validation': shacl,
+            'metric_audit': metric_audit(),
+            'run_provenance': self._build_provenance(),
             'timestamp': datetime.now().isoformat(),
             'ekg_folder': str(self.config.ekg_folder.absolute())
         }
         return combined
+
+    def _prepare_structure_only_metrics_dict(self, metrics: Dict[str, Any]) -> Dict[str, Any]:
+        """Prepare a result dictionary for graph-structure-only runs."""
+        return {
+            **metrics,
+            'metric_audit': metric_audit(),
+            'run_provenance': self._build_provenance(),
+            'timestamp': datetime.now().isoformat(),
+            'ekg_folder': str(self.config.ekg_folder.absolute()),
+            'run_scope': 'graph_structure_only'
+        }
+
+    def _build_provenance(self) -> Dict[str, Any]:
+        """Capture metric parameters and execution choices for this exact run."""
+
+        parameters = {
+            "metric_parameters": asdict(self.config.parameters),
+            "execution": {
+                "port": self.config.port,
+                "large_graph_mode": self.config.large_graph_mode,
+                "graph_structure_only": self.config.graph_structure_only,
+                "duckdb_memory_limit": self.config.duckdb_memory_limit,
+                "duckdb_temp_dir": str(self.config.duckdb_temp_dir.resolve())
+                if self.config.duckdb_temp_dir else None,
+                "large_graph_work_dir": str(self.config.large_graph_work_dir.resolve())
+                if self.config.large_graph_work_dir else None,
+                "jena_home": str(self.resolved_jena_home.resolve())
+                if self.resolved_jena_home else None,
+                "fuseki_home": str(self.resolved_fuseki_home.resolve())
+                if self.resolved_fuseki_home else None,
+            },
+        }
+        return build_run_provenance(
+            self.nt_files,
+            parameters,
+            self.project_root,
+            source_snapshot=self.source_snapshot,
+            git_snapshot=self.git_snapshot,
+        )
 
     def _prepare_metrics_dict_old(self, metrics: Dict[str, Any], 
                              redundancy: Dict[str, Any],
@@ -639,6 +701,10 @@ class EvaluationOrchestrator:
             # Save to CSV
             csv_path = self.output_handler.save_csv(metrics)
             self._log(f"Results saved to CSV: {csv_path}")
+
+            # Save metric provenance audit
+            audit_path = self.output_handler.save_metric_audit()
+            self._log(f"Metric audit saved to Markdown: {audit_path}")
 
         except Exception as e:
             raise OSError(

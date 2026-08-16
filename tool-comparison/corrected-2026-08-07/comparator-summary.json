@@ -1,0 +1,593 @@
+{
+  "input_manifest": {
+    "created_at_utc": "2026-08-07T00:53:23.282058+00:00",
+    "purpose": "Corrected synthetic inputs shared by all external comparison tools",
+    "datasets": {
+      "dataset1-high": {
+        "source_directory": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\synthetic-event-kg",
+        "source_files": [
+          {
+            "name": "entities.nt",
+            "bytes": 137910,
+            "sha256": "bc5b084ccd5b79aa4cfdc85644a7361437ee14ffa15ae88637a4ee4ed52c8e29"
+          },
+          {
+            "name": "events.nt",
+            "bytes": 55920,
+            "sha256": "e0aa02035fd45514df391bdf7459ac0cced75d0175f8c10132dc5ad5e36197f0"
+          },
+          {
+            "name": "events_descriptions_from_text_events.nt",
+            "bytes": 4582,
+            "sha256": "b0ba80b150fe5675271646ab162271de25a7a8dabd2c7dfab424f168696e45d1"
+          },
+          {
+            "name": "events_first_sentences.nt",
+            "bytes": 11363,
+            "sha256": "82da60730acac0f6a47cb7c4c9146428ab0bbc07ab7dc51077e034ac8661e90f"
+          },
+          {
+            "name": "preferred_labels.nt",
+            "bytes": 55210,
+            "sha256": "3d602140852eb398ef22802f37eb95373ae436febd559401346f6d6fad15c34c"
+          },
+          {
+            "name": "property_labels.nt",
+            "bytes": 523,
+            "sha256": "91c9382da9968d496f7c2a72ad578a5458a114bc8cc18043d969aae990127f98"
+          },
+          {
+            "name": "relations_entities_base.nt",
+            "bytes": 71372,
+            "sha256": "ae120ed838a0ac971fd92ca9c9de0151bfbdf3523c9a1b77c7539ffedf488a72"
+          },
+          {
+            "name": "relations_entities_other.nt",
+            "bytes": 8493,
+            "sha256": "1f29b0f9228be743017f868179c9bccb636e6247e89801486d6b5ae1f6136bf3"
+          },
+          {
+            "name": "relations_entities_temporal.nt",
+            "bytes": 54481,
+            "sha256": "f0ea2bc15b98cba305bc0201aa1c025ea3b5bb73685cca785020971c3f824338"
+          },
+          {
+            "name": "relations_events_base.nt",
+            "bytes": 64485,
+            "sha256": "0d7b41fa5ead2a1034e5c1090856e3f3257775474533ddadf0469505ff32c31a"
+          },
+          {
+            "name": "relations_events_literals.nt",
+            "bytes": 12963,
+            "sha256": "dc3bd9c95801c8c23bbd8c1a3c2934c7f55af1c8f54a6c027191eea3c79ff48c"
+          },
+          {
+            "name": "relations_events_other.nt",
+            "bytes": 248040,
+            "sha256": "c089d01069b63ad5aae63e176f496ed172bf02fd4f2893073cccd01bfe8d47ee"
+          },
+          {
+            "name": "schema.nt",
+            "bytes": 1081,
+            "sha256": "2dcf49e44d909ea31af1c8114570b8a054ed3f4decff0d7ee5b1848568bea884"
+          },
+          {
+            "name": "text_events.nt",
+            "bytes": 55426,
+            "sha256": "13325dcd1b00559617b0369a58a6226ac922589c74e526a72c9f0026ffb9dcac"
+          },
+          {
+            "name": "types.nt",
+            "bytes": 73730,
+            "sha256": "ea03ba08edf096f68015efcaf22accf21578195e835bf0055a8435c1909ffba8"
+          },
+          {
+            "name": "types_ontology_dbpedia.nt",
+            "bytes": 275,
+            "sha256": "b11f34551a0649545a112c126bdd05ff48c3b0daba59cab436f084671c3a1723"
+          }
+        ],
+        "combined_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\inputs\\dataset1-high.nt",
+        "combined_bytes": 855854,
+        "combined_sha256": "463ebed3776cad404aff14f7db8f78b042ac65d9bd81dc8a325349a3cdbc9f71"
+      },
+      "dataset2-mixed": {
+        "source_directory": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\synthetic-event-kg-2",
+        "source_files": [
+          {
+            "name": "entities.nt",
+            "bytes": 67278,
+            "sha256": "5f5562f8512d0c65a50b9e8adb8424004dbc75a03754dfb1a1c8726c52a63558"
+          },
+          {
+            "name": "events.nt",
+            "bytes": 53302,
+            "sha256": "544a9ff9cce403a9095f849bdc1dca644640aaa04cdb890827cba196934a025d"
+          },
+          {
+            "name": "events_descriptions_from_text_events.nt",
+            "bytes": 2560,
+            "sha256": "9c3c95528d6c99142d59870d34e95752026937f1a477795d874c4ab9de00b3b6"
+          },
+          {
+            "name": "events_first_sentences.nt",
+            "bytes": 8913,
+            "sha256": "4391767850ec59a8745c6de80420caa5a6b0737e549a382816d2feec7f219753"
+          },
+          {
+            "name": "preferred_labels.nt",
+            "bytes": 35841,
+            "sha256": "0790d3331cb267d9735fbbe12b4da8dd62ac0a38f9497cee9851f8bef27a1ed6"
+          },
+          {
+            "name": "property_labels.nt",
+            "bytes": 523,
+            "sha256": "91c9382da9968d496f7c2a72ad578a5458a114bc8cc18043d969aae990127f98"
+          },
+          {
+            "name": "relations_entities_base.nt",
+            "bytes": 40367,
+            "sha256": "568fd6768fce6d7887e0ca1c6fca1326730d5b35d0df6504c50af40578e91f74"
+          },
+          {
+            "name": "relations_entities_other.nt",
+            "bytes": 4794,
+            "sha256": "3868c981c06e9723a0275e9161ba2c054c32e497facf8fdba2477ccfc8c59f11"
+          },
+          {
+            "name": "relations_entities_temporal.nt",
+            "bytes": 30626,
+            "sha256": "3919f770199d810d90ade8f868f92e3b9338b8bc9f249a34e254bca88e9c786e"
+          },
+          {
+            "name": "relations_events_base.nt",
+            "bytes": 48962,
+            "sha256": "4745ec1499b0bf783df38a2cb22bf1757b59f4a204bd57390677b9ff0a4db07a"
+          },
+          {
+            "name": "relations_events_literals.nt",
+            "bytes": 9365,
+            "sha256": "7817ee134ea467cc602081b8756a8ccc9ff3698c57b520b5f590e52fae251429"
+          },
+          {
+            "name": "relations_events_other.nt",
+            "bytes": 94460,
+            "sha256": "3794ba51a43050230be221a12233f54df3860e2322b6d6e82fa437f1d8ccac5d"
+          },
+          {
+            "name": "schema.nt",
+            "bytes": 1081,
+            "sha256": "2dcf49e44d909ea31af1c8114570b8a054ed3f4decff0d7ee5b1848568bea884"
+          },
+          {
+            "name": "text_events.nt",
+            "bytes": 34243,
+            "sha256": "1b2869d4f4abfd6c31a84a4b5747ea862689beac2dc67ad70de9362bb72b6638"
+          },
+          {
+            "name": "types.nt",
+            "bytes": 53865,
+            "sha256": "0848983c9adb8da2948740aa01f8b95d7c1b304964153531b990700c5ebbd4a7"
+          },
+          {
+            "name": "types_ontology_dbpedia.nt",
+            "bytes": 275,
+            "sha256": "b11f34551a0649545a112c126bdd05ff48c3b0daba59cab436f084671c3a1723"
+          }
+        ],
+        "combined_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\inputs\\dataset2-mixed.nt",
+        "combined_bytes": 486455,
+        "combined_sha256": "04267b5fec7524c7cef0f5d8c33af48a477148e8e166d5725efd6a5046f9cff4"
+      },
+      "dataset3-low": {
+        "source_directory": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\synthetic-event-kg-3",
+        "source_files": [
+          {
+            "name": "entities.nt",
+            "bytes": 24351,
+            "sha256": "b299c255be5ba586a6be1f34ea9e5d837d9d8d469010de840f50967675f9991d"
+          },
+          {
+            "name": "events.nt",
+            "bytes": 28213,
+            "sha256": "7920a6ed71a2e76a38488eee6f85cddce368d9bf74aba8bd3a26692435dfe2e1"
+          },
+          {
+            "name": "events_descriptions_from_text_events.nt",
+            "bytes": 540,
+            "sha256": "fc44635de4788c8e9918da8f24d29eb92e14ae051edc094a2e0d3272e50836da"
+          },
+          {
+            "name": "events_first_sentences.nt",
+            "bytes": 1507,
+            "sha256": "fce03128d3efe1f3cd7f1f5e6d54b00308b51c91a001248ccfa017ed78910033"
+          },
+          {
+            "name": "preferred_labels.nt",
+            "bytes": 16302,
+            "sha256": "949624534fefa67b875de298564f326d0d08e31ab90920db989188d7ec6a3f59"
+          },
+          {
+            "name": "property_labels.nt",
+            "bytes": 523,
+            "sha256": "91c9382da9968d496f7c2a72ad578a5458a114bc8cc18043d969aae990127f98"
+          },
+          {
+            "name": "relations_entities_base.nt",
+            "bytes": 17465,
+            "sha256": "641ae7a354da63590fd8be6380aa6283a396988d62672eb33b6e06d0812ccea7"
+          },
+          {
+            "name": "relations_entities_other.nt",
+            "bytes": 2066,
+            "sha256": "41cd273cfca2cba5b93cb1a4cc6e2f7237e4eee9fad1e4021841dfd9c9ad1ad7"
+          },
+          {
+            "name": "relations_entities_temporal.nt",
+            "bytes": 13595,
+            "sha256": "4d05666e23ccd67b083d8746a660da1d9781d5ece3f3a7a77f096cad3212d20d"
+          },
+          {
+            "name": "relations_events_base.nt",
+            "bytes": 23749,
+            "sha256": "16149d799c7193393e515229ed777a37c4701a5cbdf0584b56aa20d6cf2f03cd"
+          },
+          {
+            "name": "relations_events_literals.nt",
+            "bytes": 2502,
+            "sha256": "74ce935a06a696bb678f3c10f769e9911126948982bb4a9de5e83109ef7f723d"
+          },
+          {
+            "name": "relations_events_other.nt",
+            "bytes": 5980,
+            "sha256": "a0712706a1ff0de07c7809403e283f54392b60e8132e29375fab16569b383e1f"
+          },
+          {
+            "name": "schema.nt",
+            "bytes": 1081,
+            "sha256": "2dcf49e44d909ea31af1c8114570b8a054ed3f4decff0d7ee5b1848568bea884"
+          },
+          {
+            "name": "text_events.nt",
+            "bytes": 14446,
+            "sha256": "d591eb64515b5f9158cf2d900cfd740127b32836dd78afb0c1ecc1ffab855795"
+          },
+          {
+            "name": "types.nt",
+            "bytes": 36295,
+            "sha256": "5ee131deaebcaf492edae9668955dcd89e7ebf8f95c04984dec430009f579bea"
+          },
+          {
+            "name": "types_ontology_dbpedia.nt",
+            "bytes": 275,
+            "sha256": "b11f34551a0649545a112c126bdd05ff48c3b0daba59cab436f084671c3a1723"
+          }
+        ],
+        "combined_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\inputs\\dataset3-low.nt",
+        "combined_bytes": 188890,
+        "combined_sha256": "4ccdd3ad2ae1a615d261d052e25bcf2bbccf90871a7babb23f2ac32842ddc10d"
+      }
+    }
+  },
+  "principle": "Coverage and within-tool sensitivity are compared. No universal aggregate score is constructed because the tool scales are not commensurable.",
+  "tools": {
+    "RDFUnit": {
+      "repository": {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\repos\\RDFUnit",
+        "git_head": "4d98ab1c488fddbee6db696cdb1d26a775bc752c",
+        "working_tree_changes": [],
+        "working_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "results": {
+        "dataset1-high": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\rdfunit\\dataset1results\\example.org_corrected-dataset1-high.aggregatedTestCaseResult.ttl",
+          "raw_sha256": "2d1e41e5a0c712b3a1af831011e5fd491da507226ad1f51f54c09f784bf015f8",
+          "tests_run": 196,
+          "failed_tests": 4,
+          "successful_tests": 192,
+          "failed_result_count": 2047,
+          "failures": [
+            {
+              "description": "http://www.w3.org/2000/01/rdf-schema#label is missing proper range",
+              "result_count": 673
+            },
+            {
+              "description": "http://www.w3.org/2000/01/rdf-schema#comment is missing proper range",
+              "result_count": 296
+            },
+            {
+              "description": "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject has rdfs:domain different from: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+              "result_count": 539
+            },
+            {
+              "description": "http://www.w3.org/1999/02/22-rdf-syntax-ns#object has rdfs:domain different from: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+              "result_count": 539
+            }
+          ]
+        },
+        "dataset2-mixed": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\rdfunit\\dataset2-mixed\\results\\example.org_corrected-dataset2-mixed.aggregatedTestCaseResult.ttl",
+          "raw_sha256": "2732a59483d3e5f865052479e0383efa9208cfddb23760eb6efa977712a048cf",
+          "tests_run": 196,
+          "failed_tests": 4,
+          "successful_tests": 192,
+          "failed_result_count": 1260,
+          "failures": [
+            {
+              "description": "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject has rdfs:domain different from: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+              "result_count": 237
+            },
+            {
+              "description": "http://www.w3.org/2000/01/rdf-schema#label is missing proper range",
+              "result_count": 514
+            },
+            {
+              "description": "http://www.w3.org/2000/01/rdf-schema#comment is missing proper range",
+              "result_count": 272
+            },
+            {
+              "description": "http://www.w3.org/1999/02/22-rdf-syntax-ns#object has rdfs:domain different from: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+              "result_count": 237
+            }
+          ]
+        },
+        "dataset3-low": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\rdfunit\\dataset3-low\\results\\example.org_corrected-dataset3-low.aggregatedTestCaseResult.ttl",
+          "raw_sha256": "63cb05947b3788ead1cd8453814bca6fb888976723c48e26db1f95e9efbd9d9b",
+          "tests_run": 196,
+          "failed_tests": 4,
+          "successful_tests": 192,
+          "failed_result_count": 678,
+          "failures": [
+            {
+              "description": "http://www.w3.org/2000/01/rdf-schema#label is missing proper range",
+              "result_count": 350
+            },
+            {
+              "description": "http://www.w3.org/2000/01/rdf-schema#comment is missing proper range",
+              "result_count": 226
+            },
+            {
+              "description": "http://www.w3.org/1999/02/22-rdf-syntax-ns#object has rdfs:domain different from: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+              "result_count": 51
+            },
+            {
+              "description": "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject has rdfs:domain different from: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+              "result_count": 51
+            }
+          ]
+        }
+      }
+    },
+    "KGHeartBeat": {
+      "repository": {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\repos\\KGHeartbeat",
+        "git_head": "85683e1fbb2000911d6702494ca31d366bc58097",
+        "working_tree_changes": [
+          " M src/API/Aggregator.py",
+          " M src/analyses.py",
+          " M src/configuration.json",
+          " M src/fromCSV_to_KG.py",
+          " M src/manager.py",
+          "?? \"Analysis results/2026-07-20.csv\"",
+          "?? \"Analysis results/2026-07-20.ttl\"",
+          "?? \"Analysis results/2026-08-07.csv\"",
+          "?? \"Analysis results/2026-08-07.ttl\"",
+          "?? \"Analysis results/performance-2026-07-20.txt\"",
+          "?? \"Analysis results/performance-2026-08-07.txt\""
+        ],
+        "working_diff_sha256": "534fa3de1b56a252c1747ed8e5186022f96933ff2d49482f0ebb32b41eb856cd"
+      },
+      "local_patch_purpose": "Accept local endpoints, skip public-catalogue metadata lookups and local URI dereferenceability, tolerate absent optional LLM imports, and serialise FAIR output.",
+      "results": {
+        "dataset1-high": {
+          "Number of triples": "4553",
+          "Number of labels/comments present on the data": "552",
+          "Percentage of triples with labels": "12.12%",
+          "Score": "0.301",
+          "Normalized score": "30.145",
+          "Availability score": "0.5",
+          "Licensing score": "0.0",
+          "Interlinking score": "0.0252580716011421",
+          "Consistency score": "0.0",
+          "Completeness score": "0.0",
+          "Understandability score": "0.030309685921370524",
+          "Interpretability score": "0.3816165165824731"
+        },
+        "dataset2-mixed": {
+          "Number of triples": "2502",
+          "Number of labels/comments present on the data": "369",
+          "Percentage of triples with labels": "14.75%",
+          "Score": "0.304",
+          "Normalized score": "30.397",
+          "Availability score": "0.5",
+          "Licensing score": "0.0",
+          "Interlinking score": "0.02302158273381295",
+          "Consistency score": "0.0",
+          "Completeness score": "0.0",
+          "Understandability score": "0.0368705035971223",
+          "Interpretability score": "0.40527577937649883"
+        },
+        "dataset3-low": {
+          "Number of triples": "861",
+          "Number of labels/comments present on the data": "159",
+          "Percentage of triples with labels": "18.47%",
+          "Score": "0.307",
+          "Normalized score": "30.729",
+          "Availability score": "0.5",
+          "Licensing score": "0.0",
+          "Interlinking score": "0.007200929152148665",
+          "Consistency score": "0.0",
+          "Completeness score": "0.0",
+          "Understandability score": "0.046167247386759584",
+          "Interpretability score": "0.44076655052264807"
+        }
+      }
+    },
+    "Luzzu": {
+      "repository": {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\repos\\Luzzu-Framework",
+        "git_head": "9a117e7f2c0bd10d928c09cf584e12ac8981f8d1",
+        "working_tree_changes": [
+          " M luzzu-communications/pom.xml",
+          " M luzzu-lowlevel-operations/src/main/resources/properties/luzzu.properties",
+          "?? luzzu-communications/externals/metrics/representation/",
+          "?? luzzu-communications/externals/vocabs-disabled-test/",
+          "?? luzzu-communications/quality-metadata/"
+        ],
+        "working_diff_sha256": "f2ebd35dfadb1880479c4d724189ec566e7115c15ddad9215dbc6736b283e18c"
+      },
+      "metric_configuration": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\luzzu-metrics-config-conservative.jsonld",
+      "results": {
+        "dataset1-high": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\luzzu\\dataset1-high-daq.trig",
+          "raw_sha256": "8f409170cd05c3446d2bbc0d95bd89f7de4ec589063c9469d6d339a1dad931a7",
+          "metrics": {
+            "BasicProvenanceMetric": 0.0,
+            "CompatibleDatatype": 1.0,
+            "CorrectLanguageTag": 0.6538461538461539,
+            "CountMetric": 4553,
+            "ExtensionalConcisenessMetric": 0.9920948616600791,
+            "HumanReadableLabellingMetric": 0.22874191944306316,
+            "MisplacedClassesOrPropertiesMetric": 1.0,
+            "MisusedOwlDatatypeOrObjectPropertiesMetric": 1.0,
+            "NoBlankNodeMetric": 1.0,
+            "NoProlixRDFMetric": 0.7632330331649462,
+            "ShortURIsMetric": 1.0,
+            "SyntaxErrorsMetric": false,
+            "UndefinedClassesAndPropertiesMetric": 0.5192180979573907
+          }
+        },
+        "dataset2-mixed": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\luzzu\\dataset2-mixed-daq.trig",
+          "raw_sha256": "e9d1aa745210a8d33aa5b69b758083a6ae0d43758768df8bd5d116b0c0c6cb25",
+          "metrics": {
+            "BasicProvenanceMetric": 0.0,
+            "CompatibleDatatype": 1.0,
+            "CorrectLanguageTag": 0.597457627118644,
+            "CountMetric": 2502,
+            "ExtensionalConcisenessMetric": 0.9897435897435898,
+            "HumanReadableLabellingMetric": 0.28633217993079585,
+            "MisplacedClassesOrPropertiesMetric": 1.0,
+            "MisusedOwlDatatypeOrObjectPropertiesMetric": 1.0,
+            "NoBlankNodeMetric": 1.0,
+            "NoProlixRDFMetric": 0.8105515587529977,
+            "ShortURIsMetric": 1.0,
+            "SyntaxErrorsMetric": false,
+            "UndefinedClassesAndPropertiesMetric": 0.49680255795363704
+          }
+        },
+        "dataset3-low": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\luzzu\\dataset3-low-daq.trig",
+          "raw_sha256": "145ff43497cae95b2f8944ddbc40d414146550abee0d82008c63f53444ecbdf8",
+          "metrics": {
+            "BasicProvenanceMetric": 0.0,
+            "CompatibleDatatype": 1.0,
+            "CorrectLanguageTag": 0.6222222222222222,
+            "CountMetric": 861,
+            "ExtensionalConcisenessMetric": 0.8650519031141869,
+            "HumanReadableLabellingMetric": 0.2948960302457467,
+            "MisplacedClassesOrPropertiesMetric": 1.0,
+            "MisusedOwlDatatypeOrObjectPropertiesMetric": 1.0,
+            "NoBlankNodeMetric": 1.0,
+            "NoProlixRDFMetric": 0.8815331010452961,
+            "ShortURIsMetric": 1.0,
+            "SyntaxErrorsMetric": false,
+            "UndefinedClassesAndPropertiesMetric": 0.3739837398373984
+          }
+        }
+      }
+    },
+    "SANSA": {
+      "repository": {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\repos\\SANSA-Stack",
+        "git_head": "5602abab29e51f91bd1447a86011831db40da3df",
+        "working_tree_changes": [
+          " M sansa-examples/sansa-examples-spark/src/main/scala/net/sansa_stack/examples/spark/rdf/RDFQualityAssessment.scala"
+        ],
+        "working_diff_sha256": "7c24d5cc65bda34ecb9dcb585bfeb4492c49ca26e65945af1e618af46658e085"
+      },
+      "local_patch_purpose": "Run metrics independently so one incompatible metric does not abort the assessment; enable local Spark execution.",
+      "results": {
+        "dataset1-high": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\sansa-dataset1-high.log",
+          "raw_sha256": "24a0a9140c22e0e2a9fcecf58728e7bd8bc4eb01d2462098ecdb310d6045784e",
+          "metrics": {
+            "completeness_schema": "0.0",
+            "completeness_interlinking": "0",
+            "completeness_property": "FAILED:SparkException:Job aborted due to stage failure: Task 0 in stage 13.0 failed 1 times, most recent failure: Lost task 0.0 in stage 13.0 (TID 340) (Aizen executor driver): org.apache.jena.graph.Node$NotLiteral: http://semanticweb.cs.vu.nl/2009/11/sem/Place is not a literal node",
+            "conciseness_extensional": "0.26596723725381927",
+            "syntacticvalidity_literalnumeric": "FAILED:SparkException:Job aborted due to stage failure: Task 0 in stage 18.0 failed 1 times, most recent failure: Lost task 0.0 in stage 18.0 (TID 420) (Aizen executor driver): org.apache.jena.graph.Node$NotLiteral: https://eventkg.l3s.uni-hannover.de/resource/entity_0 is not a literal node",
+            "syntacticvalidity_XSDDatatypeCompatibleLiterals": "1409",
+            "relevancy_CoverageDetail": "0.0034971470642370696",
+            "relevancy_CoverageScope": "0.0",
+            "relevancy_AmountOfTriples": "0.0",
+            "performance_NoHashURIs": "0.7791275538376587",
+            "reprconciseness_QueryParamFreeURIs": "0.0",
+            "reprconciseness_ShortURIs": "0.0",
+            "understandability_LabeledResources": "0.0",
+            "licensing_HumanReadableLicense": "0.0",
+            "licensing_MachineReadableLicense": "0.0",
+            "interlinking_ExternalSameAsLinks": "0.0"
+          },
+          "failed_metrics": [
+            "completeness_property",
+            "syntacticvalidity_literalnumeric"
+          ]
+        },
+        "dataset2-mixed": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\sansa-dataset2-mixed.log",
+          "raw_sha256": "f5aa26b6f222d4d1a5e50c76297e3ba5d8b3424c8a8201e3691adba432f71f9a",
+          "metrics": {
+            "completeness_schema": "0.0",
+            "completeness_interlinking": "0",
+            "completeness_property": "FAILED:SparkException:Job aborted due to stage failure: Task 1 in stage 13.0 failed 1 times, most recent failure: Lost task 1.0 in stage 13.0 (TID 341) (Aizen executor driver): org.apache.jena.graph.Node$NotLiteral: http://semanticweb.cs.vu.nl/2009/11/sem/Actor is not a literal node",
+            "conciseness_extensional": "0.277491961414791",
+            "syntacticvalidity_literalnumeric": "FAILED:SparkException:Job aborted due to stage failure: Task 8 in stage 18.0 failed 1 times, most recent failure: Lost task 8.0 in stage 18.0 (TID 424) (Aizen executor driver): org.apache.jena.graph.Node$NotLiteral: https://eventkg.l3s.uni-hannover.de/resource/relation_1039 is not a literal node",
+            "syntacticvalidity_XSDDatatypeCompatibleLiterals": "935",
+            "relevancy_CoverageDetail": "0.006109324758842444",
+            "relevancy_CoverageScope": "0.0",
+            "relevancy_AmountOfTriples": "0.0",
+            "performance_NoHashURIs": "0.7797427652733119",
+            "reprconciseness_QueryParamFreeURIs": "0.0",
+            "reprconciseness_ShortURIs": "0.0",
+            "understandability_LabeledResources": "0.0",
+            "licensing_HumanReadableLicense": "0.0",
+            "licensing_MachineReadableLicense": "0.0",
+            "interlinking_ExternalSameAsLinks": "0.0"
+          },
+          "failed_metrics": [
+            "completeness_property",
+            "syntacticvalidity_literalnumeric"
+          ]
+        },
+        "dataset3-low": {
+          "raw_file": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\tool-comparison\\corrected-2026-08-07\\sansa-dataset3-low.log",
+          "raw_sha256": "8a8cc165489f6c21de6f244a3f6c7be797b8f252f8a74b92c1754ddb5ac68ded",
+          "metrics": {
+            "completeness_schema": "0.0",
+            "completeness_interlinking": "0",
+            "completeness_property": "FAILED:SparkException:Job aborted due to stage failure: Task 13 in stage 13.0 failed 1 times, most recent failure: Lost task 13.0 in stage 13.0 (TID 353) (Aizen executor driver): org.apache.jena.graph.Node$NotLiteral: https://eventkg.l3s.uni-hannover.de/schema/Relation is not a literal node",
+            "conciseness_extensional": "0.17588769611891",
+            "syntacticvalidity_literalnumeric": "FAILED:SparkException:Job aborted due to stage failure: Task 5 in stage 18.0 failed 1 times, most recent failure: Lost task 5.0 in stage 18.0 (TID 425) (Aizen executor driver): org.apache.jena.graph.Node$NotLiteral: https://eventkg.l3s.uni-hannover.de/resource/event_4000097 is not a literal node",
+            "syntacticvalidity_XSDDatatypeCompatibleLiterals": "404",
+            "relevancy_CoverageDetail": "0.01568951279933939",
+            "relevancy_CoverageScope": "0.0",
+            "relevancy_AmountOfTriples": "0.0",
+            "performance_NoHashURIs": "0.815028901734104",
+            "reprconciseness_QueryParamFreeURIs": "0.0",
+            "reprconciseness_ShortURIs": "0.0",
+            "understandability_LabeledResources": "0.0",
+            "licensing_HumanReadableLicense": "0.0",
+            "licensing_MachineReadableLicense": "0.0",
+            "interlinking_ExternalSameAsLinks": "0.0"
+          },
+          "failed_metrics": [
+            "completeness_property",
+            "syntacticvalidity_literalnumeric"
+          ]
+        }
+      }
+    }
+  }
+}

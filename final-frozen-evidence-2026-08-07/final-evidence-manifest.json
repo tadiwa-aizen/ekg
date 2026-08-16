@@ -1,0 +1,71 @@
+{
+  "manifest_version": 2,
+  "path_base": "thesis_repository_root",
+  "created_by": "ekg/build_final_evidence_bundle.py",
+  "evaluator_source_snapshot_sha256": "f5fb9a678e061b9098c78382096f08feb28a1f51dd6e63b614d239ba53898788",
+  "current_evaluator_source_matches_frozen_runs": true,
+  "core_metric_count": 32,
+  "comparator_inputs_match_evaluator_inputs": true,
+  "runs": {
+    "DOne": {
+      "result_path": "final-frozen-evidence-2026-08-07/dataset1/ekg_metrics_20260807_040014.json",
+      "result_sha256": "afec7bf1aadb8b637345666e6f19a22d07082b7c85d674fef16e075be21c5a42",
+      "input_aggregate_sha256": "aeadb14e38a6eaedea12ebf8f16451f48451284dc4286ddc593961715a9c23e6"
+    },
+    "DTwo": {
+      "result_path": "final-frozen-evidence-2026-08-07/dataset2/ekg_metrics_20260807_040028.json",
+      "result_sha256": "e64dc1dfdc5bfb9fa1a2fc7d345a42cf09df0ae6c51820a0f85ce3ea70ef56fc",
+      "input_aggregate_sha256": "39ea57b8425ff8fcffd5880adb5509b448f637bc005301013dc6c1829ebb9f45"
+    },
+    "DThree": {
+      "result_path": "final-frozen-evidence-2026-08-07/dataset3/ekg_metrics_20260807_040040.json",
+      "result_sha256": "005f00f9617b43115263f8652f92823dfcebfd529fac5f2f136b2644a563921a",
+      "input_aggregate_sha256": "0d1e8c67c390d23485b55143b95e2b0517a4872fb5932e9e21d79d0cbb070353"
+    },
+    "ChronoReference": {
+      "result_path": "final-frozen-evidence-2026-08-07/chronographer/eventkg_ng/ekg_metrics_20260807_040133.json",
+      "result_sha256": "72428f8024fa3fba5cdd114df40188b70725952af1a8df96eaad2d425a9619c7",
+      "input_aggregate_sha256": "97c38a4d1b5625fe0005c77a10911a7981fdfe51054a279a917b8b119cff19df"
+    },
+    "ChronoSearch": {
+      "result_path": "final-frozen-evidence-2026-08-07/chronographer/search_ng/ekg_metrics_20260807_040149.json",
+      "result_sha256": "814b231c030ffd512ead9627d92e8d907dfea7d5a69f3c4a3afc773228d1b122",
+      "input_aggregate_sha256": "be451f1900e27a0b0441a1a2e28fd64c07b870109dff8629c9a3ad03fe16e2b6"
+    },
+    "ChronoGeneration": {
+      "result_path": "final-frozen-evidence-2026-08-07/chronographer/generation_ng/ekg_metrics_20260807_040205.json",
+      "result_sha256": "431910427e681d4ee82e1f41d9709125659515c2b13c673588096d175620a42f",
+      "input_aggregate_sha256": "5df82e92af4268288fabd35f52dbab66d639382e220c6531ec41478cad2c2ab5"
+    },
+    "OEKG": {
+      "result_path": "final-frozen-evidence-2026-08-07/oekg/ekg_metrics_20260807_080550.json",
+      "result_sha256": "1923d128eaf91585d34b9c1d0212432379f56995f623cceed16ffa0fee0c328d",
+      "input_aggregate_sha256": "fbf2c85305d653916d8c181dba15e2628c4d0ce2ce4aa6cfc3d0b8b8ff86b3ab"
+    }
+  },
+  "comparator_summary": {
+    "path": "tool-comparison/corrected-2026-08-07/comparator-summary.json",
+    "sha256": "f363ca6e138a2dffdebf0952a3faa2883fde0a528f5f0bb6ab11e621740775ef"
+  },
+  "test_suite": {
+    "path": "final-frozen-evidence-2026-08-07/test-suite.log",
+    "sha256": "d2a523c31f22c1a36c3671e108efe46f078360fed352ed973ebe4756273ac49d",
+    "passed": 24
+  },
+  "radar": {
+    "path": "final-frozen-evidence-2026-08-07/synthetic_quality_profile_radar.png",
+    "sha256": "751edb50d9a6b8d0b43a60291ccc2ce52d603a58fb58f982111266111e75ddc6",
+    "uses_only_directly_bounded_rates": true,
+    "universal_aggregate_score": false
+  },
+  "generated_artifacts": {
+    "final_results_macros": {
+      "path": "docs/thesis/generated/final_results_macros.tex",
+      "sha256": "8bdb88a7f2ad4daa8db254ec73550f0892331b1e1074de5f8e7410f181ccb2de"
+    },
+    "core_metric_inventory": {
+      "path": "docs/thesis/generated/core_metric_inventory.tex",
+      "sha256": "05f5e33d5b876eb29d2f430fa5406afe1e6093eaeba0a54742abca7c838b16ce"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> SELECT (COUNT(?e) AS ?count) WHERE { ?e a sem:Event }

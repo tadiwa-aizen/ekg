@@ -1,0 +1,164 @@
+\documentclass[12pt,a4paper]{report}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm2e}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage[protrusion=true,expansion=false]{microtype}
+
+\setlength{\emergencystretch}{2em}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=blue,
+    pdftitle={A Comprehensive Evaluation Framework for Event-Centric Knowledge Graphs},
+    pdfauthor={Tadiwa Magwenzi},
+    pdfsubject={Multidimensional intrinsic evaluation of RDF-based event-centric knowledge graphs},
+    pdfkeywords={event-centric knowledge graph, knowledge graph quality, RDF, SPARQL, evaluation framework},
+}
+
+% Generated directly from the frozen result bundle.
+\input{generated/final_results_macros}
+
+% Code listing settings
+\lstset{
+    basicstyle=\ttfamily\small,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    captionpos=b,
+    language=Python
+}
+
+% Line spacing
+\onehalfspacing
+\raggedbottom
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\hypersetup{pageanchor=false}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\LARGE\bfseries A Comprehensive Evaluation Framework for Event-Centric Knowledge Graphs\par}
+    
+    \vspace{2cm}
+    
+    {\Large Tadiwa Magwenzi\par}
+    {\large MGWTAD001\par}
+    
+    \vspace{2cm}
+    
+    {\large A thesis submitted in fulfilment of the requirements for the degree of\par}
+    {\large\bfseries Master of Science in Computer Science\par}
+    
+    \vspace{1.5cm}
+    
+    {\large Department of Computer Science\par}
+    {\large Faculty of Science\par}
+    {\large University of Cape Town\par}
+    
+    \vspace{1.5cm}
+    
+    {\large Supervisor: Zola Mahlaza\par}
+    {\large Supervisor: Maria Keet\par}
+    
+    \vfill
+    
+    {\large August 2026\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+
+% Declaration
+\input{declaration}
+\clearpage
+
+% Abstract
+\input{abstract}
+\clearpage
+
+% Acknowledgements
+\input{acknowledgements}
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% List of Figures
+\listoffigures
+\clearpage
+
+% List of Tables
+\listoftables
+\clearpage
+
+% List of Abbreviations
+\input{abbreviations}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MAIN CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{arabic}
+
+% Chapter 1: Introduction
+\input{chapter1_introduction}
+
+% Chapter 2: Literature Review
+\input{chapter2_literature}
+
+% Chapter 3: Methodology
+\input{chapter3_methodology}
+
+\input{chapter4_results.tex}
+
+% Chapter 5: Discussion
+\input{chapter5_discussion}
+
+% Chapter 6: Conclusion
+\input{chapter6_conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPENDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+\input{appendix_a}
+
+\end{document}

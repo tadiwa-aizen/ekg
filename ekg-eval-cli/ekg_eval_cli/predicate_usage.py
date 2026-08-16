@@ -2,6 +2,7 @@
 
 from typing import Dict, Any, List
 import requests
+import math
 
 
 class PredicateUsageAnalyzer:
@@ -78,7 +79,11 @@ class PredicateUsageAnalyzer:
                 'total_triples': 0,
                 'top_10_concentration': 0.0,
                 'singleton_predicates': 0,
-                'gini_coefficient': 0.0
+                'gini_coefficient': 0.0,
+                'shannon_entropy': 0.0,
+                'normalized_shannon_entropy': None,
+                'hhi_concentration': None,
+                'status': 'not_applicable_no_predicates'
             }
         
         # Extract predicate usage counts
@@ -95,11 +100,24 @@ class PredicateUsageAnalyzer:
         
         # Gini coefficient
         gini = self._calculate_gini(usage_counts)
+
+        # Predicate diversity/concentration diagnostics.
+        probabilities = [count / total_triples for count in usage_counts if total_triples > 0]
+        shannon_entropy = -sum(p * math.log2(p) for p in probabilities if p > 0)
+        normalized_entropy = (
+            shannon_entropy / math.log2(total_predicates)
+            if total_predicates > 1 else None
+        )
+        hhi = sum(p ** 2 for p in probabilities)
         
         return {
             'total_unique_predicates': total_predicates,
             'total_triples': total_triples,
             'top_10_concentration': round(top_10_concentration, 2),
             'singleton_predicates': singleton_predicates,
-            'gini_coefficient': round(gini, 4)
+            'gini_coefficient': round(gini, 4),
+            'shannon_entropy': round(shannon_entropy, 4),
+            'normalized_shannon_entropy': round(normalized_entropy, 4) if normalized_entropy is not None else None,
+            'hhi_concentration': round(hhi, 4),
+            'status': 'computed'
         }

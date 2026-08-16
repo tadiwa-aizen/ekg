@@ -1,0 +1,174 @@
+Metric,Value
+total_nodes,305
+total_edges,297
+num_components,57
+giant_component_size,229
+giant_component_ratio,0.7508196721311475
+avg_clustering,0.0
+edge_connectivity,0
+avg_degree,1.9475409836065574
+density,0.0064063848144952544
+timestamp,2026-08-07T04:00:40.930292
+ekg_folder,C:\Users\riski\Desktop\Projects\masters\ekg\synthetic-event-kg-3
+--- REDUNDANCY METRICS ---,
+redundancy.total_events,120
+redundancy.exact_label_duplicates,13
+redundancy.exact_duplicate_events,43
+redundancy.events_with_eligible_labels,45
+redundancy.sameas_duplicates,1
+redundancy.sameas_duplicate_events,2
+redundancy.fuzzy_duplicate_pairs,60
+redundancy.fuzzy_sample_size,45
+redundancy.fuzzy_threshold,0.9
+redundancy.fuzzy_method,deterministic_exact_all_pairs_token_sort_ratio
+redundancy.fuzzy_sampling_method,first events ordered by event IRI
+redundancy.duplication_rate,95.56
+redundancy.duplication_rate_denominator,events with eligible normalized labels
+redundancy.label_quality,"{'total_labels_sampled': 45, 'unique_normalized_labels': 15, 'label_uniqueness_rate': 33.33, 'status': 'computed', 'normalization_applied': True, 'sampling_method': 'first events ordered by event IRI'}"
+--- TEMPORAL METRICS ---,
+temporal.date_format_validation.total_sampled,51
+temporal.date_format_validation.valid_dates,51
+temporal.date_format_validation.invalid_dates,0
+temporal.date_format_validation.compliance_rate,100.0
+temporal.date_format_validation.status,computed
+temporal.date_format_validation.sampling_method,complete/small-graph IRI-ordered sample
+temporal.date_format_validation.invalid_examples,[]
+temporal.temporal_granularity.total_sampled,51
+temporal.temporal_granularity.granularity_counts.year,26
+temporal.temporal_granularity.granularity_counts.month,0
+temporal.temporal_granularity.granularity_counts.day,25
+temporal.temporal_granularity.granularity_counts.timestamp,0
+temporal.temporal_granularity.granularity_counts.unknown,0
+temporal.temporal_granularity.granularity_percentages.year,50.98
+temporal.temporal_granularity.granularity_percentages.month,0.0
+temporal.temporal_granularity.granularity_percentages.day,49.02
+temporal.temporal_granularity.granularity_percentages.timestamp,0.0
+temporal.temporal_granularity.granularity_percentages.unknown,0.0
+temporal.temporal_granularity.datatype_counts.http://www.w3.org/2001/XMLSchema#gYear,26
+temporal.temporal_granularity.datatype_counts.http://www.w3.org/2001/XMLSchema#date,25
+temporal.temporal_granularity.classification_method,XML Schema datatype with documented lexical fallback
+temporal.temporal_granularity.sampling_method,complete/small-graph IRI-ordered sample
+temporal.temporal_granularity.status,computed
+temporal.temporal_coverage.total_events,120
+temporal.temporal_coverage.events_with_temporal_information,51
+temporal.temporal_coverage.events_missing_temporal_information,69
+temporal.temporal_coverage.events_with_dates,51
+temporal.temporal_coverage.events_missing_dates,69
+temporal.temporal_coverage.temporal_coverage_rate,42.5
+temporal.temporal_coverage.status,computed
+temporal.temporal_coverage.temporal_predicates,"['http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp', 'http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp']"
+temporal.temporal_coverage.counting_method,exact file scan
+temporal.temporal_density.temporal_span_years,48
+temporal.temporal_density.avg_events_per_decade,8.5
+temporal.temporal_density.coverage_gaps,2
+temporal.temporal_density.coverage_gap_definition,missing decades between observed minimum and maximum year
+temporal.temporal_density.underpopulated_decades,3
+temporal.temporal_density.peak_decade,1950s
+temporal.temporal_density.peak_decade_count,47
+temporal.temporal_density.status,computed
+temporal.semantic_validation.events_sampled,23
+temporal.semantic_validation.total_checked,23
+temporal.semantic_validation.unparseable_events,0
+temporal.semantic_validation.violations,11
+temporal.semantic_validation.consistency_rate,52.17
+temporal.semantic_validation.status,computed
+temporal.semantic_validation.multi_value_rule,max(begin values) <= min(end values)
+temporal.semantic_validation.sampling_method,complete/small-graph IRI-ordered sample
+temporal.semantic_validation.violation_examples,"[{'event': 'https://eventkg.l3s.uni-hannover.de/resource/event_4000011', 'starts': ['1957'], 'ends': ['1956']}, {'event': 'https://eventkg.l3s.uni-hannover.de/resource/event_4000020', 'starts': ['1957-08-15'], 'ends': ['1957-06-18']}, {'event': 'https://eventkg.l3s.uni-hannover.de/resource/event_4000027', 'starts': ['1951'], 'ends': ['1950']}, {'event': 'https://eventkg.l3s.uni-hannover.de/resource/event_4000056', 'starts': ['1954'], 'ends': ['1953']}, {'event': 'https://eventkg.l3s.uni-hannover.de/resource/event_4000066', 'starts': ['1957-01-18'], 'ends': ['1956-08-06']}]"
+--- SCHEMA METRICS ---,
+schema.total_events,120
+schema.events_with_labels,45
+schema.events_with_dates,51
+schema.fully_described_events,1
+schema.label_coverage_rate,37.5
+schema.date_coverage_rate,42.5
+schema.schema_conformance_rate,0.83
+schema.status,computed
+schema.non_standard_properties_count,1
+schema.non_standard_properties_sample.http://purl.org/dc/terms/description,11
+schema.external_vocabulary_usage.schema.org,0
+schema.external_vocabulary_usage.dbpedia,9
+schema.external_vocabulary_usage.wikidata,11
+schema.counting_method,exact_file_scan
+--- COMPLETENESS METRICS ---,
+completeness.total_event_instances,120
+completeness.used_event_classes,2
+completeness.declared_event_classes,7
+completeness.events_with_complete_data,1
+completeness.schema_coverage_percentage,28.57
+completeness.population_completeness_percentage,0.83
+completeness.class_usage_efficiency_percentage,1.67
+completeness.status,computed
+completeness.property_usage_sample.http://www.w3.org/1999/02/22-rdf-syntax-ns#type,501
+completeness.property_usage_sample.http://www.w3.org/2000/01/rdf-schema#label,267
+completeness.property_usage_sample.http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp,76
+completeness.property_usage_sample.https://eventkg.l3s.uni-hannover.de/schema/startUnitType,60
+completeness.property_usage_sample.http://www.w3.org/1999/02/22-rdf-syntax-ns#subject,51
+completeness.property_usage_sample.http://www.w3.org/1999/02/22-rdf-syntax-ns#object,51
+completeness.property_usage_sample.http://semanticweb.cs.vu.nl/2009/11/sem/roleType,51
+completeness.property_usage_sample.http://www.w3.org/2002/07/owl#sameAs,31
+completeness.property_usage_sample.https://eventkg.l3s.uni-hannover.de/schema/extractedFrom,25
+completeness.property_usage_sample.http://semanticweb.cs.vu.nl/2009/11/sem/hasEndTimeStamp,23
+completeness.counting_method,exact_file_scan
+completeness.event_population,direct sem:Event instances
+completeness.required_profile,"['rdfs:label', 'sem:hasBeginTimeStamp or sem:hasEndTimeStamp', 'sem:hasPlace']"
+completeness.population_completeness.total_events,120
+completeness.population_completeness.events_with_label,45
+completeness.population_completeness.events_with_temporal,51
+completeness.population_completeness.events_with_location,15
+completeness.population_completeness.fully_complete_events,1
+completeness.population_completeness.label_coverage_rate,37.5
+completeness.population_completeness.temporal_coverage_rate,42.5
+completeness.population_completeness.location_coverage_rate,12.5
+completeness.population_completeness.population_completeness_rate,0.83
+completeness.population_completeness.status,computed
+completeness.population_completeness.counting_method,exact_file_scan
+completeness.population_completeness.event_population,direct sem:Event instances
+completeness.population_completeness.required_profile,"['rdfs:label', 'sem:hasBeginTimeStamp or sem:hasEndTimeStamp', 'sem:hasPlace']"
+--- TYPE CONSISTENCY METRICS ---,
+type_consistency.properties_analyzed,1
+type_consistency.properties_with_violations,1
+type_consistency.average_domain_conformity,100.0
+type_consistency.average_range_conformity,40.0
+type_consistency.overall_type_consistency,70.0
+type_consistency.applicable_domain_checks,15
+type_consistency.domain_violations_total,0
+type_consistency.applicable_range_checks,15
+type_consistency.range_violations_total,9
+type_consistency.applicable_consistency_checks,30
+type_consistency.total_property_usages_examined,30
+type_consistency.status,computed
+type_consistency.aggregation,evidence-weighted applicable checks
+type_consistency.consistency_interpretation,Closed-profile explicit type alignment over declared and used RDFS constraints.
+type_consistency.property_details,"[{'property': 'http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace', 'domain': 'http://semanticweb.cs.vu.nl/2009/11/sem/Event', 'range': 'http://semanticweb.cs.vu.nl/2009/11/sem/Place', 'domain_total': 15, 'domain_violations': 0, 'domain_conformity': 100.0, 'range_kind': 'class', 'range_total': 15, 'range_violations': 9, 'range_conformity': 40.0}]"
+type_consistency.inference_enabled,False
+type_consistency.open_world_caveat,Missing explicit class assertions count as non-alignment under this closed profile; they are not RDF/OWL logical inconsistencies. rdfs:Resource and rdfs:Literal are handled according to their RDF semantics.
+type_consistency.max_properties_configured,50
+--- ENTITY RICHNESS METRICS ---,
+entity_richness.avg_properties_per_event,1.87
+entity_richness.median_properties_per_event,2.0
+entity_richness.std_dev_properties,1.49
+entity_richness.sparse_entities_percentage,64.17
+entity_richness.total_events_analyzed,120
+entity_richness.status,computed
+entity_richness.counting_unit,distinct outgoing predicates excluding rdf:type
+entity_richness.sparse_threshold,fewer than 3 distinct outgoing predicates
+--- MAPPING COVERAGE METRICS ---,
+mapping_coverage.total_events,120
+mapping_coverage.events_with_external_links,11
+mapping_coverage.events_linked_to_wikidata,11
+mapping_coverage.events_linked_to_dbpedia,9
+mapping_coverage.external_link_rate,9.17
+mapping_coverage.wikidata_coverage,9.17
+mapping_coverage.dbpedia_coverage,7.5
+mapping_coverage.status,computed
+--- PREDICATE USAGE METRICS ---,
+predicate_usage.total_unique_predicates,19
+predicate_usage.total_triples,861
+predicate_usage.top_10_concentration,91.29
+predicate_usage.singleton_predicates,2
+predicate_usage.gini_coefficient,0.6101
+predicate_usage.shannon_entropy,3.2551
+predicate_usage.normalized_shannon_entropy,0.7663
+predicate_usage.hhi_concentration,0.1574
+predicate_usage.status,computed

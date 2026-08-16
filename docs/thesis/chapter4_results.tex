@@ -1,516 +1,211 @@
 \chapter{Results}
 
-\section{Introduction to Results}
+This chapter reports the evidence produced by the fixed implementation version described in Chapter 3. It distinguishes four questions that should not be conflated: whether the metrics respond to controlled changes, whether other tools provide the same diagnostic coverage, whether the implementation can run on independently produced RDF event graphs, and whether the implemented formulae agree with hand-computable cases. Interpretation and limitations are developed in Chapter 5.
 
-This chapter presents the results of applying the evaluation framework described in Chapter 3 to three synthetic event-centric knowledge graphs with known ground truth. The results are organised around the three research questions established in Chapter 1:
+\section{Evaluation Context}
 
-\begin{itemize}
-    \item \textbf{RQ1:} What dimensions of quality are relevant for event-centric knowledge graphs, and how can they be systematically measured?
-    \item \textbf{RQ2:} Can a comprehensive evaluation framework reveal quality differences across EKG systems that are missed by traditional, narrow evaluation approaches?
-    \item \textbf{RQ3:} How do EKGs of varying quality perform across multiple dimensions, and what trade-offs exist between dimensions?
-\end{itemize}
+All proposed-framework results in this chapter were generated with one frozen version of the evaluator. The result records show the input files, settings, software version, and all \FrozenCoreMetricCount{} registered fields. The synthetic and comparator experiments used identical RDF source files. The three controlled profiles are denoted D1 (high quality), D2 (mixed quality), and D3 (low quality). Event-level rates use direct \texttt{sem:Event} instances as their population, and repeated fields are interpreted once. Appendix A provides the detailed provenance record.
 
-Table \ref{tab:metric_reference} lists all 32 evaluation metrics with their dimension category and source location in the \texttt{ekg-eval-cli} codebase, providing a complete reference for the results that follow.
+The three synthetic datasets test whether the metrics respond to controlled changes. OEKG and ChronoGrapher test whether the same evaluator can run on independently produced RDF event data. The general-tool experiment compares what the tools cover and how their own values respond; it does not combine their incompatible outputs into one score.
 
-\begin{longtable}{lll}
-\caption{Complete metric reference: all 32 metrics with dimension and source} \label{tab:metric_reference} \\
-\toprule
-\textbf{Metric} & \textbf{Dimension} & \textbf{Source} \\
-\midrule
-\endfirsthead
-\toprule
-\textbf{Metric} & \textbf{Dimension} & \textbf{Source} \\
-\midrule
-\endhead
-\midrule
-\multicolumn{3}{r}{\textit{Continued on next page}} \\
-\endfoot
-\bottomrule
-\endlastfoot
-num\_components & Graph Structure & analyzer.py \\
-giant\_component\_ratio & Graph Structure & analyzer.py \\
-avg\_clustering & Graph Structure & analyzer.py \\
-edge\_connectivity & Graph Structure & analyzer.py \\
-density & Graph Structure & analyzer.py \\
-avg\_degree & Graph Structure & analyzer.py \\
-\midrule
-duplication\_rate & Redundancy & redundancy.py \\
-label\_uniqueness\_rate & Redundancy & redundancy.py \\
-fuzzy\_duplicate\_pairs & Redundancy & redundancy.py \\
-\midrule
-compliance\_rate & Temporal & temporal.py \\
-temporal\_coverage\_rate & Temporal & temporal.py \\
-temporal\_span\_years & Temporal & temporal.py \\
-avg\_events\_per\_decade & Temporal & temporal.py \\
-coverage\_gaps & Temporal & temporal.py \\
-consistency\_rate & Temporal & temporal.py \\
-\midrule
-label\_coverage\_rate & Schema & schema\_analyzer.py \\
-date\_coverage\_rate & Schema & schema\_analyzer.py \\
-schema\_conformance\_rate & Schema & schema\_analyzer.py \\
-non\_standard\_properties\_count & Schema & schema\_analyzer.py \\
-\midrule
-schema\_coverage\_\% & Completeness & completeness.py \\
-population\_completeness\_rate & Completeness & completeness.py \\
-label\_coverage\_rate & Completeness & completeness.py \\
-temporal\_coverage\_rate & Completeness & completeness.py \\
-location\_coverage\_rate & Completeness & completeness.py \\
-\midrule
-overall\_type\_consistency & Type Consistency & type\_consistency.py \\
-\midrule
-avg\_properties\_per\_event & Entity Richness & entity\_richness.py \\
-sparse\_entities\_\% & Entity Richness & entity\_richness.py \\
-\midrule
-external\_link\_rate & Mapping Coverage & mapping\_coverage.py \\
-wikidata\_coverage & Mapping Coverage & mapping\_coverage.py \\
-dbpedia\_coverage & Mapping Coverage & mapping\_coverage.py \\
-\midrule
-top\_10\_concentration & Predicate Usage & predicate\_usage.py \\
-gini\_coefficient & Predicate Usage & predicate\_usage.py \\
-\end{longtable}
+\section{Controlled Synthetic Sensitivity}
 
-Section 4.2 addresses RQ1 by presenting the complete evaluation results for all three datasets across all nine dimensions, demonstrating that each dimension is measurable through automated SPARQL and graph analysis. Section 4.3 addresses RQ2 by comparing the three datasets and identifying quality differences that single-dimension evaluation would miss. Section 4.4 addresses RQ3 by analysing cross-dimensional trade-offs and patterns. Section 4.5 reports on ground truth validation and the bugs discovered during implementation. Section 4.6 summarises the key findings.
+This experiment tests whether the implemented metrics respond to known changes across the controlled high-, mixed-, and low-quality profiles. It evaluates sensitivity to those interventions; it is not presented as independent evidence that the metrics capture every aspect of EKG quality.
 
-All results reported in this chapter are from the post-fix evaluation runs using the corrected implementation described in Chapter 3, Section 3.4.4.
+\subsection{Structural and Content Profiles}
 
-\section{Evaluation Results Across Nine Dimensions (RQ1)}
+Table \ref{tab:final_structural_results} reports the corrected domain-relation projection. Unlike the earlier full-IRI projection, it excludes \texttt{rdf:type}, RDFS, OWL, and configured schema predicates, while retaining direct events as isolated nodes. Shared class resources therefore cannot make otherwise unrelated events appear connected.
 
-To answer RQ1 (\textit{What dimensions of quality are relevant for EKGs, and how can they be systematically measured?}), we applied the framework to all three synthetic datasets and report the full results for each dimension. Dataset 1 (synthetic-event-kg, 100 events) serves as a clean baseline; Dataset 2 (synthetic-event-kg-2, 150 events) includes intentional quality degradation in selected dimensions; Dataset 3 (synthetic-event-kg-3, 120 events) is designed to score poorly across all dimensions while remaining a structurally valid EKG.
-
-\subsection{Graph Connectivity and Structure}
-
-Table \ref{tab:graph_results} presents the structural metrics computed via NetworkX from the SPARQL-projected graph.
-
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
-\caption{Graph connectivity and structure results}
-\label{tab:graph_results}
+\caption{Corrected domain-relation structural profile. Giant-component values are percentages of projected nodes.}
+\label{tab:final_structural_results}
 \begin{tabular}{lrrr}
 \toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
+Metric & D1 high & D2 mixed & D3 low \\
 \midrule
-Total nodes & 1,301 & 1,442 & 311 \\
-Total edges & 2,921 & 3,828 & 509 \\
-Connected components & 4 & 4 & 5 \\
-Giant component ratio & 98.77\% & 98.89\% & 83.92\% \\
-Average clustering coefficient & 0.0104 & 0.0064 & 0.0028 \\
-Edge connectivity & 0 & 0 & 0 \\
-Graph density & 0.0035 & 0.0037 & 0.0106 \\
-Average degree & 4.49 & 5.31 & 3.27 \\
+Projected nodes & \DOneNodes & \DTwoNodes & \DThreeNodes \\
+Projected edges & \DOneEdges & \DTwoEdges & \DThreeEdges \\
+Connected components & \DOneComponents & \DTwoComponents & \DThreeComponents \\
+Giant component & \DOneGiantPct\% & \DTwoGiantPct\% & \DThreeGiantPct\% \\
+Average degree & \DOneAverageDegree & \DTwoAverageDegree & \DThreeAverageDegree \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Datasets 1 and 2 exhibit high cohesion, with over 98\% of nodes in the giant component and four connected components each. Dataset 3 shows clear structural degradation: five connected components and only 83.92\% of nodes in the giant component, indicating that a substantial portion of the graph is fragmented into isolated clusters. This fragmentation results from the sparse relation structure in Dataset 3, where only 20 event-entity relations connect a small subset of nodes while the majority of entities remain disconnected from events. The clustering coefficient decreases monotonically across the three datasets (0.0104, 0.0064, 0.0028), and Dataset 3 has the lowest average degree (3.27), confirming that its events have fewer structural connections.
+D1 and D2 retain large connected regions, but neither is falsely reported as one fully connected component. D3 is more fragmented: it has \DThreeComponents components and only \DThreeGiantPct\% of projected nodes in the largest component. This difference was hidden by the earlier schema-hub projection.
 
-\subsection{Redundancy and Duplication}
+Table \ref{tab:final_event_profile_results} reports event-level percentages and the number of applicable checks used to calculate type alignment. Label duplication uses normalised labels. Fuzzy candidates use exact all-pairs comparison within a deterministic IRI-ordered sample, RapidFuzz token-sort similarity, and a threshold of 0.90; they are candidates, not confirmed coreference links.
 
-Table \ref{tab:redundancy_results} presents the redundancy metrics.
-
-\begin{table}[h]
+\begin{table}[htbp]
 \centering
-\caption{Redundancy and duplication results}
-\label{tab:redundancy_results}
+\small
+\caption{Event-level quality profile for the controlled datasets.}
+\label{tab:final_event_profile_results}
 \begin{tabular}{lrrr}
 \toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
+Metric & D1 high & D2 mixed & D3 low \\
 \midrule
-Total events & 100 & 150 & 120 \\
-Exact duplicate events & 194 & 253 & 147 \\
-Duplication rate & 194.00\% & 168.67\% & 122.50\% \\
-Label uniqueness rate & 10.31\% & 4.74\% & 2.04\% \\
-Fuzzy duplicate pairs ($\geq$90\%) & 913 & 2,701 & 3,567 \\
+Exact duplicate-candidate rate & \DOneDuplicateRatePct\% & \DTwoDuplicateRatePct\% & \DThreeDuplicateRatePct\% \\
+Label uniqueness & \DOneLabelUniquenessPct\% & \DTwoLabelUniquenessPct\% & \DThreeLabelUniquenessPct\% \\
+Fuzzy candidate pairs & \DOneFuzzyPairs & \DTwoFuzzyPairs & \DThreeFuzzyPairs \\
+Temporal coverage & \DOneTemporalCoveragePct\% & \DTwoTemporalCoveragePct\% & \DThreeTemporalCoveragePct\% \\
+Interval consistency & \DOneIntervalConsistencyPct\% & \DTwoIntervalConsistencyPct\% & \DThreeIntervalConsistencyPct\% \\
+Minimal profile completeness & \DOneCompletenessPct\% & \DTwoCompletenessPct\% & \DThreeCompletenessPct\% \\
+Closed-profile type alignment & \DOneTypeAlignmentPct\% & \DTwoTypeAlignmentPct\% & \DThreeTypeAlignmentPct\% \\
+Applicable type checks & \DOneTypeChecks & \DTwoTypeChecks & \DThreeTypeChecks \\
+External mapping coverage & \DOneExternalMappingPct\% & \DTwoExternalMappingPct\% & \DThreeExternalMappingPct\% \\
+Average distinct properties/event & \DOneRichness & \DTwoRichness & \DThreeRichness \\
+Sparse events & \DOneSparsePct\% & \DTwoSparsePct\% & \DThreeSparsePct\% \\
+Normalised predicate entropy & \DOnePredicateEntropy & \DTwoPredicateEntropy & \DThreePredicateEntropy \\
+Predicate HHI concentration & \DOnePredicateHHI & \DTwoPredicateHHI & \DThreePredicateHHI \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-All three datasets show substantial label duplication, but with a clear quality gradient. Dataset 1 has 20 unique normalised labels across 100 events (10.31\% uniqueness), Dataset 2 has 12 unique labels across 150 events (4.74\%), and Dataset 3 has only 3 unique labels across 120 events (2.04\%). The fuzzy duplicate count increases dramatically across the three datasets: 913, 2,701, and 3,567 pairs respectively. Dataset 3's extreme duplication results from using only three event names (``War'', ``Election'', ``Disaster''), causing nearly every pair of events to be a fuzzy match. This demonstrates the framework's ability to quantify the severity of redundancy problems across a quality spectrum.
+The intended ordering is visible across several independent outputs. Temporal coverage declines from \DOneTemporalCoveragePct\% to \DTwoTemporalCoveragePct\% and \DThreeTemporalCoveragePct\%; minimal profile completeness declines from \DOneCompletenessPct\% to \DTwoCompletenessPct\% and \DThreeCompletenessPct\%; and external mapping coverage declines from \DOneExternalMappingPct\% to \DTwoExternalMappingPct\% and \DThreeExternalMappingPct\%. D2 is not uniformly poor: its giant component remains \DTwoGiantPct\%, while its content completeness and duplicate risk are substantially weaker than D1. Predicate entropy and HHI do not follow a simple quality ordering, which confirms that these are descriptive distribution measures rather than universally directional scores.
 
-\subsection{Temporal Consistency}
+\subsection{Multidimensional Profile}
 
-Table \ref{tab:temporal_results} presents the temporal quality metrics.
+Figure \ref{fig:quality_radar_final} visualises seven directly reported bounded rates and the complement of the sparse-event rate. The complement is labelled ``Low event sparsity'' so that a higher radial value consistently means more of the favourable named property; it is calculated as $1-(\text{sparse-event rate}/100)$. The figure does not include raw counts, average degree, or richness because converting those quantities to $[0,1]$ would require arbitrary scaling. It does not average the axes.
 
-\begin{table}[h]
+\begin{figure}[htbp]
 \centering
-\caption{Temporal consistency results}
-\label{tab:temporal_results}
+\includegraphics[width=0.92\textwidth]{quality_radar_chart.png}
+\caption{Selected bounded rates for D1--D3. Higher values indicate more of the named favourable property; ``Low event sparsity'' is the complement of the reported sparse-event rate. The figure is a profile, not a universal aggregate quality score.}
+\label{fig:quality_radar_final}
+\end{figure}
+
+The profile makes the central controlled result visible: D1 is consistently strong on the selected bounded indicators; D2 combines strong structural coverage with partial content degradation; and D3 is weaker across most event-specific indicators. This supports sensitivity of the implemented profile to the controlled perturbations, but the construction procedure means it does not by itself establish external construct validity.
+
+\section{Comparison with Narrower and General Evaluation}
+
+Two comparisons establish what the multidimensional profile adds. The first restricts interpretation to selected subsets of the proposed metrics; the second executes four general RDF or KG evaluation tools on the same synthetic inputs and retains each tool's native outputs.
+
+\subsection{What Narrow Subsets Miss}
+
+Table \ref{tab:final_fragmented_comparison} answers RQ2 directly by applying coherent subsets of the proposed outputs. These subsets represent evaluation emphases rather than replications of named systems.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Conclusions available from narrow subsets compared with the full profile.}
+\label{tab:final_fragmented_comparison}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.6cm}XX}
+\toprule
+View & Conclusion from that view & Information omitted \\
+\midrule
+Structure only & D1 and D2 look similar because both have giant components above 96\%; D3 is more fragmented. & Duplicate risk, temporal loss, missing profile fields, sparse descriptions, and external grounding. \\
+Temporal only & D1, D2, and D3 follow a clear 100.00\%, 70.83\%, and 42.50\% ordering. & Structural fragmentation, duplicate labels, location/profile completeness, richness, mappings, and vocabulary use. \\
+Completeness only & D1 is strong, D2 partial, and D3 very weak at 93.00\%, 29.17\%, and 0.83\%. & Whether present values are temporally ordered, externally grounded, structurally connected, or duplicated. \\
+Mapping only & External grounding declines from 100.00\% to 65.00\% and 9.17\%. & The quality of labels, time, location, graph relations, types, and event descriptions. \\
+Predicate distribution only & Entropy and HHI do not produce the intended total ordering. & Event-level missingness and correctness indicators; this view could understate the main degradation. \\
+Full profile & D2 is mixed rather than simply good or bad; D3 has broad degradation plus stronger fragmentation. & Factual truth, causal correctness, and downstream task utility remain outside the implemented scope. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The full framework therefore changes the conclusion, not merely the number of reported values. A structural-only account would understate D2's content losses, while a temporal-only account would not show why D3 is also sparse, weakly linked, and duplicate-prone. The multidimensional result identifies which property causes the difference and hence what could be repaired.
+
+\subsection{Executed General-Tool Baselines}
+
+RDFUnit, KGHeartBeat, Luzzu, and SANSA were executed on byte-identical copies of D1--D3 \citep{testdriven2014,kgheartbeat2024,luzzu2016,sansa2017}. Table \ref{tab:final_external_tools} reports native outputs rather than converting them to a common score. Exact revisions, local adaptations, commands, hashes, and failures are recorded in Appendix \ref{app:comparator_reproducibility}.
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Within-tool responses on the same synthetic RDF inputs. Values are not directly comparable across rows.}
+\label{tab:final_external_tools}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}p{3.3cm}rrrX}
+\toprule
+Tool & Native output & D1 & D2 & D3 & Result \\
+\midrule
+RDFUnit & Passed test definitions / 196 & 192 & 192 & 192 & Same category-level pass count; failed-result counts are size-dependent and not a normalised EKG profile. \\
+KGHeartBeat & Overall score & 0.301 & 0.304 & 0.307 & Does not reproduce the intended quality ordering; its generic components answer different questions. \\
+Luzzu & Extensional conciseness & 0.992 & 0.990 & 0.865 & Responds to D3 duplicate degradation, while other Luzzu outputs move differently. \\
+Luzzu & Human-readable labelling & 0.229 & 0.286 & 0.295 & Reverse numerical ordering because the Luzzu denominator is not the direct-event label-coverage denominator. \\
+SANSA & Extensional conciseness & 0.266 & 0.277 & 0.176 & Separates D3 on this output; two other attempted metrics failed on these RDF inputs. \\
+Proposed & Temporal coverage (\%) & 100.00 & 70.83 & 42.50 & Event-specific denominator and a clear controlled response. \\
+Proposed & Minimal profile completeness (\%) & 93.00 & 29.17 & 0.83 & Explains the event-level label/time/place loss directly. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The experiment supports a claim of broader coverage and more detailed diagnosis, not universal superiority. The general tools contribute useful RDF validation, conciseness, labelling, syntax, licensing, and interlinking checks. They do not jointly expose the same event-specific temporal, profile, structural, richness, and mapping evidence with consistent direct-event denominators. Conversely, the proposed framework does not replace their licensing, generic syntax, or provenance checks. Adapted EventKG-style coverage and Event-QA-style query views used during framework development are project-built analyses informed by those traditions, not executions of official EventKG or Event-QA evaluators.
+
+\section{Real-World Feasibility}
+
+The next experiments apply the same fixed evaluator to independently produced RDF event data. The OEKG run tests whether it can process a complete event layer, while the ChronoGrapher runs test how the calculation rules behave on smaller public artefacts with a different representation.
+
+\subsection{OEKG Event Layer}
+
+The complete cleaned OEKG event-layer input contains \OEKGTriples\ triples and \OEKGEvents\ direct \texttt{sem:Event} resources. Only seven invalid backslash escapes in one literals file were repaired to make the N-Triples parseable; the original archive was retained, and no semantic facts were added. The source, cleaned-file, database, projection, and result hashes are recorded in Appendix \ref{app:oekg_run_details}.
+
+Table \ref{tab:final_oekg_results} reports selected results used to assess whether the evaluator completed the large run and how the OEKG representation affected the measurements.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Selected results for the complete cleaned OEKG event layer.}
+\label{tab:final_oekg_results}
+\begin{tabular}{lr}
+\toprule
+Metric & OEKG result \\
+\midrule
+Direct events & \OEKGEvents \\
+Triples & \OEKGTriples \\
+Projected nodes & \OEKGNodes \\
+Projected edges & \OEKGEdges \\
+Connected components & \OEKGComponents \\
+Giant component & \OEKGGiantPct\% \\
+Temporal coverage & \OEKGTemporalCoveragePct\% \\
+Interval consistency & \OEKGIntervalConsistencyPct\% \\
+Minimal profile completeness & \OEKGCompletenessPct\% \\
+Closed-profile type alignment & \OEKGTypeAlignmentPct\% \\
+Applicable type checks & \OEKGTypeChecks \\
+Average distinct properties/event & \OEKGRichness \\
+External mapping coverage & \OEKGExternalMappingPct\% \\
+Normalised predicate entropy & \OEKGPredicateEntropy \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This run demonstrates that the complete cleaned event layer can be processed on the available machine using TDB2, streaming file scans, and the disk-backed structural path. It does not imply that every dimension is directly comparable with the synthetic data. In particular, type alignment depends on explicit RDFS declarations and explicit instance types, and mapping coverage measures explicit \texttt{owl:sameAs} links rather than all external IRIs or their correctness. Average clustering is unavailable in the disk-backed path and is reported as such.
+
+\subsection{ChronoGrapher RDF Artefacts}
+
+Table \ref{tab:final_chronographer_results} reports the three public ChronoGrapher RDF artefacts that contain explicit \texttt{sem:Event} assertions. The runs profile these released graph artefacts; they do not reproduce ChronoGrapher's human question-answering study.
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Selected results for the public ChronoGrapher RDF artefacts.}
+\label{tab:final_chronographer_results}
 \begin{tabular}{lrrr}
 \toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
+Metric & Reference graph & Search graph & Generation graph \\
 \midrule
-ISO 8601 compliance rate & 100.00\% & 100.00\% & 100.00\% \\
-Temporal coverage rate & 100.00\% & 100.00\% & 57.50\% \\
-Day-level granularity & 100.00\% & 100.00\% & 47.83\% \\
-Year-level granularity & 0.00\% & 0.00\% & 52.17\% \\
-Temporal span (years) & 117 & 123 & 116 \\
-Avg events per decade & 8.33 & 11.54 & 6.90 \\
-Coverage gaps (decades $<$10 events) & 8 & 3 & 9 \\
-Peak decade & 1990s (13) & 1920s (18) & 1950s (55) \\
+Direct events & \ChronoReferenceEvents & \ChronoSearchEvents & \ChronoGenerationEvents \\
+Triples & \ChronoReferenceTriples & \ChronoSearchTriples & \ChronoGenerationTriples \\
+Giant component & \ChronoReferenceGiantPct\% & \ChronoSearchGiantPct\% & \ChronoGenerationGiantPct\% \\
+Temporal coverage & \ChronoReferenceTemporalCoveragePct\% & \ChronoSearchTemporalCoveragePct\% & \ChronoGenerationTemporalCoveragePct\% \\
+Minimal profile completeness & \ChronoReferenceCompletenessPct\% & \ChronoSearchCompletenessPct\% & \ChronoGenerationCompletenessPct\% \\
+Type alignment & \ChronoReferenceTypeAlignmentPct & \ChronoSearchTypeAlignmentPct & \ChronoGenerationTypeAlignmentPct \\
+Average distinct properties/event & \ChronoReferenceRichness & \ChronoSearchRichness & \ChronoGenerationRichness \\
+External mapping coverage & \ChronoReferenceExternalMappingPct\% & \ChronoSearchExternalMappingPct\% & \ChronoGenerationExternalMappingPct\% \\
+Normalised predicate entropy & \ChronoReferencePredicateEntropy & \ChronoSearchPredicateEntropy & \ChronoGenerationPredicateEntropy \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Datasets 1 and 2 achieve perfect scores on temporal quality rates: all events have dates, all at day-level granularity. Dataset 3 introduces significant temporal degradation: only 57.50\% of events have dates (51 events missing temporal information entirely), and of those with dates, 52.17\% are at year-level granularity rather than day-level. All three datasets maintain 100\% ISO 8601 compliance for the dates that do exist.
+All three artefacts have high temporal coverage and large connected regions under the domain-relation projection. Their minimal profile completeness is 0 because the files do not attach \texttt{rdfs:label} values to the direct events. Type alignment is unavailable because no used domain/range constraints apply. Explicit mapping coverage is 0 even though DBpedia IRIs occur directly as resources; the metric intentionally counts explicit \texttt{owl:sameAs} links and therefore should not be read as absence of all external grounding. These results illustrate why unavailable values and representation-profile explanations are necessary for honest cross-EKG evaluation.
 
-The temporal density metrics reveal further differentiation. Dataset 3 has the worst temporal distribution: 9 coverage gaps, only 6.90 events per decade on average, and extreme clustering with 55 events (79.7\% of dated events) concentrated in the 1950s alone. This skew contrasts sharply with Datasets 1 and 2, where peak decades contain only 13 and 18 events respectively. The framework successfully captures both the absence of temporal data (coverage) and the quality of its distribution (density and granularity).
+\section{Checks That the Evaluator Produced the Defined Values}
 
-\subsection{Schema Conformance}
+All 24 automated tests passed. The tests use small RDF graphs with answers that can be calculated by hand and together cover every registered result field. They include empty and unavailable cases, duplicate normalisation, temporal ordering, type applicability, external-link matching, predicate-distribution formulae, and the structural projection. A fresh reproduction run also regenerated D1--D3 and matched all 32 registered fields for each dataset with the accepted evidence. Appendix A gives the complete test command and verification record.
 
-Table \ref{tab:schema_results} presents the schema alignment metrics.
+This result shows that the implementation follows the declared calculation rules for the tested cases. It does not by itself show that every metric is suitable for every EKG or application; that question is considered in Chapter 5.
 
-\begin{table}[h]
-\centering
-\caption{Schema conformance results}
-\label{tab:schema_results}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
-\midrule
-Label coverage rate & 100.00\% & 100.00\% & 89.17\% \\
-Date coverage rate & 100.00\% & 100.00\% & 57.50\% \\
-Schema conformance rate & 0.00\% & 0.00\% & 0.00\% \\
-Fully described events & 0 & 0 & 0 \\
-Non-standard properties & 1 & 1 & 1 \\
-External vocab: DBpedia & 100 events & 105 events & 10 events \\
-External vocab: Wikidata & 100 events & 114 events & 10 events \\
-External vocab: schema.org & 0 events & 0 events & 0 events \\
-\bottomrule
-\end{tabular}
-\end{table}
+\section{Results Summary}
 
-Schema conformance is 0\% across all three datasets because the conformance metric requires label, date, \textit{and} location (\texttt{sem:hasPlace}), and no dataset includes location data. However, the per-property breakdown reveals significant differences that the aggregate score obscures. Datasets 1 and 2 achieve 100\% label and date coverage, while Dataset 3 drops to 89.17\% label coverage (13 events with no label) and 57.50\% date coverage. External vocabulary usage shows a dramatic decline: Datasets 1 and 2 link 100--114 events to Wikidata and DBpedia, while Dataset 3 links only 10 events to each. This demonstrates how the framework's decomposed metrics provide actionable detail even when aggregate scores are identical.
-
-\subsection{Coverage and Completeness}
-
-Table \ref{tab:completeness_results} presents the completeness metrics.
-
-\begin{table}[h]
-\centering
-\caption{Coverage and completeness results}
-\label{tab:completeness_results}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
-\midrule
-Schema coverage & 20.00\% & 20.00\% & 20.00\% \\
-Population completeness rate & 100.00\% & 100.00\% & 49.17\% \\
-Label coverage rate & 100.00\% & 100.00\% & 89.17\% \\
-Temporal coverage rate & 100.00\% & 100.00\% & 57.50\% \\
-Location coverage rate & 0.00\% & 0.00\% & 0.00\% \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Schema coverage is 20\% across all three datasets: only 1 of 5 declared event classes (\texttt{sem:Event}) has instances. The critical difference appears in population completeness: Datasets 1 and 2 achieve 100\% (all events have both label and date), while Dataset 3 drops to 49.17\% because 30\% of events lack labels and 42.5\% lack dates. The per-property breakdown pinpoints the sources of incompleteness: Dataset 3's label coverage (89.17\%) and temporal coverage (57.50\%) are both substantially below the 100\% achieved by Datasets 1 and 2. Location coverage remains 0\% across all datasets. This decomposition demonstrates that the framework identifies not just \textit{that} a dataset is incomplete, but \textit{which specific properties} are missing.
-
-\subsection{Type and Role Consistency}
-
-Table \ref{tab:type_results} presents the type consistency metrics.
-
-\begin{table}[h]
-\centering
-\caption{Type consistency results}
-\label{tab:type_results}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
-\midrule
-Properties analysed & 3 & 3 & 3 \\
-Properties with violations & 0 & 0 & 0 \\
-Overall type consistency & 100.00\% & 100.00\% & 100.00\% \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-All three datasets score 100\% on type consistency. The framework found 3 properties with \texttt{rdfs:domain} declarations in the schema, but none of these properties are actually used as predicates in any of the datasets, so there are no violations to detect. The 100\% score is technically correct but vacuous. This result highlights a limitation: type consistency is only informative when the schema declares constraints on properties that are actively used in the data. This metric would become meaningful on datasets with richer schema usage, such as the real EventKG.
-
-\subsection{Entity Richness}
-
-Table \ref{tab:richness_results} presents the entity richness metrics.
-
-\begin{table}[h]
-\centering
-\caption{Entity richness results}
-\label{tab:richness_results}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
-\midrule
-Avg properties per event & 9.24 & 15.32 & 3.62 \\
-Median properties per event & 9.00 & 16.00 & 4.00 \\
-Std dev properties & 1.50 & 1.66 & 1.28 \\
-Sparse entities ($<$3 properties) & 0.00\% & 0.00\% & 25.00\% \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Entity richness shows the clearest quality gradient across the three datasets. Dataset 2 events are the richest (15.32 properties per event), Dataset 1 is moderate (9.24), and Dataset 3 is sparse (3.62). Critically, Dataset 3 is the only dataset with sparse entities: 25\% of its events have fewer than 3 properties, meaning they consist of little more than a type declaration and possibly a label. Datasets 1 and 2 have 0\% sparse entities. The low standard deviation across all three datasets (1.28--1.66) indicates that richness is consistent within each dataset rather than being driven by outliers.
-
-\subsection{External Mapping Coverage}
-
-Table \ref{tab:mapping_results} presents the external mapping metrics.
-
-\begin{table}[h]
-\centering
-\caption{External mapping coverage results}
-\label{tab:mapping_results}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
-\midrule
-External link rate & 100.00\% & 94.00\% & 15.83\% \\
-Wikidata coverage & 100.00\% & 76.00\% & 8.33\% \\
-DBpedia coverage & 100.00\% & 70.00\% & 8.33\% \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-External mapping coverage shows the most dramatic quality gradient. Dataset 1 achieves perfect coverage: every event links to both Wikidata and DBpedia. Dataset 2 shows moderate degradation (94\% overall, 76\% Wikidata, 70\% DBpedia). Dataset 3 is severely deficient: only 15.83\% of events have any external links, and only 8.33\% link to Wikidata or DBpedia specifically. This means that over 84\% of Dataset 3's events exist in isolation with no connection to external knowledge bases, severely limiting their utility for cross-referencing, entity disambiguation, or knowledge integration tasks.
-
-\subsection{Predicate Usage Patterns}
-
-Table \ref{tab:predicate_results} presents the predicate usage metrics.
-
-\begin{table}[h]
-\centering
-\caption{Predicate usage pattern results}
-\label{tab:predicate_results}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Metric} & \textbf{Dataset 1} & \textbf{Dataset 2} & \textbf{Dataset 3} \\
-\midrule
-Unique predicates & 20 & 20 & 15 \\
-Total triples & 4,235 & 6,454 & 878 \\
-Top-10 concentration & 93.48\% & 91.54\% & 97.15\% \\
-Gini coefficient & 0.6068 & 0.5808 & 0.6478 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Dataset 3 uses fewer unique predicates (15 vs 20) and shows the most skewed distribution: its top 10 predicates account for 97.15\% of all triples, compared to 93.48\% and 91.54\% for Datasets 1 and 2. The Gini coefficient is highest for Dataset 3 (0.6478), indicating greater inequality in predicate usage---a small number of predicates (\texttt{rdf:type}, \texttt{rdfs:label}) dominate while others are rarely used. This skew reflects Dataset 3's sparse event structure: with fewer properties per event, the vocabulary is dominated by the mandatory structural predicates.
-
-\subsection{Summary of Dimension Coverage (RQ1)}
-
-Table \ref{tab:dimension_summary} summarises the measurability of each dimension.
-
-\begin{table}[h]
-\centering
-\caption{Summary of dimension measurability across all three datasets}
-\label{tab:dimension_summary}
-\begin{tabular}{lcl}
-\toprule
-\textbf{Dimension} & \textbf{Metrics} & \textbf{Status} \\
-\midrule
-Graph Connectivity & 6 & All computed successfully \\
-Redundancy & 3 & All computed successfully \\
-Temporal Consistency & 6 & All computed successfully \\
-Schema Conformance & 4 & All computed successfully \\
-Completeness & 5 & All computed successfully \\
-Type Consistency & 1 & Computed but vacuous (no property usage) \\
-Entity Richness & 2 & All computed successfully \\
-External Mapping & 3 & All computed successfully \\
-Predicate Usage & 2 & All computed successfully \\
-\midrule
-\textbf{Total} & \textbf{32} & 31 informative, 1 vacuous \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-All 32 metrics were computable through automated SPARQL queries and graph analysis across all three datasets, confirming that the nine dimensions identified in Chapter 3 can be systematically measured. One metric (type consistency) produced a technically correct but uninformative result due to the absence of actively used schema-constrained properties.
-
-\section{Comparative Quality Analysis (RQ2)}
-
-To answer RQ2 (\textit{Can a comprehensive evaluation framework reveal quality differences that are missed by traditional, narrow evaluation approaches?}), we compare all three datasets across all dimensions and identify differences that would be invisible to single-dimension evaluation.
-
-\subsection{Quality Differences Detected}
-
-Table \ref{tab:comparison} presents the key metrics across all three datasets, ordered from best to worst quality.
-
-\begin{table}[h]
-\centering
-\caption{Quality comparison across all three datasets}
-\label{tab:comparison}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Metric} & \textbf{DS1} & \textbf{DS2} & \textbf{DS3} \\
-\midrule
-Giant component ratio & 98.77\% & 98.89\% & 83.92\% \\
-Label uniqueness rate & 10.31\% & 4.74\% & 2.04\% \\
-Fuzzy duplicate pairs & 913 & 2,701 & 3,567 \\
-Temporal coverage rate & 100.00\% & 100.00\% & 57.50\% \\
-Day-level granularity & 100.00\% & 100.00\% & 47.83\% \\
-Label coverage rate & 100.00\% & 100.00\% & 89.17\% \\
-Population completeness & 100.00\% & 100.00\% & 49.17\% \\
-Avg properties per event & 9.24 & 15.32 & 3.62 \\
-Sparse entities & 0.00\% & 0.00\% & 25.00\% \\
-External link rate & 100.00\% & 94.00\% & 15.83\% \\
-Wikidata coverage & 100.00\% & 76.00\% & 8.33\% \\
-DBpedia coverage & 100.00\% & 70.00\% & 8.33\% \\
-Gini coefficient & 0.6068 & 0.5808 & 0.6478 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The framework detects a clear quality gradient across all three datasets. Dataset 3 scores worse than Datasets 1 and 2 on every informative dimension:
-
-\textbf{Structure:} Dataset 3's giant component ratio (83.92\%) is 15 percentage points below Datasets 1 and 2, indicating significant graph fragmentation.
-
-\textbf{Redundancy:} Label uniqueness degrades monotonically: 10.31\% $\rightarrow$ 4.74\% $\rightarrow$ 2.04\%. Dataset 3 has nearly four times as many fuzzy duplicate pairs as Dataset 1.
-
-\textbf{Temporal:} Datasets 1 and 2 achieve 100\% temporal coverage; Dataset 3 drops to 57.50\%, with over half its dates at year-level granularity rather than day-level.
-
-\textbf{Completeness:} Population completeness drops from 100\% (Datasets 1 and 2) to 49.17\% (Dataset 3), driven by missing labels and dates.
-
-\textbf{Entity Richness:} Average properties per event range from 15.32 (Dataset 2) to 3.62 (Dataset 3). Dataset 3 is the only dataset with sparse entities (25\%).
-
-\textbf{External Mapping:} The most dramatic decline---from 100\% (Dataset 1) to 15.83\% (Dataset 3). Wikidata and DBpedia coverage drop to 8.33\%.
-
-\subsection{What Single-Dimension Evaluation Would Miss}
-
-To illustrate the value of multidimensional assessment, consider four hypothetical single-dimension evaluations:
-
-\textbf{Temporal-only evaluation:} Datasets 1 and 2 score identically (100\% on all temporal rates). Conclusion: equivalent quality. Missed: the 196\% increase in fuzzy duplicates and 30\% drop in DBpedia coverage between them.
-
-\textbf{Completeness-only evaluation:} Datasets 1 and 2 both score 100\% population completeness. Conclusion: both are equally complete. Missed: Dataset 2 has 66\% richer events but 54\% lower label uniqueness.
-
-\textbf{Size-only evaluation:} Dataset 2 has the most events (150), Dataset 3 has 120, Dataset 1 has 100. Conclusion: Dataset 2 is best. Missed: Dataset 3 is worse than Dataset 1 on every quality dimension despite having 20\% more events.
-
-\textbf{Schema conformance only:} All three datasets score 0\%. Conclusion: all equally bad. Missed: the enormous differences in temporal coverage (100\% vs 57.50\%), external mapping (100\% vs 15.83\%), and entity richness (9.24 vs 3.62 properties per event).
-
-Only the multidimensional framework captures the full quality profile, revealing that Dataset 2 represents a different set of trade-offs relative to Dataset 1, while Dataset 3 is uniformly worse across all dimensions.
-
-\section{Cross-Dimensional Patterns and Trade-offs (RQ3)}
-
-To answer RQ3 (\textit{How do EKGs of varying quality perform across multiple dimensions, and what trade-offs exist?}), we analyse patterns across dimensions using all three datasets.
-
-\subsection{Observed Trade-offs}
-
-The three-dataset comparison reveals trade-offs between Datasets 1 and 2, and uniform degradation in Dataset 3:
-
-\textbf{Richness vs Redundancy (DS1 vs DS2):} Dataset 2 events have 66\% more properties per event but 54\% lower label uniqueness and 196\% more fuzzy duplicates. Adding more properties to events appears to correlate with increased duplication. Whether this reflects a genuine trade-off or an artefact of the data generation process cannot be determined from intrinsic evaluation alone.
-
-\textbf{Temporal Density vs External Mapping (DS1 vs DS2):} Dataset 2 has better temporal distribution (3 gaps vs 8) but worse external linking (70--76\% vs 100\%). More events are distributed across time, but fewer are linked to external knowledge bases.
-
-\textbf{Uniform Degradation (DS3):} Dataset 3 does not exhibit trade-offs---it is worse on every dimension. This pattern is qualitatively different from the DS1-vs-DS2 comparison and demonstrates that the framework can distinguish between datasets with quality trade-offs (DS2) and datasets with uniformly poor quality (DS3). This distinction is important for practitioners: a dataset with trade-offs may be suitable for specific tasks, while a uniformly poor dataset is unlikely to be suitable for any task.
-
-\subsection{Quality Gradient Analysis}
-
-The three datasets form a clear quality spectrum that the framework captures quantitatively. Table \ref{tab:gradient} illustrates the gradient for selected metrics.
-
-\begin{table}[h]
-\centering
-\caption{Quality gradient across three datasets}
-\label{tab:gradient}
-\begin{tabular}{lccc}
-\toprule
-\textbf{Metric} & \textbf{DS1 (High)} & \textbf{DS2 (Mixed)} & \textbf{DS3 (Low)} \\
-\midrule
-Temporal coverage & 100\% & 100\% & 57.50\% \\
-External link rate & 100\% & 94\% & 15.83\% \\
-Label uniqueness & 10.31\% & 4.74\% & 2.04\% \\
-Avg properties/event & 9.24 & 15.32 & 3.62 \\
-Giant component ratio & 98.77\% & 98.89\% & 83.92\% \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-For most metrics, the ordering is DS1 $>$ DS2 $>$ DS3. The exception is entity richness, where DS2 $>$ DS1 $>$ DS3, reflecting the trade-off between richness and other quality dimensions in Dataset 2. The framework's ability to capture this non-monotonic pattern across dimensions---where one dataset is best on some metrics but not others---demonstrates the value of multidimensional assessment over any single aggregate quality score.
-
-\subsection{Consistent Patterns}
-
-Several patterns are consistent across all three datasets:
-
-\begin{itemize}
-    \item \textbf{Location absence:} No dataset includes \texttt{sem:hasPlace}, making schema conformance uniformly 0\%. This is a data generation limitation, not a framework limitation.
-    \item \textbf{Schema coverage:} All three datasets use only 1 of 5 declared event classes (20\% schema coverage), indicating that the OEKG schema overlay declares subclasses that none of the synthetic datasets instantiate.
-    \item \textbf{Type consistency:} All three score 100\% because the schema-declared properties are not used in the data. This metric would become informative on datasets with richer schema usage.
-\end{itemize}
-
-\section{Ground Truth Validation and Bug Discovery}
-
-\subsection{Validation Results}
-
-All 32 metrics were validated against ground truth extracted independently from the raw N-Triples files using Unix command-line tools and direct SPARQL queries against the TDB2 database. Table \ref{tab:validation_final} presents selected validation results for Dataset 1.
-
-\begin{table}[h]
-\centering
-\caption{Ground truth validation results (Dataset 1, post-fix)}
-\label{tab:validation_final}
-\begin{tabular}{lccc}
-\toprule
-\textbf{Metric} & \textbf{Tool Output} & \textbf{Ground Truth} & \textbf{Match} \\
-\midrule
-Temporal coverage & 100/100 (100\%) & 100/100 & \checkmark \\
-Label coverage & 100/100 (100\%) & 100/100 & \checkmark \\
-Wikidata links & 100 (100\%) & 100 & \checkmark \\
-DBpedia links & 100 (100\%) & 100 & \checkmark \\
-Unique labels & 20 (10.31\%) & 20 & \checkmark \\
-ISO 8601 compliance & 100\% & 100\% & \checkmark \\
-Temporal span & 117 years & 1900--2017 & \checkmark \\
-Peak decade & 1990s (13) & 1990s (13) & \checkmark \\
-Gini coefficient & 0.6068 & $\in [0, 1]$ & \checkmark \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-All metrics match ground truth after the implementation corrections described below.
-
-\subsection{Bugs Discovered Through Validation}
-
-Systematic ground truth comparison identified eight implementation bugs, documented in Chapter 3. Table \ref{tab:bugs} summarises the bugs and their impact.
-
-\begin{table}[h]
-\centering
-\caption{Implementation bugs discovered through ground truth validation}
-\label{tab:bugs}
-\begin{tabular}{llll}
-\toprule
-\textbf{Bug} & \textbf{Module} & \textbf{Impact} & \textbf{Fix} \\
-\midrule
-Wrong query model & temporal.py & 5 metrics returned 0 & Query sem:Event \\
-Wrong query model & temporal.py & Wrong sample population & Query sem:Event \\
-Averaging logic & type\_consistency.py & 0\% with no violations & Average over used only \\
-Predicate-only check & schema\_analyzer.py & External vocab always 0 & Check objects too \\
-OPTIONAL location & schema\_analyzer.py & Inflated conformance & Require location \\
-Inverted Gini & predicate\_usage.py & Negative coefficient & Fix formula \\
-Wrong available flag & orchestrator.py & available=true on error & Set false \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The bug discovery process itself is a significant finding: it demonstrates that EKG evaluation tools require rigorous ground truth validation, and that seemingly reasonable SPARQL queries can produce misleading results when schema assumptions do not match the data. The most impactful bugs were the temporal density query (which queried \texttt{ekgs:Relation} instead of \texttt{sem:Event}) and the type consistency averaging (which penalised unused schema declarations as failures). Both produced results that appeared plausible but were factually wrong.
-
-\subsection{Performance}
-
-Table \ref{tab:performance_results} reports evaluation performance.
-
-\begin{table}[h]
-\centering
-\caption{Evaluation performance}
-\label{tab:performance_results}
-\begin{tabular}{lccc}
-\toprule
-\textbf{Dataset} & \textbf{Events} & \textbf{Load Time} & \textbf{Analysis Time} \\
-\midrule
-Dataset 1 & 100 & 3s & 8s \\
-Dataset 2 & 150 & 4s & 9s \\
-Dataset 3 & 120 & 3s & 8s \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-All three evaluations complete in under 15 seconds including database loading. Subsequent runs reuse the TDB2 database and complete in under 5 seconds. These times confirm that the framework is practical for iterative development and repeated evaluation.
-
-\section{Summary of Key Findings}
-
-The evaluation produced four key findings that directly address the research questions:
-
-\textbf{Finding 1 (RQ1):} All nine dimensions are measurable through automated analysis. The framework computed 32 metrics across all three datasets using SPARQL queries and NetworkX graph analysis, with no manual annotation required. One metric (type consistency) was computable but uninformative due to the absence of actively used schema-constrained properties, highlighting that metric informativeness depends on data characteristics.
-
-\textbf{Finding 2 (RQ2):} The comprehensive framework reveals quality differences invisible to single-dimension evaluation. Datasets 1 and 2 score identically on temporal coverage, label coverage, schema conformance, and type consistency, yet differ substantially on redundancy, external mapping, and entity richness. Dataset 3 scores worse than both on every informative dimension. Any single-dimension evaluation would produce an incomplete and potentially misleading quality assessment---for example, all three datasets score 0\% on schema conformance, yet they differ enormously on every other dimension.
-
-\textbf{Finding 3 (RQ3):} The three-dataset comparison reveals two distinct quality patterns. Between Datasets 1 and 2, cross-dimensional trade-offs exist: Dataset 2 is richer but more redundant, with better temporal density but worse external mapping. Dataset 3 exhibits uniform degradation with no compensating strengths. The framework's ability to distinguish between trade-off patterns and uniform degradation provides actionable guidance: a dataset with trade-offs may suit specific tasks, while a uniformly poor dataset requires improvement across all dimensions.
-
-\textbf{Finding 4 (Validation):} Ground truth comparison identified eight implementation bugs that produced plausible but incorrect results. This finding underscores the importance of systematic validation for EKG evaluation tools and demonstrates that the framework's modular design facilitated targeted bug identification and correction.
-
-These findings are discussed in depth in Chapter 5, where we examine their implications for EKG evaluation practice, compare with prior work, and identify limitations and future directions.
+The controlled experiment shows that the framework responds to the intended D1--D3 differences and explains why D2 is mixed rather than uniformly poor. The general tools provide useful checks but do not share one defensible score scale. The OEKG and ChronoGrapher runs show that the evaluator can process independently produced RDF event data and report when a calculation does not apply. Together, these results support broader coverage across the selected dimensions and more detailed diagnosis of EKG quality.

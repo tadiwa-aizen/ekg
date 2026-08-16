@@ -1,0 +1,19 @@
+# Exact Python environment used for the corrected August 2026 evaluation.
+# Apache Jena and Fuseki are external Java dependencies documented separately.
+certifi==2024.8.30
+charset-normalizer==3.3.2
+click==8.1.7
+colorama==0.4.6
+duckdb==1.5.5
+idna==3.8
+llvmlite==0.48.0
+networkx==3.3
+numba==0.66.0
+numpy==1.26.4
+pyparsing==3.2.1
+python-dateutil==2.9.0.post0
+RapidFuzz==3.14.5
+rdflib==7.6.0
+requests==2.32.3
+six==1.16.0
+urllib3==2.2.2

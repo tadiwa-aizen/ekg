@@ -1,12 +1,12 @@
 # Large datasets (downloadable, not our code)
-event-kg/
-oekg/
+/event-kg/
+/oekg/
 
 # Apache Jena/Fuseki installations (downloadable)
 apache-jena-*/
 
 # TDB2 databases (generated)
-databases/
+databases*/
 
 # Fuseki runtime
 run/
@@ -26,6 +26,27 @@ dist/
 venv/
 env/
 .venv/
+.venv-reproduction/
+.reproduction-cache/
+reproduction-output/
+
+# Large local public-graph workspaces and regenerated evaluation products
+real-oekg-evaluation/large-graph-work-oekg/
+real-oekg-evaluation/oekg-event-layer/
+real-oekg-evaluation/oekg-event-layer-clean/
+real-oekg-evaluation/oekg-full/
+real-oekg-evaluation/oekg-small-rdf/
+real-oekg-evaluation/raw/
+real-oekg-evaluation/results-*/
+real-oekg-evaluation/test-results-*/
+real-oekg-evaluation/oekg_edges_direct.nt
+chronographer-evaluation/nt/*/databases/
+chronographer-evaluation/nt_utf8/*/databases/
+chronographer-evaluation/results/
+
+# Downloaded tool archives and extracted runtimes
+tools/apache-jena-*/
+tools/*.zip
 
 # Binary docs
 docs/*.pdf
@@ -33,6 +54,16 @@ docs/*.docx
 
 # Old draft
 docs/thesis/thesis-long.tex
+
+# LaTeX build products
+docs/thesis/*.aux
+docs/thesis/*.bbl
+docs/thesis/*.blg
+docs/thesis/*.lof
+docs/thesis/*.lot
+docs/thesis/*.out
+docs/thesis/*.toc
+docs/thesis/*.pdf
 
 # OS
 .DS_Store
@@ -50,3 +81,4 @@ Thumbs.db
 
 # Logs
 *.log
+!final-frozen-evidence-2026-08-07/test-suite.log

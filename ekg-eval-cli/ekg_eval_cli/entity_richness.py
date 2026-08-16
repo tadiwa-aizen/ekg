@@ -31,13 +31,17 @@ class EntityRichnessAnalyzer:
         return response.json()['results']['bindings']
 
     def analyze_entity_richness(self) -> Dict[str, Any]:
-        """Measure average properties/relations per entity."""
+        """Measure distinct outgoing descriptive predicates per direct event."""
         query = """
         PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         
-        SELECT ?event (COUNT(?prop) AS ?propCount) WHERE {
+        SELECT ?event (COUNT(DISTINCT ?prop) AS ?propCount) WHERE {
             ?event a sem:Event .
-            ?event ?prop ?value .
+            OPTIONAL {
+                ?event ?prop ?value .
+                FILTER(?prop != rdf:type)
+            }
         } GROUP BY ?event
         """
         
@@ -45,11 +49,12 @@ class EntityRichnessAnalyzer:
         
         if not results:
             return {
-                'avg_properties_per_event': 0.0,
-                'median_properties_per_event': 0.0,
-                'std_dev_properties': 0.0,
-                'sparse_entities_percentage': 0.0,
-                'total_events_analyzed': 0
+                'avg_properties_per_event': None,
+                'median_properties_per_event': None,
+                'std_dev_properties': None,
+                'sparse_entities_percentage': None,
+                'total_events_analyzed': 0,
+                'status': 'not_applicable_no_events'
             }
         
         # Extract property counts
@@ -69,5 +74,8 @@ class EntityRichnessAnalyzer:
             'median_properties_per_event': median_props,
             'std_dev_properties': round(std_dev, 2),
             'sparse_entities_percentage': round(sparse_percentage, 2),
-            'total_events_analyzed': len(prop_counts)
+            'total_events_analyzed': len(prop_counts),
+            'status': 'computed',
+            'counting_unit': 'distinct outgoing predicates excluding rdf:type',
+            'sparse_threshold': 'fewer than 3 distinct outgoing predicates'
         }

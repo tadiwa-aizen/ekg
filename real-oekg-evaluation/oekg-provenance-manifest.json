@@ -1,0 +1,244 @@
+{
+  "created_at_utc": "2026-08-07T07:08:44.519759+00:00",
+  "source_release": {
+    "description": "OEKG V2.0 event-layer archive event_kg.tar.gz downloaded from Zenodo",
+    "version": "OEKG V2.0",
+    "release_date": "2021-01-31",
+    "retrieved_date": "2026-08-02",
+    "zenodo_record_url": "https://zenodo.org/record/4503163",
+    "archive_path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\raw\\event_kg.tar.gz",
+    "archive_sha256": "392d6eeb69d074130166fb626d4db7279c2b16b45be50213480de1864ce4aa4a",
+    "selected_event_layer_files": [
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\events.nt",
+        "size_bytes": 1107081440,
+        "sha256": "5c8ab97315ed8bdf6088749ca64fdbef34465269c91eb7e4e601be98bcaf8552",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\events_descriptions_from_text_events.nt",
+        "size_bytes": 7259309,
+        "sha256": "f5d4ab8c3e9fa09fdb4e8e20af3dc6b8d75c263c6d9fe2a4b711207904f50d37",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\events_first_sentences.nt",
+        "size_bytes": 257434925,
+        "sha256": "28c820aad5104411679006286e885bfb681b3635042e665d583798c395608b75",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\preferred_labels.nt",
+        "size_bytes": 2674656793,
+        "sha256": "fd50e3c7697d2b72636a7f13da86b55507c4a508975e9f9c708e639b9b644c93",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\property_labels.nt",
+        "size_bytes": 1310748,
+        "sha256": "64c964502985cdb512c154ba411788f60803d4c86edab6c4e51385dc411fc407",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\relations_events_literals.nt",
+        "size_bytes": 898441140,
+        "sha256": "3c0ae0316c8a1c6987d5cc2002dd98f6bab6133a4471b88b4bb37bd081fe2942",
+        "same_physical_file_as_clean_copy": false
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\relations_events_other.nt",
+        "size_bytes": 4102007936,
+        "sha256": "e5889507c0dea42ca616114a465d50b995f1ec051e4cb6241876f61783ae86a3",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\relations_event_base.nt",
+        "size_bytes": 709541683,
+        "sha256": "3db2d0fa019e148caa5168cbdff4e540be1663e5789fbad7a66edd0237ed44f0",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\schema.nt",
+        "size_bytes": 2728,
+        "sha256": "b072d02f19348e4e36b97f4a7be63113ffeb5a068d5fa0cbe6c7353cf9c09d0e",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\text_events.nt",
+        "size_bytes": 1126174058,
+        "sha256": "50abed0cf52b0ac1548d074edbe875a476b9c9344e210bb23716fd547868aa4f",
+        "same_physical_file_as_clean_copy": false
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\types.nt",
+        "size_bytes": 3713121407,
+        "sha256": "d1be2ae21e83be9f362acc132836a238e1efd3f3d0e1aeeb056ff10d00ba7ce6",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\types_ontology_dbpedia.nt",
+        "size_bytes": 198100,
+        "sha256": "e0dc1cc9d747a5da06b0c1a9fca7479dc4ecce8969f80072c1a81127fa2b0c83",
+        "same_physical_file_as_clean_copy": true
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-full\\event_kg\\type_labels_dbpedia.nt",
+        "size_bytes": 377374,
+        "sha256": "dbe90c95e7367e3f4ce222753a1b88bd0f8479ba754ccdc21c07e5c10f8aaafc",
+        "same_physical_file_as_clean_copy": true
+      }
+    ]
+  },
+  "cleaning": {
+    "script": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\clean_oekg_literals.py",
+    "scope": "Only invalid backslash escape sequences inside RDF literal lexical forms were escaped; all unchanged files are hard links to the source extraction.",
+    "changed_lines": {
+      "relations_events_literals.nt": [
+        {
+          "line": 52811,
+          "source_line_sha256": "9e5e021a9af8060c2536e413484dad904d4901da4afcafb9fa179d8df4f1c499",
+          "clean_line_sha256": "aab630ea74816152fc0b25982404d248f6fb9e48bab14b181150acb0067668a0",
+          "source_bytes": 142,
+          "clean_bytes": 143
+        },
+        {
+          "line": 2391515,
+          "source_line_sha256": "ea115e4e6ade4664f062157006bc70b4bdaf5770063d66a805209759363c1266",
+          "clean_line_sha256": "fd30dc7d95fb07b2184d148b33acb28211f3978001d9404ba5739108d52e93a6",
+          "source_bytes": 133,
+          "clean_bytes": 134
+        },
+        {
+          "line": 2837895,
+          "source_line_sha256": "f7b478b6f95da60fb36cadf458725e566a3b4dfdc7893431a5785616b0183a6b",
+          "clean_line_sha256": "91425ea54c98b5818e78238532439d3b564778e0371f3de814965b8b21e47dda",
+          "source_bytes": 198,
+          "clean_bytes": 202
+        },
+        {
+          "line": 3288831,
+          "source_line_sha256": "dc3cfc06b520ad96f8496fc2b087289f5508f4afb97a4e4430f4e41e764bcb1d",
+          "clean_line_sha256": "b5d008665afd0c3d47a769271cadb96c4567932cc7580732d5db99d0eab7bd72",
+          "source_bytes": 149,
+          "clean_bytes": 150
+        },
+        {
+          "line": 3641255,
+          "source_line_sha256": "11ad637514688d24585a17e3482641c3d87c1eab79d0ff69c932e3c80720c99a",
+          "clean_line_sha256": "5f2ac31bbd74953bcc3dad89e373a57d45386bc1f8bc5dcd8debde8c76ae26f5",
+          "source_bytes": 139,
+          "clean_bytes": 141
+        },
+        {
+          "line": 4205991,
+          "source_line_sha256": "740003dcfeb9e4c6977fb808afaf46a1691910700bc0091f560167fc4f6e4eda",
+          "clean_line_sha256": "4a091c061b24afbb0a2242e7671b0d0809566b0a3ff584024ccffdc34f0ad61f",
+          "source_bytes": 212,
+          "clean_bytes": 213
+        },
+        {
+          "line": 4991027,
+          "source_line_sha256": "aff07d87485ca6c6e7371c5aaa0b969315a45fec2f439258e985eb13469f1b1e",
+          "clean_line_sha256": "2e032de77666234b1879d242a8a520a7e5a7f14fd56dbf45a2b5adae5153d4e9",
+          "source_bytes": 178,
+          "clean_bytes": 181
+        }
+      ],
+      "text_events.nt": []
+    },
+    "changed_line_count": 7
+  },
+  "clean_input_manifest": {
+    "manifest_version": 1,
+    "files": [
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\events.nt",
+        "size_bytes": 1107081440,
+        "mtime_ns": 1612048204000000000,
+        "sha256": "5c8ab97315ed8bdf6088749ca64fdbef34465269c91eb7e4e601be98bcaf8552"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\events_descriptions_from_text_events.nt",
+        "size_bytes": 7259309,
+        "mtime_ns": 1612048164000000000,
+        "sha256": "f5d4ab8c3e9fa09fdb4e8e20af3dc6b8d75c263c6d9fe2a4b711207904f50d37"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\events_first_sentences.nt",
+        "size_bytes": 257434925,
+        "mtime_ns": 1612048244000000000,
+        "sha256": "28c820aad5104411679006286e885bfb681b3635042e665d583798c395608b75"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\preferred_labels.nt",
+        "size_bytes": 2674656793,
+        "mtime_ns": 1612048248000000000,
+        "sha256": "fd50e3c7697d2b72636a7f13da86b55507c4a508975e9f9c708e639b9b644c93"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\property_labels.nt",
+        "size_bytes": 1310748,
+        "mtime_ns": 1612048172000000000,
+        "sha256": "64c964502985cdb512c154ba411788f60803d4c86edab6c4e51385dc411fc407"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\relations_event_base.nt",
+        "size_bytes": 709541683,
+        "mtime_ns": 1612048203000000000,
+        "sha256": "3db2d0fa019e148caa5168cbdff4e540be1663e5789fbad7a66edd0237ed44f0"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\relations_events_literals.nt",
+        "size_bytes": 898441153,
+        "mtime_ns": 1785691293136465000,
+        "sha256": "6f49214c38b20824fc42150a8f3ec56f6ee6e61c6d9af2a4afadec1e426f4b82"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\relations_events_other.nt",
+        "size_bytes": 4102007936,
+        "mtime_ns": 1612048209000000000,
+        "sha256": "e5889507c0dea42ca616114a465d50b995f1ec051e4cb6241876f61783ae86a3"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\schema.nt",
+        "size_bytes": 2728,
+        "mtime_ns": 1612048244000000000,
+        "sha256": "b072d02f19348e4e36b97f4a7be63113ffeb5a068d5fa0cbe6c7353cf9c09d0e"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\text_events.nt",
+        "size_bytes": 1126174058,
+        "mtime_ns": 1785691419659722500,
+        "sha256": "50abed0cf52b0ac1548d074edbe875a476b9c9344e210bb23716fd547868aa4f"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\type_labels_dbpedia.nt",
+        "size_bytes": 377374,
+        "mtime_ns": 1612048244000000000,
+        "sha256": "dbe90c95e7367e3f4ce222753a1b88bd0f8479ba754ccdc21c07e5c10f8aaafc"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\types.nt",
+        "size_bytes": 3713121407,
+        "mtime_ns": 1612048202000000000,
+        "sha256": "d1be2ae21e83be9f362acc132836a238e1efd3f3d0e1aeeb056ff10d00ba7ce6"
+      },
+      {
+        "path": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\types_ontology_dbpedia.nt",
+        "size_bytes": 198100,
+        "mtime_ns": 1612048173000000000,
+        "sha256": "e0dc1cc9d747a5da06b0c1a9fca7479dc4ecce8969f80072c1a81127fa2b0c83"
+      }
+    ],
+    "aggregate_sha256": "fbf2c85305d653916d8c181dba15e2628c4d0ce2ce4aa6cfc3d0b8b8ff86b3ab"
+  },
+  "tdb_verification": {
+    "triple_count": 93474126,
+    "direct_sem_event_count": 954554,
+    "queries": [
+      "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\queries\\total_triples.rq",
+      "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\queries\\sem_event_count.rq"
+    ],
+    "database_manifest": "C:\\Users\\riski\\Desktop\\Projects\\masters\\ekg\\real-oekg-evaluation\\oekg-event-layer-clean\\databases\\eventkg-db\\ekg_eval_database_manifest.json"
+  }
+}

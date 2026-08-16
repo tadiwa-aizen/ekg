@@ -1,0 +1,49 @@
+\chapter{Discussion}
+
+This chapter interprets the results against the research questions. The central finding is not that every EKG can be ranked by one score. It is that the selected intrinsic dimensions expose materially different strengths, weaknesses, and evidence gaps that narrower views can hide.
+
+\section{Answering the Research Questions}
+
+The three research questions concern the selected evaluation dimensions, the information lost through narrow evaluation, and the cross-dimensional patterns observed in the empirical results. They are answered separately below before the findings are related to prior work and practice.
+
+\subsection{RQ1: Which dimensions and metrics support systematic intrinsic EKG evaluation?}
+
+The literature synthesis and formalisation produced nine selected dimensions and 28 distinct calculations, listed in Appendix \ref{app:core_metric_inventory}. The implementation exposes 32 named result fields because four fields repeat a calculation in another reporting module. The dimensions combine transferable KG-quality concerns with event-specific requirements: domain-relation structure, duplicate candidates, temporal representation and ordering, minimal event-profile alignment, completeness, explicit type alignment, event-description richness, external mappings, and predicate distribution. The repeated fields are interpreted once and are not independent evidence. The results show that these concerns can be computed under one declared direct-event population and checked result definitions.
+
+This is a scoped answer. The framework covers the selected intrinsic RDF-EKG profile, not every possible notion of quality. Factual accuracy, causal correctness, provenance trust, multilingual quality, and downstream utility require additional evidence and are not represented by the 32 result fields.
+
+\subsection{RQ2: What is revealed when the dimensions are evaluated together?}
+
+The fragmented-view experiment provides the clearest answer. A structure-only view makes D1 and D2 appear similar because both retain giant components above 96\%. A temporal-only view correctly orders the profiles but cannot show that D2 also has duplicate risk, sparse records, lower minimal profile completeness, and weaker external grounding. Predicate-distribution statistics do not reproduce the intended ordering at all. The full profile changes the conclusion by identifying D2 as structurally strong but content-incomplete, while D3 combines broad event-level degradation with stronger fragmentation.
+
+The general-tool comparison leads to the same bounded conclusion. RDFUnit, KGHeartBeat, Luzzu, and SANSA provide useful generic checks, but their native outputs use different units and denominators and do not form a common quality scale. Some outputs respond to individual perturbations, such as Luzzu and SANSA extensional conciseness on D3. Others remain constant or move in the opposite direction. The proposed framework's contribution is broader event-specific coverage and diagnostic decomposition within its selected scope, not universal numerical superiority over those tools.
+
+\subsection{RQ3: What patterns emerge across controlled and public RDF event graphs?}
+
+The controlled profiles show that dimensions can diverge. D2 retains a \DTwoGiantPct\% giant component while minimal profile completeness falls to \DTwoCompletenessPct\% and exact duplicate-candidate rate rises to \DTwoDuplicateRatePct\%. D3's graph density is numerically higher than D1's because D3 is much smaller, even though its giant component and average degree are lower. Predicate entropy is also non-monotonic. These cases show why contextual statistics should not be treated as universally directional quality scores.
+
+The real-data results add a second kind of trade-off: representation compatibility. The ChronoGrapher artefacts have temporal coverage between \ChronoGenerationTemporalCoveragePct\% and \ChronoSearchTemporalCoveragePct\%, but no direct-event labels under the minimum profile, and no applicable explicit domain/range checks. Their use of DBpedia IRIs directly is also different from explicit \texttt{owl:sameAs} mapping coverage. The framework is useful here because it exposes both the measured property and the reason a metric is unavailable or low; it would be misleading to collapse these outcomes into one score.
+
+\section{Relationship to Prior Work}
+
+EventKG and OEKG primarily document resource construction, coverage, integration, and use cases, while ChronoGrapher evaluates event-centric graph use in a question-answering setting \citep{eventkg2018,oekg2023,chronographer2023}. Those evaluations are appropriate to their research questions. The present framework addresses a different question: what intrinsic profile can be reported consistently for an RDF event graph itself? Applying it to OEKG adds structural, duplication, profile, type-applicability, richness, mapping, and predicate-distribution evidence that is not jointly reported in the OEKG resource paper. Applying it to ChronoGrapher does not reproduce or replace the original human evaluation; it adds an intrinsic profile of the public RDF artefacts.
+
+General KG quality work supplies many of the underlying principles, including completeness, conciseness, interlinking, syntactic validity, and schema consistency \citep{zaveri2016,kgquality2021,luzzu2016,testdriven2014}. The implemented framework adapts these ideas to a declared event population and combines them with temporal and minimum-profile requirements. Appendix \ref{app:core_metric_inventory} distinguishes adopted formulae, adapted formulae, and calculations formalised in this thesis rather than implying that every underlying quality idea was invented here.
+
+\section{Implications for EKG Evaluation Practice}
+
+The results suggest three practical rules. First, report EKG quality as a profile and show the population used for each rate. A value of 0 means that the measured property was absent, while \texttt{N/A} means that the graph did not contain the evidence needed for the calculation. Second, keep the metrics separate so that a poor result can be traced to missing labels, dates, places, mappings, or another specific property. Third, test the implementation against examples with known answers and record how each result was produced. These steps make the profile easier to interpret and reduce the risk of plausible but incorrect output.
+
+The framework can therefore support dataset auditing, release comparison, and targeted repair within its stated scope. It cannot by itself determine whether an EKG is suitable for a particular application. Such a decision requires task requirements and, where relevant, factual or human evaluation in addition to the intrinsic profile.
+
+\section{Limitations}
+
+The synthetic datasets were deliberately varied along properties measured by the framework. They demonstrate controlled sensitivity, not independent construct validity, and may favour the selected profile despite the cross-tool compatibility features added during construction. An independently designed or blinded benchmark remains necessary.
+
+External validity is limited to the complete cleaned OEKG event layer and three public ChronoGrapher RDF artefacts. Both use SEM-style event modelling. Graphs that represent events through other RDF profiles or property-graph models require explicit profile mappings and may make some metrics unavailable. OEKG cleaning repaired seven invalid literal escapes; although no semantic facts were added, the evaluation is of the documented cleaned representation.
+
+Some results can only be calculated when the graph contains the required evidence. Closed-profile type alignment counts missing explicit types as non-alignment and is not an RDF/OWL inconsistency proof. External mapping coverage counts explicit \texttt{owl:sameAs} links and does not test whether those links are correct or current, or whether external IRIs are used directly. Fuzzy pairs are candidates, not confirmed duplicates. The temporal checks use deterministic bounded samples for format, granularity, and interval ordering. These samples are reproducible, but they do not provide random-sampling confidence intervals for the complete OEKG population.
+
+The disk-backed OEKG path avoids loading the complete projected graph into RAM, but average clustering is not computed in that mode and full file scans remain time-consuming. The external-tool comparison also has limits: tool versions and local compatibility patches are recorded, but the complete upstream implementations were not independently audited line by line. The coverage coding was performed within this project and was not independently rated.
+
+Finally, the framework does not implement factual correctness, causal correctness, source trustworthiness, or downstream task validation. It therefore supports intrinsic diagnosis within the selected dimensions but does not prove real-world truth or task suitability.

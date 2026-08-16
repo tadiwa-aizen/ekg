@@ -1,0 +1,3 @@
+# Reproduction-only test dependency. Evaluator runtime dependencies remain frozen
+# in ekg-eval-cli/requirements-lock.txt.
+pytest==8.3.2

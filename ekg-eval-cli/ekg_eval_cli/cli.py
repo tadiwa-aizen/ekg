@@ -15,6 +15,12 @@ from .config import EvaluationParameters
     metavar='EKG_FOLDER'
 )
 @click.option(
+    '--port',
+    type=click.IntRange(1, 65535),
+    default=3030,
+    help='Fuseki port (default: 3030)'
+)
+@click.option(
     '--verbose',
     is_flag=True,
     help='Enable verbose output with detailed progress information'
@@ -40,14 +46,14 @@ from .config import EvaluationParameters
 @click.option(
     '--fuzzy-threshold',
     type=float,
-    default=0.85,
-    help='Fuzzy matching similarity threshold (0.0-1.0, default: 0.85)'
+    default=0.90,
+    help='Exact token-sort similarity threshold (0.0-1.0, default: 0.90)'
 )
 @click.option(
     '--fuzzy-sample-size',
     type=int,
     default=1000,
-    help='Number of events to sample for fuzzy matching (default: 1000)'
+    help='Maximum deterministic event sample for exact fuzzy matching (default: 1000)'
 )
 @click.option(
     '--temporal-sample-size',
@@ -61,15 +67,46 @@ from .config import EvaluationParameters
     default=50,
     help='Maximum properties to analyze for type consistency (default: 50)'
 )
+@click.option(
+    '--large-graph-mode',
+    is_flag=True,
+    help='Use DuckDB and streaming union-find for structural metrics instead of NetworkX'
+)
+@click.option(
+    '--graph-structure-only',
+    is_flag=True,
+    help='Only compute graph structural metrics; skip endpoint-based RDF quality metrics'
+)
+@click.option(
+    '--large-graph-work-dir',
+    type=click.Path(file_okay=False, dir_okay=True, path_type=Path),
+    default=None,
+    help='Work directory for large graph artefacts (default: OUTPUT_DIR/large_graph_work)'
+)
+@click.option(
+    '--duckdb-memory-limit',
+    type=str,
+    default='8GB',
+    help='DuckDB memory limit for large graph mode (default: 8GB)'
+)
+@click.option(
+    '--duckdb-temp-dir',
+    type=click.Path(file_okay=False, dir_okay=True, path_type=Path),
+    default=None,
+    help='DuckDB temporary spill directory for large graph mode'
+)
 @click.version_option(
-    version='0.1.0',
+    version='0.2.0',
     prog_name='ekg-eval-cli',
     message='%(prog)s version %(version)s'
 )
 def main(ekg_folder, verbose, output_dir, jena_home, fuseki_home,
-         fuzzy_threshold, fuzzy_sample_size, temporal_sample_size, max_properties):
+         port, fuzzy_threshold, fuzzy_sample_size, temporal_sample_size, max_properties,
+         large_graph_mode, graph_structure_only, large_graph_work_dir,
+         duckdb_memory_limit, duckdb_temp_dir):
     """
-    Evaluate Event-Centric Knowledge Graph structural metrics.
+    Evaluate an RDF-based event-centric knowledge graph as a
+    multidimensional intrinsic quality profile.
 
     EKG_FOLDER is the path to a directory containing N-Triples (.nt) files
     representing your Event-Centric Knowledge Graph.
@@ -78,8 +115,8 @@ def main(ekg_folder, verbose, output_dir, jena_home, fuseki_home,
     \b
     1. Load the .nt files into a TDB2 database (if not already loaded)
     2. Start Apache Jena Fuseki SPARQL server (if not already running)
-    3. Extract graph edges using SPARQL queries
-    4. Calculate connectivity and cohesion metrics using NetworkX
+    3. Extract graph edges
+    4. Calculate connectivity and cohesion metrics using NetworkX or large graph mode
     5. Output results to console, JSON, and CSV files
 
     Examples:
@@ -124,13 +161,19 @@ def main(ekg_folder, verbose, output_dir, jena_home, fuseki_home,
         jena_home=jena_home,
         fuseki_home=fuseki_home,
         verbose=verbose,
+        port=port,
+        large_graph_mode=large_graph_mode,
+        graph_structure_only=graph_structure_only,
+        large_graph_work_dir=large_graph_work_dir,
+        duckdb_memory_limit=duckdb_memory_limit,
+        duckdb_temp_dir=duckdb_temp_dir,
         parameters=params
     )
 
     # Display startup message
     if verbose:
         click.echo("=" * 70)
-        click.echo("EKG Evaluation CLI v0.1.0")
+        click.echo("EKG Evaluation CLI v0.2.0")
         click.echo("=" * 70)
         click.echo(f"EKG Folder: {ekg_folder.absolute()}")
         click.echo(f"Output Directory: {output_dir.absolute()}")
@@ -138,6 +181,15 @@ def main(ekg_folder, verbose, output_dir, jena_home, fuseki_home,
             click.echo(f"Jena Home: {jena_home.absolute()}")
         if fuseki_home:
             click.echo(f"Fuseki Home: {fuseki_home.absolute()}")
+        if large_graph_mode:
+            click.echo("Large Graph Mode: enabled")
+            if large_graph_work_dir:
+                click.echo(f"Large Graph Work Dir: {large_graph_work_dir.absolute()}")
+            click.echo(f"DuckDB Memory Limit: {duckdb_memory_limit}")
+            if duckdb_temp_dir:
+                click.echo(f"DuckDB Temp Dir: {duckdb_temp_dir.absolute()}")
+        if graph_structure_only:
+            click.echo("Graph Structure Only: enabled")
         click.echo("=" * 70)
         click.echo()
 

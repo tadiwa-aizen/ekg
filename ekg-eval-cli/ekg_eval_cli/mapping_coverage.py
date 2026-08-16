@@ -35,7 +35,7 @@ class MappingCoverageAnalyzer:
         total_query = """
         PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
         
-        SELECT (COUNT(?e) AS ?count) WHERE { 
+        SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { 
             ?e a sem:Event 
         }
         """
@@ -59,7 +59,7 @@ class MappingCoverageAnalyzer:
         SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { 
             ?e a sem:Event ;
                owl:sameAs ?wd 
-            FILTER(CONTAINS(STR(?wd), "wikidata"))
+            FILTER(REGEX(STR(?wd), "^https?://(www[.])?wikidata[.]org/", "i"))
         }
         """
         
@@ -71,7 +71,7 @@ class MappingCoverageAnalyzer:
         SELECT (COUNT(DISTINCT ?e) AS ?count) WHERE { 
             ?e a sem:Event ;
                owl:sameAs ?db 
-            FILTER(CONTAINS(STR(?db), "dbpedia"))
+            FILTER(REGEX(STR(?db), "^https?://([a-z]{2,3}[.])?dbpedia[.]org/", "i"))
         }
         """
         
@@ -88,16 +88,17 @@ class MappingCoverageAnalyzer:
         dbpedia_events = int(dbpedia_results[0]['count']['value'])
         
         # Calculate percentages
-        external_link_rate = (sameas_events / total_events * 100) if total_events > 0 else 0.0
-        wikidata_coverage = (wikidata_events / total_events * 100) if total_events > 0 else 0.0
-        dbpedia_coverage = (dbpedia_events / total_events * 100) if total_events > 0 else 0.0
+        external_link_rate = (sameas_events / total_events * 100) if total_events > 0 else None
+        wikidata_coverage = (wikidata_events / total_events * 100) if total_events > 0 else None
+        dbpedia_coverage = (dbpedia_events / total_events * 100) if total_events > 0 else None
         
         return {
             'total_events': total_events,
             'events_with_external_links': sameas_events,
             'events_linked_to_wikidata': wikidata_events,
             'events_linked_to_dbpedia': dbpedia_events,
-            'external_link_rate': round(external_link_rate, 2),
-            'wikidata_coverage': round(wikidata_coverage, 2),
-            'dbpedia_coverage': round(dbpedia_coverage, 2)
+            'external_link_rate': round(external_link_rate, 2) if external_link_rate is not None else None,
+            'wikidata_coverage': round(wikidata_coverage, 2) if wikidata_coverage is not None else None,
+            'dbpedia_coverage': round(dbpedia_coverage, 2) if dbpedia_coverage is not None else None,
+            'status': 'computed' if total_events else 'not_applicable_no_events'
         }

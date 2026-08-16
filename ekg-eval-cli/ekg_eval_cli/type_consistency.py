@@ -1,192 +1,246 @@
-"""Type and role consistency analysis."""
+"""Closed-profile domain and range consistency analysis."""
 
-from typing import Dict, Any, List, Tuple, Optional
+from __future__ import annotations
+
+from typing import Any, Dict, List, Optional, Tuple
 import requests
+
 from .config import EvaluationParameters
 
 
-class TypeConsistencyAnalyzer:
-    """Analyzes type and role consistency."""
+XSD_NAMESPACE = "http://www.w3.org/2001/XMLSchema#"
+RDFS_RESOURCE = "http://www.w3.org/2000/01/rdf-schema#Resource"
+RDFS_LITERAL = "http://www.w3.org/2000/01/rdf-schema#Literal"
 
-    def __init__(self, endpoint_url: str, parameters: Optional[EvaluationParameters] = None):
+
+class TypeConsistencyAnalyzer:
+    """Check used triples against explicitly declared RDFS domain/range profiles."""
+
+    def __init__(
+        self, endpoint_url: str, parameters: Optional[EvaluationParameters] = None
+    ):
         self.endpoint_url = endpoint_url
-        if not endpoint_url.endswith('/sparql'):
-            self.query_url = f"{endpoint_url}/sparql"
-        else:
-            self.query_url = endpoint_url
-        
+        self.query_url = (
+            endpoint_url if endpoint_url.endswith("/sparql") else f"{endpoint_url}/sparql"
+        )
         self.parameters = parameters or EvaluationParameters()
 
     def _execute_query(self, query: str) -> List[Dict[str, Any]]:
-        """Execute SPARQL query and return results."""
         headers = {
-            'Accept': 'application/sparql-results+json',
-            'Content-Type': 'application/x-www-form-urlencoded'
+            "Accept": "application/sparql-results+json",
+            "Content-Type": "application/x-www-form-urlencoded",
         }
         response = requests.post(
-            self.query_url,
-            headers=headers,
-            data={'query': query},
-            timeout=300
+            self.query_url, headers=headers, data={"query": query}, timeout=300
         )
         response.raise_for_status()
-        return response.json()['results']['bindings']
+        return response.json()["results"]["bindings"]
 
     def extract_property_domains_ranges(self) -> List[Tuple[str, str, str]]:
-        """Extract property domain and range definitions from schema."""
         query = """
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        
         SELECT ?property ?domain ?range
         WHERE {
-            ?property rdfs:domain ?domain .
+            {
+                SELECT DISTINCT ?property WHERE {
+                    { ?property rdfs:domain ?anyDomain }
+                    UNION
+                    { ?property rdfs:range ?anyRange }
+                }
+            }
+            OPTIONAL { ?property rdfs:domain ?domain }
             OPTIONAL { ?property rdfs:range ?range }
         }
+        ORDER BY STR(?property) STR(?domain) STR(?range)
         """
-        results = self._execute_query(query)
         return [
             (
-                r['property']['value'],
-                r.get('domain', {}).get('value', ''),
-                r.get('range', {}).get('value', '')
+                row["property"]["value"],
+                row.get("domain", {}).get("value", ""),
+                row.get("range", {}).get("value", ""),
             )
-            for r in results
+            for row in self._execute_query(query)
         ]
 
-    def check_domain_violations(self, property_uri: str, expected_domain: str) -> Tuple[int, int]:
-        """
-        Check domain violations for a property with RDFS inference.
-        
-        Uses SPARQL property paths (rdfs:subClassOf*) for subclass inference.
-        """
-        # Count total usage
-        total_query = f"""
-        SELECT (COUNT(*) AS ?count)
-        WHERE {{
-            ?s <{property_uri}> ?o .
-        }}
-        """
-        total_results = self._execute_query(total_query)
-        total = int(total_results[0]['count']['value'])
-        
-        if total == 0:
+    def _count(self, query: str) -> int:
+        rows = self._execute_query(query)
+        return int(rows[0]["count"]["value"]) if rows else 0
+
+    def check_domain_violations(
+        self, property_uri: str, expected_domain: str
+    ) -> Tuple[int, int]:
+        total = self._count(
+            f"SELECT (COUNT(*) AS ?count) WHERE {{ ?s <{property_uri}> ?o . }}"
+        )
+        if not total:
             return 0, 0
-        
-        # Count violations with subclass inference
-        violation_query = f"""
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        
-        SELECT (COUNT(*) AS ?count)
-        WHERE {{
-            ?s <{property_uri}> ?o .
-            FILTER NOT EXISTS {{
-                ?s a ?type .
-                ?type rdfs:subClassOf* <{expected_domain}> .
+        if expected_domain == RDFS_RESOURCE:
+            return total, 0
+        violations = self._count(
+            f"""
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT (COUNT(*) AS ?count) WHERE {{
+                ?s <{property_uri}> ?o .
+                FILTER NOT EXISTS {{
+                    ?s a ?type .
+                    ?type rdfs:subClassOf* <{expected_domain}> .
+                }}
             }}
-        }}
-        """
-        violation_results = self._execute_query(violation_query)
-        violations = int(violation_results[0]['count']['value'])
-        
+            """
+        )
         return total, violations
 
-    def check_range_violations_datatype(self, property_uri: str, expected_datatype: str) -> Tuple[int, int]:
-        """Check range violations for datatype properties."""
-        total_query = f"""
-        SELECT (COUNT(*) AS ?count)
-        WHERE {{
-            ?s <{property_uri}> ?o .
-        }}
-        """
-        total_results = self._execute_query(total_query)
-        total = int(total_results[0]['count']['value'])
-        
-        if total == 0:
+    def check_range_violations_datatype(
+        self, property_uri: str, expected_datatype: str
+    ) -> Tuple[int, int]:
+        total = self._count(
+            f"SELECT (COUNT(*) AS ?count) WHERE {{ ?s <{property_uri}> ?o . }}"
+        )
+        if not total:
             return 0, 0
-        
-        violation_query = f"""
-        SELECT (COUNT(*) AS ?count)
-        WHERE {{
-            ?s <{property_uri}> ?o .
-            FILTER(DATATYPE(?o) != <{expected_datatype}>)
-        }}
-        """
-        violation_results = self._execute_query(violation_query)
-        violations = int(violation_results[0]['count']['value'])
-        
+        violations = self._count(
+            f"""
+            SELECT (COUNT(*) AS ?count) WHERE {{
+                ?s <{property_uri}> ?o .
+                FILTER(!isLiteral(?o) || DATATYPE(?o) != <{expected_datatype}>)
+            }}
+            """
+        )
         return total, violations
+
+    def check_range_violations_class(
+        self, property_uri: str, expected_class: str
+    ) -> Tuple[int, int]:
+        total = self._count(
+            f"SELECT (COUNT(*) AS ?count) WHERE {{ ?s <{property_uri}> ?o . }}"
+        )
+        if not total:
+            return 0, 0
+        if expected_class == RDFS_RESOURCE:
+            return total, 0
+        if expected_class == RDFS_LITERAL:
+            violations = self._count(
+                f"""
+                SELECT (COUNT(*) AS ?count) WHERE {{
+                    ?s <{property_uri}> ?o .
+                    FILTER(!isLiteral(?o))
+                }}
+                """
+            )
+            return total, violations
+        violations = self._count(
+            f"""
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            SELECT (COUNT(*) AS ?count) WHERE {{
+                ?s <{property_uri}> ?o .
+                FILTER(!isIRI(?o) && !isBlank(?o) || NOT EXISTS {{
+                    ?o a ?type .
+                    ?type rdfs:subClassOf* <{expected_class}> .
+                }})
+            }}
+            """
+        )
+        return total, violations
+
+    @staticmethod
+    def _rate(total: int, violations: int) -> Optional[float]:
+        return (total - violations) / total * 100 if total else None
 
     def analyze_type_consistency(self) -> Dict[str, Any]:
-        """Run complete type consistency analysis with configurable limit."""
-        # Get property definitions
-        property_defs = self.extract_property_domains_ranges()
-        
-        if not property_defs:
-            return {
-                'properties_analyzed': 0,
-                'properties_with_violations': 0,
-                'average_domain_conformity': 100.0,
-                'average_range_conformity': 100.0,
-                'overall_type_consistency': 100.0,
-                'property_details': [],
-                'inference_enabled': True
+        definitions = self.extract_property_domains_ranges()[
+            : self.parameters.max_properties_analyzed
+        ]
+        details = []
+        domain_total = domain_violations = 0
+        range_total = range_violations = 0
+        violating_properties = set()
+
+        for property_uri, domain, range_value in definitions:
+            detail: Dict[str, Any] = {
+                "property": property_uri,
+                "domain": domain or None,
+                "range": range_value or None,
             }
-        
-        # Limit to configured maximum
-        max_props = self.parameters.max_properties_analyzed
-        property_defs = property_defs[:max_props]
-        
-        property_results = []
-        total_domain_conformity = 0
-        total_range_conformity = 0
-        domain_checked_count = 0
-        range_checked_count = 0
-        properties_with_violations = 0
-        
-        for prop_uri, domain, range_val in property_defs:
-            result = {
-                'property': prop_uri,
-                'domain': domain,
-                'range': range_val
-            }
-            
-            # Check domain with inference
             if domain:
-                total, violations = self.check_domain_violations(prop_uri, domain)
-                if total > 0:
-                    domain_conformity = ((total - violations) / total * 100)
-                    result['domain_conformity'] = round(domain_conformity, 2)
-                    result['domain_violations'] = violations
-                    result['domain_total'] = total
-                    total_domain_conformity += domain_conformity
-                    domain_checked_count += 1
-                    if violations > 0:
-                        properties_with_violations += 1
-            
-            # Check range (simplified - only for XSD datatypes)
-            if range_val and 'XMLSchema' in range_val:
-                total, violations = self.check_range_violations_datatype(prop_uri, range_val)
-                if total > 0:
-                    range_conformity = ((total - violations) / total * 100)
-                    result['range_conformity'] = round(range_conformity, 2)
-                    result['range_violations'] = violations
-                    result['range_total'] = total
-                    total_range_conformity += range_conformity
-                    range_checked_count += 1
-            
-            property_results.append(result)
-        
-        avg_domain = (total_domain_conformity / domain_checked_count) if domain_checked_count > 0 else 100.0
-        avg_range = (total_range_conformity / range_checked_count) if range_checked_count > 0 else 100.0
-        overall = (avg_domain + avg_range) / 2
-        
+                total, violations = self.check_domain_violations(property_uri, domain)
+                domain_total += total
+                domain_violations += violations
+                detail.update(
+                    {
+                        "domain_total": total,
+                        "domain_violations": violations,
+                        "domain_conformity": (
+                            round(self._rate(total, violations), 2) if total else None
+                        ),
+                    }
+                )
+                if violations:
+                    violating_properties.add(property_uri)
+
+            if range_value:
+                if range_value.startswith(XSD_NAMESPACE):
+                    range_kind = "datatype"
+                    total, violations = self.check_range_violations_datatype(
+                        property_uri, range_value
+                    )
+                else:
+                    range_kind = "class"
+                    total, violations = self.check_range_violations_class(
+                        property_uri, range_value
+                    )
+                range_total += total
+                range_violations += violations
+                detail.update(
+                    {
+                        "range_kind": range_kind,
+                        "range_total": total,
+                        "range_violations": violations,
+                        "range_conformity": (
+                            round(self._rate(total, violations), 2) if total else None
+                        ),
+                    }
+                )
+                if violations:
+                    violating_properties.add(property_uri)
+            details.append(detail)
+
+        applicable = domain_total + range_total
+        violations = domain_violations + range_violations
+        domain_rate = self._rate(domain_total, domain_violations)
+        range_rate = self._rate(range_total, range_violations)
+        overall_rate = self._rate(applicable, violations)
+        status = "computed" if applicable else "not_applicable_no_used_constrained_triples"
         return {
-            'properties_analyzed': len(property_results),
-            'properties_with_violations': properties_with_violations,
-            'average_domain_conformity': round(avg_domain, 2),
-            'average_range_conformity': round(avg_range, 2),
-            'overall_type_consistency': round(overall, 2),
-            'property_details': property_results,
-            'inference_enabled': True,
-            'max_properties_configured': self.parameters.max_properties_analyzed
+            "properties_analyzed": len(definitions),
+            "properties_with_violations": len(violating_properties),
+            "average_domain_conformity": (
+                round(domain_rate, 2) if domain_rate is not None else None
+            ),
+            "average_range_conformity": (
+                round(range_rate, 2) if range_rate is not None else None
+            ),
+            "overall_type_consistency": (
+                round(overall_rate, 2) if overall_rate is not None else None
+            ),
+            "applicable_domain_checks": domain_total,
+            "domain_violations_total": domain_violations,
+            "applicable_range_checks": range_total,
+            "range_violations_total": range_violations,
+            "applicable_consistency_checks": applicable,
+            "total_property_usages_examined": applicable,
+            "status": status,
+            "aggregation": "evidence-weighted applicable checks",
+            "consistency_interpretation": (
+                "Closed-profile explicit type alignment over declared and used RDFS constraints."
+                if applicable
+                else "No declared constraints applied to used triples; no score is reported."
+            ),
+            "property_details": details,
+            "inference_enabled": False,
+            "open_world_caveat": (
+                "Missing explicit class assertions count as non-alignment under this closed profile; "
+                "they are not RDF/OWL logical inconsistencies. rdfs:Resource and rdfs:Literal are "
+                "handled according to their RDF semantics."
+            ),
+            "max_properties_configured": self.parameters.max_properties_analyzed,
         }

@@ -1,0 +1,129 @@
+\section{Definitive Registered-Result Inventory}
+\label{app:core_metric_inventory}
+
+The following tables are generated from the frozen implementation's list of registered result fields and checked against the implementation. The 32 fields represent 28 distinct calculations because four are aliases used by another reporting module. Other JSON fields provide counts, denominators, status values, samples, or diagnostic details rather than additional metrics.
+
+\begingroup\scriptsize\setlength{\tabcolsep}{3pt}\setlength{\LTpre}{0.4em}\setlength{\LTpost}{0.4em}
+\begin{longtable}{p{0.06\textwidth}p{0.25\textwidth}p{0.61\textwidth}}
+\caption{Registered result-field names and dimensions.}\label{tab:core_metric_inventory_names}\\
+\toprule ID & Dimension & Metric \\
+\midrule\endfirsthead
+\toprule ID & Dimension & Metric \\
+\midrule\endhead
+\bottomrule\endfoot
+M01 & Graph connectivity and structure & Weak/undirected connected components \\
+M02 & Graph connectivity and structure & Giant component ratio \\
+M03 & Graph connectivity and structure & Average local clustering coefficient \\
+M04 & Graph connectivity and structure & Edge connectivity \\
+M05 & Graph connectivity and structure & Graph density \\
+M06 & Graph connectivity and structure & Average degree \\
+M07 & Redundancy and duplication & Exact-label duplicate candidate rate \\
+M08 & Redundancy and duplication & Label uniqueness rate \\
+M09 & Redundancy and duplication & Fuzzy duplicate candidate pairs \\
+M10 & Temporal consistency & Temporal literal validity rate \\
+M11 & Temporal consistency & Temporal granularity distribution \\
+M12 & Temporal consistency & Temporal coverage \\
+M13 & Temporal consistency & Interval validity rate \\
+M14 & Temporal consistency & Temporal span \\
+M15 & Temporal consistency & Average events per decade in observed span \\
+M16 & Minimal event-profile alignment & Label coverage \\
+M17 & Minimal event-profile alignment & Date coverage \\
+M18 & Minimal event-profile alignment & Minimal event-profile conformance rate \\
+M19 & Minimal event-profile alignment & Reported non-allowlisted property count (cap 50) \\
+M20 & Completeness & Event-class schema coverage \\
+M21 & Completeness & Minimal population completeness \\
+M22 & Completeness & Profile label coverage \\
+M23 & Completeness & Profile temporal coverage \\
+M24 & Completeness & Profile place coverage \\
+M25 & Type consistency & Closed-profile explicit type-alignment summary \\
+M26 & Entity richness & Average distinct-predicate richness \\
+M27 & Entity richness & Sparse event rate \\
+M28 & External mapping coverage & owl:sameAs external-link coverage \\
+M29 & External mapping coverage & Wikidata link coverage \\
+M30 & External mapping coverage & DBpedia link coverage \\
+M31 & Predicate usage & Normalised predicate Shannon entropy \\
+M32 & Predicate usage & Predicate HHI concentration \\
+\end{longtable}
+
+\begin{longtable}{p{0.06\textwidth}p{0.38\textwidth}p{0.48\textwidth}}
+\caption{Registered JSON result fields and implementation paths.}\label{tab:core_metric_inventory_paths}\\
+\toprule ID & JSON output path & Implementation path \\
+\midrule\endfirsthead
+\toprule ID & JSON output path & Implementation path \\
+\midrule\endhead
+\bottomrule\endfoot
+M01 & \path{num_components} & \path{ekg_eval_cli.analyzer.GraphAnalyzer.calculate_metrics} \\
+M02 & \path{giant_component_ratio} & \path{ekg_eval_cli.analyzer.GraphAnalyzer.calculate_metrics} \\
+M03 & \path{avg_clustering} & \path{ekg_eval_cli.analyzer.GraphAnalyzer.calculate_metrics} \\
+M04 & \path{edge_connectivity} & \path{ekg_eval_cli.analyzer.GraphAnalyzer.calculate_metrics} \\
+M05 & \path{density} & \path{ekg_eval_cli.analyzer.GraphAnalyzer.calculate_metrics} \\
+M06 & \path{avg_degree} & \path{ekg_eval_cli.analyzer.GraphAnalyzer.calculate_metrics} \\
+M07 & \path{redundancy.duplication_rate} & \path{ekg_eval_cli.redundancy.RedundancyAnalyzer.analyze_redundancy} \\
+M08 & \path{redundancy.label_quality.label_uniqueness_rate} & \path{ekg_eval_cli.redundancy.RedundancyAnalyzer.analyze_redundancy} \\
+M09 & \path{redundancy.fuzzy_duplicate_pairs} & \path{ekg_eval_cli.redundancy.RedundancyAnalyzer.analyze_redundancy} \\
+M10 & \path{temporal.date_format_validation.compliance_rate} & \path{ekg_eval_cli.temporal.TemporalValidator.validate_temporal_consistency / ekg_eval_cli.temporal.TemporalValidator.validate_temporal_semantics} \\
+M11 & \path{temporal.temporal_granularity.granularity_percentages} & \path{ekg_eval_cli.temporal.TemporalValidator.validate_temporal_consistency / ekg_eval_cli.temporal.TemporalValidator.validate_temporal_semantics} \\
+M12 & \path{temporal.temporal_coverage.temporal_coverage_rate} & \path{ekg_eval_cli.temporal.TemporalValidator.validate_temporal_consistency / ekg_eval_cli.temporal.TemporalValidator.validate_temporal_semantics} \\
+M13 & \path{temporal.semantic_validation.consistency_rate} & \path{ekg_eval_cli.temporal.TemporalValidator.validate_temporal_consistency / ekg_eval_cli.temporal.TemporalValidator.validate_temporal_semantics} \\
+M14 & \path{temporal.temporal_density.temporal_span_years} & \path{ekg_eval_cli.temporal.TemporalValidator.validate_temporal_consistency / ekg_eval_cli.temporal.TemporalValidator.validate_temporal_semantics} \\
+M15 & \path{temporal.temporal_density.avg_events_per_decade} & \path{ekg_eval_cli.temporal.TemporalValidator.validate_temporal_consistency / ekg_eval_cli.temporal.TemporalValidator.validate_temporal_semantics} \\
+M16 & \path{schema.label_coverage_rate} & \path{ekg_eval_cli.schema_analyzer.SchemaAnalyzer.analyze_schema_conformance} \\
+M17 & \path{schema.date_coverage_rate} & \path{ekg_eval_cli.schema_analyzer.SchemaAnalyzer.analyze_schema_conformance} \\
+M18 & \path{schema.schema_conformance_rate} & \path{ekg_eval_cli.schema_analyzer.SchemaAnalyzer.analyze_schema_conformance} \\
+M19 & \path{schema.non_standard_properties_count} & \path{ekg_eval_cli.schema_analyzer.SchemaAnalyzer.analyze_schema_conformance} \\
+M20 & \path{completeness.schema_coverage_percentage} & \path{ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_completeness / ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_population_completeness} \\
+M21 & \path{completeness.population_completeness_percentage} & \path{ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_completeness / ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_population_completeness} \\
+M22 & \path{completeness.population_completeness.label_coverage_rate} & \path{ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_completeness / ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_population_completeness} \\
+M23 & \path{completeness.population_completeness.temporal_coverage_rate} & \path{ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_completeness / ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_population_completeness} \\
+M24 & \path{completeness.population_completeness.location_coverage_rate} & \path{ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_completeness / ekg_eval_cli.completeness.CompletenessAnalyzer.analyze_population_completeness} \\
+M25 & \path{type_consistency.overall_type_consistency} & \path{ekg_eval_cli.type_consistency.TypeConsistencyAnalyzer.analyze_type_consistency} \\
+M26 & \path{entity_richness.avg_properties_per_event} & \path{ekg_eval_cli.entity_richness.EntityRichnessAnalyzer.analyze_entity_richness} \\
+M27 & \path{entity_richness.sparse_entities_percentage} & \path{ekg_eval_cli.entity_richness.EntityRichnessAnalyzer.analyze_entity_richness} \\
+M28 & \path{mapping_coverage.external_link_rate} & \path{ekg_eval_cli.mapping_coverage.MappingCoverageAnalyzer.analyze_mapping_coverage} \\
+M29 & \path{mapping_coverage.wikidata_coverage} & \path{ekg_eval_cli.mapping_coverage.MappingCoverageAnalyzer.analyze_mapping_coverage} \\
+M30 & \path{mapping_coverage.dbpedia_coverage} & \path{ekg_eval_cli.mapping_coverage.MappingCoverageAnalyzer.analyze_mapping_coverage} \\
+M31 & \path{predicate_usage.normalized_shannon_entropy} & \path{ekg_eval_cli.predicate_usage.PredicateUsageAnalyzer.analyze_predicate_usage} \\
+M32 & \path{predicate_usage.hhi_concentration} & \path{ekg_eval_cli.predicate_usage.PredicateUsageAnalyzer.analyze_predicate_usage} \\
+\end{longtable}
+
+\begin{longtable}{p{0.05\textwidth}p{0.37\textwidth}p{0.22\textwidth}p{0.25\textwidth}}
+\caption{Exact formula contracts, unavailable-value policies, and provenance classification.}\label{tab:core_metric_inventory_contracts}\\
+\toprule ID & Formula / operational definition & Empty or inapplicable case & Source / formalisation class \\
+\midrule\endfirsthead
+\toprule ID & Formula / operational definition & Empty or inapplicable case & Source / formalisation class \\
+\midrule\endhead
+\bottomrule\endfoot
+M01 & Number of maximal connected components in the undirected projected graph. & No projected nodes: reject the input and emit no structural profile. & graph-theory standard: Standard connected-component definition; NetworkX connected\_components implementation. \\
+M02 & |V\_max| / |V|. & No projected nodes: reject the input and emit no structural profile. & adapted from graph theory: Standard giant-component concept normalised by graph order. \\
+M03 & (1 / |V|) * sum\_v (2e\_v / (k\_v(k\_v - 1))) on the undirected simple projection. & No projected nodes: reject the input. In large-graph mode, clustering is unavailable and accompanied by an explicit status. & graph-theory standard: Watts-Strogatz clustering coefficient; NetworkX average\_clustering implementation. \\
+M04 & Minimum number of edges whose removal disconnects the graph; set to 0 for disconnected graphs. & No projected nodes: reject the input. In large-graph mode, report only conditionally exact cases; otherwise mark the value unavailable. & graph-theory standard: Standard edge-connectivity definition; NetworkX edge\_connectivity implementation. \\
+M05 & 2m / (n(n - 1)) for the undirected simple projection. & No projected nodes: reject the input and emit no structural profile. & graph-theory standard: Standard graph-density formula; NetworkX density implementation. \\
+M06 & 2m / n for the undirected simple projection. & No projected nodes: reject the input and emit no structural profile. & graph-theory standard: Handshaking lemma; standard graph degree definition. \\
+M07 & events in repeated normalised-label groups / events with eligible labels * 100. & No eligible labels: rate is null (N/A); duplicate candidate counts remain 0. & custom operationalisation adapted from conciseness: Linked Data conciseness dimension; thesis-specific exact-label duplicate proxy. \\
+M08 & unique normalised sampled labels / sampled labels * 100. & No eligible labels: rate is null (N/A); duplicate candidate counts remain 0. & custom descriptive metric: Motivated by duplicate-detection and label-quality review practice. \\
+M09 & Exact count of non-identical sampled normalised-label pairs with RapidFuzz token-sort similarity >= 90\%. & No eligible labels: rate is null (N/A); duplicate candidate counts remain 0. & adapted from record-linkage literature: Fellegi-Sunter record linkage; duplicate-detection literature; RapidFuzz token\_sort\_ratio implementation. \\
+M10 & valid ISO-parseable temporal literals / sampled temporal literals * 100. & No applicable temporal values or intervals: rate/value is null (N/A), with an explicit status. & standard-based / literature-derived: XML Schema date lexical forms, OWL-Time temporal representation, syntactic validity in KG quality literature. \\
+M11 & count(values at granularity g) / sampled temporal values * 100. & No applicable temporal values or intervals: rate/value is null (N/A), with an explicit status. & adapted descriptive temporal metric: OWL-Time supports multiple temporal positions/granularities; event-KG literature emphasises temporal anchoring. \\
+M12 & events with sem:hasBeginTimeStamp or sem:hasEndTimeStamp / direct sem:Event instances * 100. & No applicable temporal values or intervals: rate/value is null (N/A), with an explicit status. & adapted from completeness literature: Profile-relative completeness in KG/Linked Data quality; SEM/EventKG event-time role. \\
+M13 & events with parseable start/end and end >= start / checked start-end events * 100. & No applicable temporal values or intervals: rate/value is null (N/A), with an explicit status. & custom logical consistency operationalisation: OWL-Time interval semantics; temporal consistency principles. \\
+M14 & max(year) - min(year) over dated events. & No applicable temporal values or intervals: rate/value is null (N/A), with an explicit status. & custom descriptive metric grounded in temporal distribution analysis: OWL-Time temporal positions; event dataset coverage analysis. \\
+M15 & sum of distinct-event counts per represented begin-date literal / number of decades from the minimum to maximum observed year, including empty decades. & No applicable temporal values or intervals: rate/value is null (N/A), with an explicit status. & custom descriptive metric: Temporal distribution analysis; thesis-specific event-corpus summary. \\
+M16 & events with rdfs:label / total sem:Event instances * 100. & No direct sem:Event instances: profile rates are null (N/A); property count remains descriptive. & adapted from completeness literature: Profile-relative completeness in KG quality literature; rdfs:label as RDF labeling convention. \\
+M17 & events with sem:hasBeginTimeStamp or sem:hasEndTimeStamp / total direct sem:Event instances * 100. & No direct sem:Event instances: profile rates are null (N/A); property count remains descriptive. & adapted from completeness and event-modelling literature: KG completeness literature; SEM/EventKG event-time modelling. \\
+M18 & events with rdfs:label, (sem:hasBeginTimeStamp or sem:hasEndTimeStamp), and sem:hasPlace / total direct sem:Event instances * 100. & No direct sem:Event instances: profile rates are null (N/A); property count remains descriptive. & custom profile-relative conformance formula: Closed application-profile validation principle; completeness literature under explicit profile requirements. \\
+M19 & Count of the up to 50 most frequent distinct event predicates whose namespace is outside the configured allow-list. & No direct sem:Event instances: profile rates are null (N/A); property count remains descriptive. & custom descriptive metric: Vocabulary/schema profiling practice; thesis-specific namespace allow-list. \\
+M20 & event classes used under sem:Event subclass closure / sem:Event plus declared direct subclasses of sem:Event * 100. & No direct sem:Event instances: event-profile rates are null (N/A); schema coverage remains schema-relative. & adapted from schema completeness literature: Pipino/Farber-style schema completeness adapted to KG profiles. \\
+M21 & direct sem:Event instances with label, begin or end time, and place / all direct sem:Event instances * 100. & No direct sem:Event instances: event-profile rates are null (N/A); schema coverage remains schema-relative. & adapted from completeness literature: Profile-relative completeness; column/property completeness adapted to event resources. \\
+M22 & events with rdfs:label / total sem:Event instances * 100. & No direct sem:Event instances: event-profile rates are null (N/A); schema coverage remains schema-relative. & adapted from completeness literature: Profile-relative KG completeness. \\
+M23 & events with sem:hasBeginTimeStamp or sem:hasEndTimeStamp / total direct sem:Event instances * 100. & No direct sem:Event instances: event-profile rates are null (N/A); schema coverage remains schema-relative. & adapted from completeness literature: Profile-relative KG completeness and event-time role modelling. \\
+M24 & events with sem:hasPlace / total sem:Event instances * 100. & No direct sem:Event instances: event-profile rates are null (N/A); schema coverage remains schema-relative. & adapted from completeness and event-modelling literature: Event role completeness from SEM/event-centric KG modelling. \\
+M25 & all explicitly aligned domain and range checks / all applicable declared domain and range checks * 100; null if none apply. & No applicable domain/range evidence: score is null (N/A), not 100\%. & custom closed-profile aggregate over adapted consistency checks: Custom summary informed by RDF/RDFS domain and range semantics and closed-profile validation practice. \\
+M26 & mean\_e count(distinct outgoing predicates other than rdf:type attached to direct event e). & No direct sem:Event instances: richness and sparsity are null (N/A). & adapted/custom metric: Adapted from OntoQA attribute richness; event-level descriptive richness is thesis-specific. \\
+M27 & events with fewer than 3 distinct outgoing predicates excluding rdf:type / analysed events * 100. & No direct sem:Event instances: richness and sparsity are null (N/A). & custom/new metric: Thesis-specific thresholded sparsity indicator. \\
+M28 & events with at least one owl:sameAs link / total events * 100. & No direct sem:Event instances: all mapping rates are null (N/A). & literature-derived / standard vocabulary: Linked Data interlinking quality; OWL owl:sameAs identity predicate. \\
+M29 & events with owl:sameAs on a Wikidata HTTP(S) host / total direct sem:Event instances * 100. & No direct sem:Event instances: all mapping rates are null (N/A). & custom source-specific interlinking metric: Adapted from Linked Data interlinking coverage by target source. \\
+M30 & events with owl:sameAs on a DBpedia HTTP(S) host (including language subdomains) / total direct sem:Event instances * 100. & No direct sem:Event instances: all mapping rates are null (N/A). & custom source-specific interlinking metric: Adapted from Linked Data interlinking coverage by target source. \\
+M31 & H / log2(k), where k is the number of predicates. & No predicates: normalised entropy and HHI are null (N/A). & literature-derived from information theory: Normalised Shannon entropy over categorical distributions. \\
+M32 & sum\_i p\_i\textasciicircum{}2. & No predicates: normalised entropy and HHI are null (N/A). & literature-derived from concentration measurement: Herfindahl-Hirschman Index applied to predicate frequency distribution. \\
+\end{longtable}
+\endgroup

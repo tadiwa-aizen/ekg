@@ -1,0 +1,1 @@
+SELECT (COUNT(*) AS ?semEvents) WHERE { ?e a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> }

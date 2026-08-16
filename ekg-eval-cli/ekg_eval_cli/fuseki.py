@@ -12,7 +12,7 @@ from typing import Optional
 class FusekiManager:
     """Manages Fuseki server lifecycle."""
 
-    def __init__(self, fuseki_home: Path, db_path: Path):
+    def __init__(self, fuseki_home: Path, db_path: Path, port: int = 3030):
         """
         Initialize FusekiManager.
 
@@ -22,9 +22,11 @@ class FusekiManager:
         """
         self.fuseki_home = fuseki_home
         self.db_path = db_path
-        self.port = 3030
+        self.port = int(port)
         self.endpoint_url = f"http://localhost:{self.port}/eventkg"
         self._process: Optional[subprocess.Popen] = None
+        self._stdout_handle = None
+        self._stderr_handle = None
 
     def is_running(self) -> bool:
         """
@@ -86,18 +88,25 @@ class FusekiManager:
         # This creates a dataset named "eventkg" backed by the TDB2 database
         cmd = [
             str(fuseki_cmd),
+            "--port", str(self.port),
             "--loc", str(self.db_path),
             "/eventkg"
         ]
 
         try:
+            log_dir = self.db_path.parent / "fuseki_logs"
+            log_dir.mkdir(parents=True, exist_ok=True)
+            self._stdout_handle = open(log_dir / "fuseki_stdout.log", "a", encoding="utf-8")
+            self._stderr_handle = open(log_dir / "fuseki_stderr.log", "a", encoding="utf-8")
+
             # Start Fuseki as a subprocess
             # We don't use check=True because we want the process to run in background
             process = subprocess.Popen(
                 cmd,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                text=True
+                stdout=self._stdout_handle,
+                stderr=self._stderr_handle,
+                text=True,
+                cwd=str(self.fuseki_home)
             )
 
             # Store the process reference
@@ -109,12 +118,11 @@ class FusekiManager:
             # Check if process is still running (didn't crash immediately)
             if process.poll() is not None:
                 # Process has terminated
-                stdout, stderr = process.communicate()
                 raise RuntimeError(
                     f"Fuseki server failed to start.\n"
                     f"Command: {' '.join(cmd)}\n"
                     f"Exit code: {process.returncode}\n"
-                    f"Error output:\n{stderr}"
+                    f"See logs under: {log_dir}"
                 )
 
             return process
@@ -174,7 +182,15 @@ class FusekiManager:
 
         try:
             # Try graceful termination first
-            process.terminate()
+            if platform.system() == "Windows":
+                subprocess.run(
+                    ["taskkill", "/PID", str(process.pid), "/T", "/F"],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    check=False,
+                )
+            else:
+                process.terminate()
 
             # Wait up to 5 seconds for graceful shutdown
             try:
@@ -192,3 +208,11 @@ class FusekiManager:
                 # Process might already be dead
                 pass
 
+        for handle in (self._stdout_handle, self._stderr_handle):
+            try:
+                if handle is not None:
+                    handle.close()
+            except Exception:
+                pass
+        self._stdout_handle = None
+        self._stderr_handle = None

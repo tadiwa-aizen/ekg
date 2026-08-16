@@ -9,8 +9,8 @@ class EvaluationParameters:
     """
     Configurable parameters for EKG evaluation.
     
-    All parameters have documented defaults based on industry standards
-    and empirical testing. Parameters can be overridden via CLI or API.
+    Parameters are thesis-defined operational settings and can be overridden
+    via the CLI or API. Result files record the values used for each run.
     
     References:
         - Fuzzy matching thresholds: Christen (2012) - Data Matching
@@ -18,10 +18,10 @@ class EvaluationParameters:
     """
     
     # Fuzzy matching parameters
-    fuzzy_similarity_threshold: float = 0.85
+    fuzzy_similarity_threshold: float = 0.90
     """Similarity threshold for fuzzy duplicate detection (0.0-1.0).
-    Default: 0.85 (85% similarity)
-    Rationale: Balances precision/recall for event labels with minor variations.
+    Default: 0.90 (90% token-sort similarity)
+    Rationale: Conservative candidate threshold used consistently in the thesis.
     """
     
     fuzzy_sample_size: int = 1000
@@ -34,7 +34,8 @@ class EvaluationParameters:
     temporal_sample_size: int = 1000
     """Number of temporal relations to sample for validation.
     Default: 1000
-    Rationale: Representative sample for format validation.
+    Rationale: Bounds endpoint work. Sampling metadata is reported; a sample
+    is not called representative without a statistical design.
     """
     
     # Type consistency parameters

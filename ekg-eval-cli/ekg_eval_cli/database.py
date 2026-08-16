@@ -2,9 +2,13 @@
 
 from pathlib import Path
 from typing import List
+import json
 import subprocess
 import re
 import platform
+import os
+
+from .provenance import build_input_manifest
 
 
 class DatabaseManager:
@@ -22,7 +26,11 @@ class DatabaseManager:
         self.ekg_folder = ekg_folder
         self.db_path = ekg_folder / "databases" / "eventkg-db"
 
-    def database_exists(self) -> bool:
+    @property
+    def manifest_path(self) -> Path:
+        return self.db_path / "ekg_eval_database_manifest.json"
+
+    def database_exists(self, nt_files: List[Path]) -> bool:
         """
         Check if TDB2 database already exists.
 
@@ -32,10 +40,30 @@ class DatabaseManager:
         if not self.db_path.exists():
             return False
 
-        # Check if the database directory contains TDB2 files
-        # TDB2 databases typically have Data-*.dat files
-        db_files = list(self.db_path.glob("Data-*.dat"))
-        return len(db_files) > 0
+        # Check if the database directory contains TDB2 files. Jena TDB2
+        # creates Data-* directories on current releases, not Data-*.dat files.
+        db_entries = list(self.db_path.glob("Data-*"))
+        if not db_entries:
+            return False
+
+        current = build_input_manifest(
+            nt_files, self.ekg_folder / ".ekg_eval_input_manifest.json"
+        )
+        if not self.manifest_path.exists():
+            raise RuntimeError(
+                "An existing TDB2 database has no input manifest and cannot be reused safely. "
+                f"Verify or rebuild it before evaluation: {self.db_path}"
+            )
+        try:
+            recorded = json.loads(self.manifest_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            raise RuntimeError(f"Invalid TDB2 input manifest: {self.manifest_path}") from exc
+        if recorded.get("aggregate_sha256") != current.get("aggregate_sha256"):
+            raise RuntimeError(
+                "The existing TDB2 database was built from different input files. "
+                f"Rebuild the database at {self.db_path}."
+            )
+        return True
 
     def load_database(self, nt_files: List[Path]) -> int:
         """
@@ -52,6 +80,15 @@ class DatabaseManager:
             FileNotFoundError: If tdb2.tdbloader executable not found
             OSError: If database directory cannot be created or accessed
         """
+        # The Jena command launchers require the runtime jars in lib/. Some
+        # source-only or incomplete extractions still contain the launcher
+        # scripts, but fail later with a misleading ClassNotFoundException.
+        if not (self.jena_home / "lib").is_dir():
+            raise FileNotFoundError(
+                "Apache Jena runtime libraries are missing. Use the complete binary "
+                f"distribution, not a source-only extraction: {self.jena_home}"
+            )
+
         # Create database directory if it doesn't exist
         try:
             self.db_path.mkdir(parents=True, exist_ok=True)
@@ -68,7 +105,15 @@ class DatabaseManager:
 
         # Determine the correct tdbloader command based on OS
         if platform.system() == "Windows":
-            tdbloader_cmd = self.jena_home / "bat" / "tdb2.tdbloader.bat"
+            bat_dir = self.jena_home / "bat"
+            tdbloader_candidates = [
+                bat_dir / "tdb2.tdbloader.bat",
+                bat_dir / "tdb2_tdbloader.bat",
+            ]
+            tdbloader_cmd = next(
+                (candidate for candidate in tdbloader_candidates if candidate.exists()),
+                tdbloader_candidates[0],
+            )
         else:
             tdbloader_cmd = self.jena_home / "bin" / "tdb2.tdbloader"
 
@@ -92,17 +137,26 @@ class DatabaseManager:
 
         try:
             # Run tdb2.tdbloader and capture output
+            env = os.environ.copy()
+            env["JENA_HOME"] = str(self.jena_home)
+            env["JENAROOT"] = str(self.jena_home)
+
             result = subprocess.run(
                 cmd,
                 capture_output=True,
                 text=True,
-                check=True
+                check=True,
+                env=env
             )
 
             # Parse output to extract number of triples loaded
             # TDB2 loader typically outputs something like:
             # "-- Finished: 1,234 tuples in 1.23s (Rate: 1,000 per second)"
             triples_loaded = self._parse_triples_count(result.stdout + result.stderr)
+            manifest = build_input_manifest(
+                nt_files, self.ekg_folder / ".ekg_eval_input_manifest.json"
+            )
+            self.manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
             return triples_loaded
 
         except subprocess.CalledProcessError as e:

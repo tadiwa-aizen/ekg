@@ -5,6 +5,8 @@ from typing import Dict, Any
 import networkx as nx
 import re
 
+from .projection import NODE_PREDICATE
+
 
 class GraphAnalyzer:
     """Analyzes graph structure using NetworkX."""
@@ -53,13 +55,17 @@ class GraphAnalyzer:
                     if match:
                         subject = match.group(1)
                         obj = match.group(2)
-                        # Add edge (automatically adds nodes if they don't exist)
-                        graph.add_edge(subject, obj)
-                        edge_count += 1
+                        predicate_match = re.match(r'<[^>]+>\s+<([^>]+)>', line)
+                        predicate = predicate_match.group(1) if predicate_match else ""
+                        if predicate == NODE_PREDICATE and subject == obj:
+                            graph.add_node(subject)
+                        else:
+                            graph.add_edge(subject, obj)
+                            edge_count += 1
 
-            if edge_count == 0:
+            if graph.number_of_nodes() == 0:
                 raise RuntimeError(
-                    f"No valid edges found in {edge_file}.\n"
+                    f"No valid projected nodes or edges found in {edge_file}.\n"
                     f"The file may be empty or in an incorrect format.\n"
                     f"Expected N-Triples format: <subject> <predicate> <object> ."
                 )

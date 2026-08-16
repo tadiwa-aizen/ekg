@@ -18,13 +18,12 @@ if requirements_path.exists():
 
 setup(
     name="ekg-eval-cli",
-    version="0.1.0",
+    version="0.2.0",
     description="A command-line tool for evaluating Event-Centric Knowledge Graphs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="EKG Research Team",
-    author_email="research@example.com",
-    url="https://github.com/example/ekg-eval-cli",
+    author="Tadiwa Magwenzi",
+    author_email="MGWTAD001@myuct.ac.za",
     packages=find_packages(),
     install_requires=requirements,
     python_requires=">=3.8",
@@ -46,4 +45,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     keywords="knowledge-graph rdf sparql jena fuseki networkx evaluation",
+    license="MIT",
 )

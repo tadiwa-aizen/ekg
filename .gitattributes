@@ -1,0 +1,4 @@
+# Frozen evidence is verified byte-for-byte and must not be line-ending normalised.
+final-frozen-evidence-2026-08-07/** -text
+tool-comparison/corrected-2026-08-07/comparator-summary.json -text
+docs/thesis/generated/*.tex -text

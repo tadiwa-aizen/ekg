@@ -1,238 +1,135 @@
 # ekg-eval-cli
 
-A command-line tool for evaluating the quality of Event-Centric Knowledge Graphs (EKGs). Point it at a folder of N-Triples files and it produces a comprehensive quality report across 9 evaluation dimensions with 32 metrics.
+`ekg-eval-cli` evaluates RDF-based event-centric knowledge graphs (EKGs) as a multidimensional intrinsic profile. It reports exactly 32 core metrics across nine selected dimensions, plus supporting counts and diagnostics. It does not collapse the dimensions into one universal quality score.
 
-## How It Works
+Every output is defined in `ekg_eval_cli/metric_registry.py` as adopted, adapted, literature-informed original, or project-specific. The generated metric audit records its formula, implementation path, empty-case rule, provenance, and limitations.
 
-```
-ekg-eval-cli /path/to/your-event-kg
-```
+## Scope
 
-The tool:
-1. Loads your `.nt` files into an Apache Jena TDB2 database
-2. Starts a Fuseki SPARQL server
-3. Runs SPARQL queries + NetworkX analysis across a 16-step pipeline
-4. Outputs results to console, JSON, and CSV
+The default profile uses direct `sem:Event` instances and expects SEM-style temporal properties attached to event nodes. It evaluates graph structure, duplicate candidates, temporal representation, minimal event-profile alignment, completeness, explicit type alignment, event richness, external link presence, and predicate-use patterns. It does not establish factual truth, causal correctness, downstream task utility, or mapping correctness.
 
 ## Requirements
 
-- **Python 3.8+**
-- **Apache Jena** (for TDB2 database) — place `apache-jena-*` in the working directory or use `--jena-home`
-- **Apache Jena Fuseki** (for SPARQL endpoint) — place `apache-jena-fuseki-*` in the working directory or use `--fuseki-home`
+- Python 3.8 or later
+- Apache Jena 5.6.0
+- Apache Jena Fuseki 5.6.0
+- Dependencies in `requirements.txt`
+- Exact evaluation environment in `requirements-lock.txt`
 
 ## Installation
 
 ```bash
 cd ekg-eval-cli
-pip install -e .
-```
-
-### Optional Dependencies
-
-```bash
-pip install pyshacl     # For SHACL constraint validation
-pip install datasketch  # For LSH-based fuzzy matching (faster on large datasets)
+python -m pip install -r requirements-lock.txt
+python -m pip install -e . --no-deps
+python -m pytest -q
 ```
 
 ## Usage
 
 ```bash
-# Basic evaluation
-ekg-eval-cli /path/to/ekg/folder
-
-# Verbose output (shows 16-step progress)
-ekg-eval-cli /path/to/ekg/folder --verbose
-
-# Custom parameters
-ekg-eval-cli /path/to/ekg/folder --fuzzy-threshold 0.90 --max-properties 100
-
-# Custom Jena/Fuseki paths
-ekg-eval-cli /path/to/ekg/folder --jena-home /opt/jena --fuseki-home /opt/fuseki
+ekg-eval-cli /path/to/ekg/folder \
+  --verbose \
+  --output-dir /path/to/results \
+  --jena-home /path/to/apache-jena-5.6.0 \
+  --fuseki-home /path/to/apache-jena-fuseki-5.6.0
 ```
 
-### CLI Options
+For a graph whose projected domain relations do not fit comfortably in memory:
 
-| Option | Default | Description |
-|--------|---------|-------------|
-| `--verbose` | off | Show detailed progress for each step |
-| `--output-dir` | `./ekg_results` | Directory for JSON/CSV output |
-| `--jena-home` | auto-detect | Path to Apache Jena installation |
-| `--fuseki-home` | auto-detect | Path to Fuseki installation |
-| `--fuzzy-threshold` | 0.85 | Similarity threshold for fuzzy duplicate detection (0.0–1.0) |
-| `--fuzzy-sample-size` | 1000 | Events to sample for fuzzy matching |
-| `--temporal-sample-size` | 1000 | Temporal relations to sample for validation |
-| `--max-properties` | 50 | Max properties to analyze for type consistency |
-
-## Input Format
-
-The tool expects a folder containing N-Triples (`.nt`) files following the EventKG schema:
-
-```turtle
-<event_123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<event_123> <http://www.w3.org/2000/01/rdf-schema#label> "World Cup 2022"@en .
-<event_123> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2022-11-20"^^<http://www.w3.org/2001/XMLSchema#date> .
-<event_123> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q284070> .
+```bash
+ekg-eval-cli /path/to/ekg/folder \
+  --large-graph-mode \
+  --large-graph-work-dir /path/to/work \
+  --duckdb-memory-limit 8GB \
+  --duckdb-temp-dir /path/to/work/duckdb-temp
 ```
 
-The tool uses the SEM (Simple Event Model) ontology and EventKG schema conventions.
+Important options:
 
-## Output
+| Option | Default | Meaning |
+|---|---:|---|
+| `--port` | `3030` | Fuseki port |
+| `--fuzzy-threshold` | `0.90` | RapidFuzz token-sort threshold |
+| `--fuzzy-sample-size` | `1000` | IRI-ordered event-label sample; no population inference |
+| `--temporal-sample-size` | `1000` | Deterministic temporal sample size |
+| `--max-properties` | `50` | Maximum declared properties inspected for type alignment |
+| `--large-graph-mode` | off | Disk-backed structural projection and union-find |
 
-Each run produces three outputs:
+## Input Contract
 
-### Console
-```
-[1] GRAPH CONNECTIVITY AND COHESION
-  Total Nodes:              1,301
-  Total Edges:              2,921
-  Connected Components:     4
-  Giant Component Ratio:    0.9877
+The input is one folder containing UTF-8 N-Triples files. The canonical event population is:
 
-[3] REDUNDANCY AND DUPLICATION
-  Total Events:             100
-  Fuzzy Duplicate Pairs:    913
-  Label Uniqueness:         10.31%
-
-[9] EXTERNAL MAPPING COVERAGE
-  Wikidata Coverage:        100.00%
-  DBpedia Coverage:         100.00%
+```sparql
+?event a <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 ```
 
-### JSON — `ekg_results/ekg_metrics_YYYYMMDD_HHMMSS.json`
-Full structured results with 32 evaluation metrics and supporting data points.
+The minimal profile requires:
 
-### CSV — `ekg_results/ekg_metrics_YYYYMMDD_HHMMSS.csv`
-Flat key-value format for spreadsheet analysis.
+- an `rdfs:label`;
+- `sem:hasBeginTimeStamp` or `sem:hasEndTimeStamp`;
+- a `sem:hasPlace` value.
 
-## Evaluation Dimensions
+The domain-connectivity projection is a simple undirected graph over IRI-to-IRI domain relations. It excludes `rdf:type`, `rdfs:*`, `owl:*`, and other configured schema predicates. Direct `sem:Event` resources remain nodes even when they have no retained IRI relation. Predicate direction and parallel edges are not retained, so the structural outputs must be interpreted under this explicit projection.
 
-The tool evaluates 9 quality dimensions (32 metrics):
+## Core Dimensions
 
-| # | Dimension | Module | Key Metrics |
-|---|-----------|--------|-------------|
-| 1 | Graph Connectivity & Structure | `analyzer.py` | Nodes, edges, components, giant component ratio, clustering coefficient, edge connectivity, average degree, density |
-| 2 | Redundancy | `redundancy.py` | Exact duplicates, owl:sameAs duplicates, fuzzy duplicates (RapidFuzz), label uniqueness |
-| 3 | Temporal Consistency | `temporal.py` | ISO 8601 compliance, temporal granularity, temporal coverage, semantic validation (end ≥ start), temporal density |
-| 4 | Schema Conformance | `schema_analyzer.py` | Label coverage, date coverage, schema conformance, non-standard property detection |
-| 5 | Completeness | `completeness.py` | Schema coverage, population completeness, class usage efficiency |
-| 6 | Type Consistency | `type_consistency.py` | Domain/range conformity with RDFS subclass inference |
-| 7 | Entity Richness | `entity_richness.py` | Avg/median/stddev properties per event, sparse entity detection |
-| 8 | Mapping Coverage | `mapping_coverage.py` | External link rate, Wikidata coverage, DBpedia coverage |
-| 9 | Predicate Usage | `predicate_usage.py` | Unique predicates, top-10 concentration, Gini coefficient |
+| Dimension | Core count | Main implementation |
+|---|---:|---|
+| Graph connectivity and structure | 6 | `analyzer.py`, `large_graph.py` |
+| Redundancy and duplication | 3 | `redundancy.py` |
+| Temporal consistency | 6 | `temporal.py` |
+| Minimal event-profile alignment | 4 | `schema_analyzer.py` |
+| Completeness | 5 | `completeness.py` |
+| Type consistency/alignment | 1 | `type_consistency.py` |
+| Entity richness | 2 | `entity_richness.py` |
+| External mapping coverage | 3 | `mapping_coverage.py` |
+| Predicate usage | 2 | `predicate_usage.py` |
+| **Total** | **32** | `metric_registry.py` |
 
-SHACL validation is available as an optional 11th dimension if `pyshacl` is installed.
+Type consistency is a closed-profile explicit alignment check over used RDFS domain/range declarations. Missing explicit types count as non-alignment; they are not asserted to be RDF/OWL logical contradictions. `rdfs:Resource` and `rdfs:Literal` are handled according to RDF semantics. If no declared constraint applies, the score is `null` (`N/A`), not 100%.
 
-## Architecture
+External mapping rates measure explicit `owl:sameAs` link presence. Wikidata and DBpedia are identified by HTTP(S) host patterns. The tool does not verify equivalence correctness, currency, or resolvability.
 
-```
-cli.py                  → Click CLI entry point
-orchestrator.py         → 16-step pipeline coordinator
-path_resolver.py        → Auto-detect Jena/Fuseki installations
-database.py             → Load .nt files into TDB2
-fuseki.py               → Start/stop Fuseki SPARQL server
-sparql.py               → Execute SPARQL queries (graph projection)
-analyzer.py             → NetworkX graph analysis
-redundancy.py           → Duplicate detection (exact, sameAs, fuzzy)
-temporal.py             → Temporal validation (ISO 8601, coverage, semantics)
-schema_analyzer.py      → Schema conformance checking
-completeness.py         → Population completeness analysis
-type_consistency.py     → Domain/range validation with RDFS inference
-entity_richness.py      → Properties-per-event statistics
-mapping_coverage.py     → Wikidata/DBpedia link analysis
-predicate_usage.py      → Property distribution and Gini coefficient
-shacl_validator.py      → SHACL constraint validation (optional)
-label_normalizer.py     → Unicode NFKD + case folding + diacritic removal
-config.py               → Configurable parameters with defaults
-output.py               → Console, JSON, CSV output formatting
-```
+Predicate entropy and concentration, graph density, richness, and related values are descriptive diagnostics. Their direction is not universally good or bad.
 
-### Pipeline Steps
+## Outputs and Provenance
 
-```
- 1. Validate EKG folder (find .nt files)
- 2. Resolve Jena/Fuseki paths
- 3. Load .nt files → TDB2 database
- 4. Start Fuseki SPARQL server
- 5. Extract graph edges via SPARQL CONSTRUCT
- 6. Analyze graph structure (NetworkX)
- 7. Detect redundancy (exact + fuzzy matching)
- 8. Validate temporal consistency
- 9. Check schema conformance
-10. Analyze completeness
-11. Check type consistency (RDFS inference)
-12. Measure entity richness
-13. Check external mapping coverage
-14. Analyze predicate usage patterns
-15. Run SHACL validation (if pyshacl installed)
-16. Save results (JSON + CSV + console)
+Each successful run writes:
+
+- `ekg_metrics_YYYYMMDD_HHMMSS.json`;
+- `ekg_metrics_YYYYMMDD_HHMMSS.csv`;
+- `metric_audit.md`.
+
+The JSON contains:
+
+- SHA-256 hashes for every input and an aggregate input hash;
+- the exact first-party source snapshot hash and per-file hashes captured when the run starts;
+- Git revision and dirty state;
+- Python, platform, and package versions;
+- metric parameters and execution options;
+- exact metric IDs, formulas, implementation paths, empty-case rules, and provenance classifications.
+
+TDB2 and large-graph caches are protected by input manifests. The domain projection additionally records the projection contract and `projection.py` hash. A mismatched cache is rejected rather than silently reused.
+
+## Determinism and Unavailable Values
+
+- Fuzzy matching evaluates every non-identical pair in an IRI-ordered bounded label sample with `RapidFuzz.fuzz.token_sort_ratio` at 0.90.
+- Temporal samples are deterministically selected and ordered; the sampling method is stored in the result.
+- Interval consistency is event-level. Unparseable events are excluded from the consistency denominator and reported separately; multiple values use `max(begin) <= min(end)`.
+- Empty or inapplicable denominators produce `null` plus a status, never a vacuous perfect score.
+- Large-graph mode reports unavailable clustering as `-1` with `avg_clustering_status`, and explains conditional edge-connectivity values.
+
+## Tests
+
+Run:
+
+```bash
+python -m pytest -q
 ```
 
-## Key Algorithms
+The regression suite uses hand-computable fixtures for all 32 core output formulas, projection semantics, duplicate normalization, temporal edge cases, direct-event denominators, type applicability, mapping host rules, predicate diversity, source manifests, and cache invalidation. Passing unit tests establish implementation checks for these fixtures; they do not establish construct validity for every EKG use case.
 
-| Task | Library | Method |
-|------|---------|--------|
-| Connected components | NetworkX | `nx.connected_components()` |
-| Clustering coefficient | NetworkX | `nx.average_clustering()` |
-| Edge connectivity | NetworkX | `nx.edge_connectivity()` |
-| Graph density | NetworkX | `nx.density()` |
-| Fuzzy matching | RapidFuzz | `fuzz.token_sort_ratio()` |
-| LSH candidate generation | datasketch | `MinHashLSH` (optional) |
-| Label normalization | stdlib | Unicode NFKD + `str.casefold()` |
-| Date validation | python-dateutil | `parser.isoparse()` |
-| RDFS inference | SPARQL | `rdfs:subClassOf*` property paths |
-| Graph projection | SPARQL | `CONSTRUCT` with `FILTER(isIRI())` |
+## Licence
 
-## Performance
-
-| Dataset | Events | Total Time |
-|---------|--------|------------|
-| synthetic-event-kg (100 events) | 100 | ~11s |
-| synthetic-event-kg-2 (150 events) | 150 | ~13s |
-| synthetic-event-kg-3 (120 events) | 120 | ~11s |
-| Real EventKG (~1M events) | 993,268 | ~30–40 min |
-
-Database loading is a one-time cost. Subsequent runs reuse the existing TDB2 database.
-
-## Known Limitations
-
-- **Type consistency** reports 100% when datasets have no actively used properties with RDFS domain/range declarations (vacuous result)
-- **SHACL validation** requires `pyshacl` to be installed separately
-- **Fuzzy matching** uses O(n²) naive comparison when `datasketch` is not installed; sampling mitigates this
-- **Format assumption** — expects EventKG format where temporal data is stored directly on event nodes (`sem:hasBeginTimeStamp`); Relations-based temporal models are not supported
-- **No unit tests** — validation was done by comparing tool output against ground truth extracted independently from raw N-Triples files
-
-## Project Structure
-
-```
-ekg-eval-cli/
-├── ekg_eval_cli/
-│   ├── __init__.py
-│   ├── cli.py
-│   ├── orchestrator.py
-│   ├── path_resolver.py
-│   ├── database.py
-│   ├── fuseki.py
-│   ├── sparql.py
-│   ├── analyzer.py
-│   ├── redundancy.py
-│   ├── temporal.py
-│   ├── schema_analyzer.py
-│   ├── completeness.py
-│   ├── type_consistency.py
-│   ├── entity_richness.py
-│   ├── mapping_coverage.py
-│   ├── predicate_usage.py
-│   ├── shacl_validator.py
-│   ├── label_normalizer.py
-│   ├── config.py
-│   └── output.py
-├── setup.py
-├── requirements.txt
-├── README.md
-├── STANDARDS_COMPLIANCE.md
-└── REPORT.md (in parent directory)
-```
-
-## License
-
-MIT
+MIT. See `LICENSE`.

@@ -1,342 +1,379 @@
-"""Temporal consistency validation for EventKG."""
+"""Temporal coverage, format, granularity, distribution, and ordering checks."""
 
-from typing import Dict, Any, List, Optional
-import requests
+from __future__ import annotations
+
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
+import re
+
 from dateutil import parser
-from datetime import datetime
+import requests
+
 from .config import EvaluationParameters
 
 
+SEM = "http://semanticweb.cs.vu.nl/2009/11/sem/"
+XSD = "http://www.w3.org/2001/XMLSchema#"
+
+
 class TemporalValidator:
-    """Validates temporal consistency in EventKG."""
+    """Validate explicitly represented temporal information on direct SEM events."""
 
-    def __init__(self, endpoint_url: str, parameters: Optional[EvaluationParameters] = None):
-        """
-        Initialize TemporalValidator.
-
-        Args:
-            endpoint_url: URL of the SPARQL endpoint
-            parameters: Evaluation parameters (uses defaults if None)
-        """
+    def __init__(
+        self,
+        endpoint_url: str,
+        parameters: Optional[EvaluationParameters] = None,
+        nt_files: Optional[List[Path]] = None,
+    ):
         self.endpoint_url = endpoint_url
-        if not endpoint_url.endswith('/sparql'):
-            self.query_url = f"{endpoint_url}/sparql"
-        else:
-            self.query_url = endpoint_url
-        
+        self.query_url = (
+            endpoint_url if endpoint_url.endswith("/sparql") else f"{endpoint_url}/sparql"
+        )
         self.parameters = parameters or EvaluationParameters()
+        self.nt_files = nt_files or []
 
     def _execute_query(self, query: str) -> List[Dict[str, Any]]:
-        """Execute SPARQL query and return results."""
         headers = {
-            'Accept': 'application/sparql-results+json',
-            'Content-Type': 'application/x-www-form-urlencoded'
+            "Accept": "application/sparql-results+json",
+            "Content-Type": "application/x-www-form-urlencoded",
         }
         response = requests.post(
-            self.query_url,
-            headers=headers,
-            data={'query': query},
-            timeout=300
+            self.query_url, headers=headers, data={"query": query}, timeout=300
         )
         response.raise_for_status()
-        return response.json()['results']['bindings']
+        return response.json()["results"]["bindings"]
 
-    def validate_date_formats(self, sample_size: int = None) -> Dict[str, Any]:
-        """
-        Validate ISO 8601 date format compliance on events.
-        
-        Args:
-            sample_size: Number of events to sample, uses config default if None
-        """
-        if sample_size is None:
-            sample_size = self.parameters.temporal_sample_size
-        
-        query = f"""
-        PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        
+    def _sample_begin_values(self, sample_size: int) -> Tuple[List[Dict[str, Any]], str]:
+        """Return a deterministic hash-ordered sample, with a small-graph fallback."""
+
+        hash_query = f"""
+        PREFIX sem: <{SEM}>
         SELECT ?event ?date
         WHERE {{
-            ?event a sem:Event ;
-                   sem:hasBeginTimeStamp ?date .
+            ?event a sem:Event ; sem:hasBeginTimeStamp ?date .
+            BIND(SHA256(STR(?event)) AS ?sampleKey)
+            FILTER(SUBSTR(?sampleKey, 1, 2) = "00")
         }}
-        LIMIT {sample_size}
+        ORDER BY ?sampleKey STR(?event) STR(?date)
+        LIMIT {int(sample_size)}
         """
-        
-        results = self._execute_query(query)
-        
+        rows = self._execute_query(hash_query)
+        if len(rows) >= min(30, sample_size):
+            return rows, "deterministic SHA-256 event sample (00 prefix)"
+
+        fallback_query = f"""
+        PREFIX sem: <{SEM}>
+        SELECT ?event ?date
+        WHERE {{ ?event a sem:Event ; sem:hasBeginTimeStamp ?date . }}
+        ORDER BY STR(?event) STR(?date)
+        LIMIT {int(sample_size)}
+        """
+        return self._execute_query(fallback_query), "complete/small-graph IRI-ordered sample"
+
+    @staticmethod
+    def _granularity(value: str, datatype: str) -> str:
+        datatype_map = {
+            f"{XSD}gYear": "year",
+            f"{XSD}gYearMonth": "month",
+            f"{XSD}date": "day",
+            f"{XSD}dateTime": "timestamp",
+            f"{XSD}dateTimeStamp": "timestamp",
+        }
+        if datatype in datatype_map:
+            return datatype_map[datatype]
+        if re.fullmatch(r"[+-]?\d{4,}", value):
+            return "year"
+        if re.fullmatch(r"[+-]?\d{4,}-\d{2}", value):
+            return "month"
+        if re.fullmatch(r"[+-]?\d{4,}-\d{2}-\d{2}(?:Z|[+-]\d{2}:\d{2})?", value):
+            return "day"
+        if "T" in value:
+            return "timestamp"
+        return "unknown"
+
+    @classmethod
+    def _valid_temporal_lexical(cls, value: str, datatype: str) -> bool:
+        granularity = cls._granularity(value, datatype)
+        if granularity == "year":
+            return bool(re.fullmatch(r"[+-]?\d{4,}", value))
+        if granularity == "month":
+            match = re.fullmatch(r"([+-]?\d{4,})-(\d{2})", value)
+            return bool(match and 1 <= int(match.group(2)) <= 12)
+        try:
+            parser.isoparse(value)
+            return granularity in {"day", "timestamp"}
+        except (ValueError, parser.ParserError, OverflowError):
+            return False
+
+    @classmethod
+    def _parse_temporal_value(cls, value: str) -> datetime:
+        """Parse supported temporal granularities to their earliest represented instant."""
+        granularity = cls._granularity(value, "")
+        if granularity == "year":
+            return datetime(int(value), 1, 1)
+        if granularity == "month":
+            year, month = value.split("-", 1)
+            return datetime(int(year), int(month), 1)
+        parsed = parser.isoparse(value)
+        if parsed.tzinfo is not None:
+            parsed = parsed.astimezone(timezone.utc).replace(tzinfo=None)
+        return parsed
+
+    def validate_date_formats(self, sample_size: Optional[int] = None) -> Dict[str, Any]:
+        sample_size = sample_size or self.parameters.temporal_sample_size
+        rows, sampling_method = self._sample_begin_values(sample_size)
+        invalid_examples = []
         valid_count = 0
-        invalid_count = 0
-        invalid_dates = []
-        
-        for r in results:
-            date_str = r['date']['value']
-            try:
-                # Try to parse as ISO 8601
-                parser.isoparse(date_str)
+        for row in rows:
+            value = row["date"]["value"]
+            datatype = row["date"].get("datatype", "")
+            if self._valid_temporal_lexical(value, datatype):
                 valid_count += 1
-            except (ValueError, parser.ParserError):
-                invalid_count += 1
-                if len(invalid_dates) < 10:  # Keep first 10 examples
-                    invalid_dates.append(date_str)
-        
-        total = len(results)
-        compliance_rate = (valid_count / total * 100) if total > 0 else 0.0
-        
+            elif len(invalid_examples) < 10:
+                invalid_examples.append(
+                    {"value": value, "datatype": datatype or "untyped"}
+                )
+        total = len(rows)
         return {
-            'total_sampled': total,
-            'valid_dates': valid_count,
-            'invalid_dates': invalid_count,
-            'compliance_rate': round(compliance_rate, 2),
-            'invalid_examples': invalid_dates
+            "total_sampled": total,
+            "valid_dates": valid_count,
+            "invalid_dates": total - valid_count,
+            "compliance_rate": round(valid_count / total * 100, 2) if total else None,
+            "status": "computed" if total else "not_applicable_no_begin_values",
+            "sampling_method": sampling_method,
+            "invalid_examples": invalid_examples,
         }
 
-    def analyze_temporal_granularity(self, sample_size: int = None) -> Dict[str, Any]:
-        """
-        Analyze temporal granularity distribution of event dates.
-        
-        Determines granularity by parsing date string format:
-        YYYY = year, YYYY-MM = month, YYYY-MM-DD = day, contains T = timestamp.
-        
-        Args:
-            sample_size: Number of events to sample, uses config default if None
-        """
-        if sample_size is None:
-            sample_size = self.parameters.temporal_sample_size
-        
-        query = f"""
-        PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        
-        SELECT ?event ?date
-        WHERE {{
-            ?event a sem:Event ;
-                   sem:hasBeginTimeStamp ?date .
-        }}
-        LIMIT {sample_size}
-        """
-        
-        results = self._execute_query(query)
-        
-        granularity_counts = {
-            'year': 0,
-            'month': 0,
-            'day': 0,
-            'timestamp': 0,
-            'unknown': 0
+    def analyze_temporal_granularity(
+        self, sample_size: Optional[int] = None
+    ) -> Dict[str, Any]:
+        sample_size = sample_size or self.parameters.temporal_sample_size
+        rows, sampling_method = self._sample_begin_values(sample_size)
+        counts = {"year": 0, "month": 0, "day": 0, "timestamp": 0, "unknown": 0}
+        datatype_counts: Dict[str, int] = defaultdict(int)
+        for row in rows:
+            value = row["date"]["value"]
+            datatype = row["date"].get("datatype", "")
+            counts[self._granularity(value, datatype)] += 1
+            datatype_counts[datatype or "untyped"] += 1
+        total = len(rows)
+        percentages = {
+            key: round(value / total * 100, 2) if total else None
+            for key, value in counts.items()
         }
-        
-        for r in results:
-            date_str = r['date']['value']
-            
-            if 'T' in date_str:
-                granularity_counts['timestamp'] += 1
-            elif len(date_str) == 10:  # YYYY-MM-DD
-                granularity_counts['day'] += 1
-            elif len(date_str) == 7:  # YYYY-MM
-                granularity_counts['month'] += 1
-            elif len(date_str) == 4:  # YYYY
-                granularity_counts['year'] += 1
-            else:
-                granularity_counts['unknown'] += 1
-        
-        total = len(results)
-        granularity_percentages = {
-            k: round((v / total * 100), 2) if total > 0 else 0.0
-            for k, v in granularity_counts.items()
-        }
-        
         return {
-            'total_sampled': total,
-            'granularity_counts': granularity_counts,
-            'granularity_percentages': granularity_percentages
+            "total_sampled": total,
+            "granularity_counts": counts,
+            "granularity_percentages": percentages,
+            "datatype_counts": dict(datatype_counts),
+            "classification_method": "XML Schema datatype with documented lexical fallback",
+            "sampling_method": sampling_method,
+            "status": "computed" if total else "not_applicable_no_begin_values",
         }
 
     def detect_missing_dates(self) -> Dict[str, Any]:
+        """Count direct SEM events with at least one begin or end timestamp."""
+
+        if self.nt_files:
+            return self._detect_missing_dates_from_files()
+        query = f"""
+        PREFIX sem: <{SEM}>
+        SELECT ?total ?dated
+        WHERE {{
+            {{ SELECT (COUNT(DISTINCT ?event) AS ?total)
+               WHERE {{ ?event a sem:Event . }} }}
+            {{ SELECT (COUNT(DISTINCT ?datedEvent) AS ?dated)
+               WHERE {{
+                   ?datedEvent a sem:Event .
+                   {{ ?datedEvent sem:hasBeginTimeStamp ?time }}
+                   UNION
+                   {{ ?datedEvent sem:hasEndTimeStamp ?time }}
+               }} }}
+        }}
         """
-        Detect events without temporal information.
-        
-        Note: Counts events that have relations with temporal data vs those without.
-        """
-        # Count total events
-        total_query = """
-        PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        
-        SELECT (COUNT(DISTINCT ?event) AS ?total)
-        WHERE {
-            ?event a sem:Event .
-        }
-        """
-        
-        # Count events with temporal relations
-        dated_query = """
-        PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        
-        SELECT (COUNT(DISTINCT ?event) AS ?total)
-        WHERE {
-            ?event a sem:Event ;
-                   sem:hasBeginTimeStamp ?date .
-        }
-        """
-        
-        total_results = self._execute_query(total_query)
-        dated_results = self._execute_query(dated_query)
-        
-        total_events = int(total_results[0]['total']['value'])
-        dated_events = int(dated_results[0]['total']['value'])
-        missing_dates = total_events - dated_events
-        
-        coverage_rate = (dated_events / total_events * 100) if total_events > 0 else 0.0
-        
+        row = self._execute_query(query)[0]
+        total = int(row["total"]["value"])
+        dated = int(row["dated"]["value"])
+        return self._coverage_result(total, dated, "SPARQL direct sem:Event population")
+
+    @staticmethod
+    def _coverage_result(total: int, dated: int, method: str) -> Dict[str, Any]:
         return {
-            'total_events': total_events,
-            'events_with_dates': dated_events,
-            'events_missing_dates': missing_dates,
-            'temporal_coverage_rate': round(coverage_rate, 2)
+            "total_events": total,
+            "events_with_temporal_information": dated,
+            "events_missing_temporal_information": total - dated,
+            # Compatibility aliases retained for downstream readers.
+            "events_with_dates": dated,
+            "events_missing_dates": total - dated,
+            "temporal_coverage_rate": round(dated / total * 100, 2) if total else None,
+            "status": "computed" if total else "not_applicable_no_events",
+            "temporal_predicates": [
+                f"{SEM}hasBeginTimeStamp",
+                f"{SEM}hasEndTimeStamp",
+            ],
+            "counting_method": method,
         }
 
-    def validate_temporal_semantics(self, sample_size: int = None) -> Dict[str, Any]:
+    def _detect_missing_dates_from_files(self) -> Dict[str, Any]:
+        event_pattern = re.compile(
+            rf"^\s*<([^>]+)>\s+<http://www\.w3\.org/1999/02/22-rdf-syntax-ns#type>\s+"
+            rf"<{re.escape(SEM)}Event>\s+\.\s*$"
+        )
+        time_pattern = re.compile(
+            rf"^\s*<([^>]+)>\s+<{re.escape(SEM)}has(?:Begin|End)TimeStamp>\s+"
+        )
+        events = set()
+        dated = set()
+        for nt_file in self.nt_files:
+            with nt_file.open("r", encoding="utf-8", errors="replace") as source:
+                for line in source:
+                    event_match = event_pattern.match(line)
+                    if event_match:
+                        events.add(event_match.group(1))
+                    time_match = time_pattern.match(line)
+                    if time_match:
+                        dated.add(time_match.group(1))
+        return self._coverage_result(
+            len(events), len(events.intersection(dated)), "exact file scan"
+        )
+
+    def _sample_intervals(self, sample_size: int) -> Tuple[List[Dict[str, Any]], str]:
+        hash_query = f"""
+        PREFIX sem: <{SEM}>
+        SELECT ?event ?start ?end
+        WHERE {{
+            ?event a sem:Event ;
+                   sem:hasBeginTimeStamp ?start ;
+                   sem:hasEndTimeStamp ?end .
+            BIND(SHA256(STR(?event)) AS ?sampleKey)
+            FILTER(SUBSTR(?sampleKey, 1, 2) = "00")
+        }}
+        ORDER BY ?sampleKey STR(?event) STR(?start) STR(?end)
+        LIMIT {int(sample_size * 4)}
         """
-        Validate semantic temporal consistency (end date >= start date).
-        
-        Args:
-            sample_size: Number of events to sample, uses config default if None
-        """
-        if sample_size is None:
-            sample_size = self.parameters.temporal_sample_size
-        
-        query = f"""
-        PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        
+        rows = self._execute_query(hash_query)
+        if len({row["event"]["value"] for row in rows}) >= min(30, sample_size):
+            return rows, "deterministic SHA-256 event sample (00 prefix)"
+        fallback_query = f"""
+        PREFIX sem: <{SEM}>
         SELECT ?event ?start ?end
         WHERE {{
             ?event a sem:Event ;
                    sem:hasBeginTimeStamp ?start ;
                    sem:hasEndTimeStamp ?end .
         }}
-        LIMIT {sample_size}
+        ORDER BY STR(?event) STR(?start) STR(?end)
+        LIMIT {int(sample_size * 4)}
         """
-        
-        results = self._execute_query(query)
-        
-        total = len(results)
+        return self._execute_query(fallback_query), "complete/small-graph IRI-ordered sample"
+
+    def validate_temporal_semantics(
+        self, sample_size: Optional[int] = None
+    ) -> Dict[str, Any]:
+        """Check event-level interval ordering over parseable begin/end values."""
+
+        sample_size = sample_size or self.parameters.temporal_sample_size
+        rows, sampling_method = self._sample_intervals(sample_size)
+        grouped: Dict[str, Dict[str, set[str]]] = defaultdict(
+            lambda: {"starts": set(), "ends": set()}
+        )
+        for row in rows:
+            event = row["event"]["value"]
+            grouped[event]["starts"].add(row["start"]["value"])
+            grouped[event]["ends"].add(row["end"]["value"])
+
         violations = 0
-        violation_examples = []
-        
-        for r in results:
+        unparseable = 0
+        examples = []
+        checked = 0
+        for event in sorted(grouped)[:sample_size]:
             try:
-                start_str = r['start']['value']
-                end_str = r['end']['value']
-                
-                start_date = parser.isoparse(start_str)
-                end_date = parser.isoparse(end_str)
-                
-                if end_date < start_date:
-                    violations += 1
-                    if len(violation_examples) < 5:
-                        violation_examples.append({
-                            'event': r['event']['value'],
-                            'start': start_str,
-                            'end': end_str
-                        })
-            except (ValueError, parser.ParserError):
-                # Skip invalid dates (already caught by format validation)
+                starts = [self._parse_temporal_value(value) for value in grouped[event]["starts"]]
+                ends = [self._parse_temporal_value(value) for value in grouped[event]["ends"]]
+            except (ValueError, TypeError, parser.ParserError, OverflowError):
+                unparseable += 1
                 continue
-        
-        consistency_rate = ((total - violations) / total * 100) if total > 0 else 100.0
-        
+            checked += 1
+            # Conservative multi-value rule: every represented begin must be
+            # no later than every represented end.
+            if max(starts) > min(ends):
+                violations += 1
+                if len(examples) < 5:
+                    examples.append(
+                        {
+                            "event": event,
+                            "starts": sorted(grouped[event]["starts"]),
+                            "ends": sorted(grouped[event]["ends"]),
+                        }
+                    )
+
+        rate = (checked - violations) / checked * 100 if checked else None
         return {
-            'total_checked': total,
-            'violations': violations,
-            'consistency_rate': round(consistency_rate, 2),
-            'violation_examples': violation_examples
+            "events_sampled": min(len(grouped), sample_size),
+            "total_checked": checked,
+            "unparseable_events": unparseable,
+            "violations": violations,
+            "consistency_rate": round(rate, 2) if rate is not None else None,
+            "status": "computed" if checked else "not_applicable_no_parseable_intervals",
+            "multi_value_rule": "max(begin values) <= min(end values)",
+            "sampling_method": sampling_method,
+            "violation_examples": examples,
         }
 
     def analyze_temporal_density(self) -> Dict[str, Any]:
+        query = f"""
+        PREFIX sem: <{SEM}>
+        SELECT ?date (COUNT(DISTINCT ?event) AS ?count)
+        WHERE {{ ?event a sem:Event ; sem:hasBeginTimeStamp ?date . }}
+        GROUP BY ?date ORDER BY ?date
         """
-        Measure event distribution across time.
-        
-        Queries events directly for temporal data.
-        """
-        query = """
-        PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
-        
-        SELECT ?date (COUNT(DISTINCT ?event) AS ?count) WHERE {
-            ?event a sem:Event ;
-                   sem:hasBeginTimeStamp ?date .
-        } GROUP BY ?date ORDER BY ?date
-        """
-        
-        results = self._execute_query(query)
-        
-        if not results:
-            return {
-                'temporal_span_years': 0,
-                'avg_events_per_decade': 0.0,
-                'coverage_gaps': 0,
-                'peak_decade': None,
-                'peak_decade_count': 0
-            }
-        
-        # Extract year from date strings and count
-        year_counts = {}
-        for r in results:
-            if 'date' in r and 'count' in r:
-                date_str = r['date']['value']
-                # Extract year from ISO date (YYYY-MM-DD or YYYY)
-                try:
-                    year = int(date_str[:4])
-                    count = int(r['count']['value'])
-                    year_counts[year] = year_counts.get(year, 0) + count
-                except (ValueError, IndexError):
-                    continue
-        
+        rows = self._execute_query(query)
+        year_counts: Dict[int, int] = defaultdict(int)
+        for row in rows:
+            try:
+                year_counts[int(row["date"]["value"][:4])] += int(row["count"]["value"])
+            except (ValueError, IndexError, KeyError):
+                continue
         if not year_counts:
             return {
-                'temporal_span_years': 0,
-                'avg_events_per_decade': 0.0,
-                'coverage_gaps': 0,
-                'peak_decade': None,
-                'peak_decade_count': 0
+                "temporal_span_years": None,
+                "avg_events_per_decade": None,
+                "coverage_gaps": None,
+                "underpopulated_decades": None,
+                "peak_decade": None,
+                "peak_decade_count": 0,
+                "status": "not_applicable_no_parseable_begin_years",
             }
-        
-        # Calculate temporal span
-        min_year = min(year_counts.keys())
-        max_year = max(year_counts.keys())
-        temporal_span = max_year - min_year
-        
-        # Group by decades and calculate metrics
-        decade_counts = {}
+
+        min_year, max_year = min(year_counts), max(year_counts)
+        decade_counts: Dict[int, int] = defaultdict(int)
         for year, count in year_counts.items():
-            decade = (year // 10) * 10
-            decade_counts[decade] = decade_counts.get(decade, 0) + count
-        
-        # Average events per decade
-        avg_per_decade = sum(decade_counts.values()) / len(decade_counts) if decade_counts else 0.0
-        
-        # Coverage gaps (decades with <10 events)
-        coverage_gaps = sum(1 for count in decade_counts.values() if count < 10)
-        
-        # Peak decade
-        peak_decade = max(decade_counts, key=decade_counts.get) if decade_counts else None
-        peak_count = decade_counts[peak_decade] if peak_decade else 0
-        
+            decade_counts[(year // 10) * 10] += count
+        first_decade = (min_year // 10) * 10
+        last_decade = (max_year // 10) * 10
+        expected_decades = list(range(first_decade, last_decade + 1, 10))
+        missing_decades = sum(1 for decade in expected_decades if decade not in decade_counts)
+        avg_per_decade = sum(decade_counts.values()) / len(expected_decades)
+        peak_decade = max(decade_counts, key=decade_counts.get)
         return {
-            'temporal_span_years': temporal_span,
-            'avg_events_per_decade': round(avg_per_decade, 2),
-            'coverage_gaps': coverage_gaps,
-            'peak_decade': f"{peak_decade}s" if peak_decade else None,
-            'peak_decade_count': peak_count
+            "temporal_span_years": max_year - min_year,
+            "avg_events_per_decade": round(avg_per_decade, 2),
+            "coverage_gaps": missing_decades,
+            "coverage_gap_definition": "missing decades between observed minimum and maximum year",
+            "underpopulated_decades": sum(
+                1 for decade in expected_decades if 0 < decade_counts.get(decade, 0) < 10
+            ),
+            "peak_decade": f"{peak_decade}s",
+            "peak_decade_count": decade_counts[peak_decade],
+            "status": "computed",
         }
 
     def validate_temporal_consistency(self) -> Dict[str, Any]:
-        """Run complete temporal validation."""
-        date_validation = self.validate_date_formats()
-        granularity = self.analyze_temporal_granularity()
-        missing_dates = self.detect_missing_dates()
-        density = self.analyze_temporal_density()
-        
         return {
-            'date_format_validation': date_validation,
-            'temporal_granularity': granularity,
-            'temporal_coverage': missing_dates,
-            'temporal_density': density
+            "date_format_validation": self.validate_date_formats(),
+            "temporal_granularity": self.analyze_temporal_granularity(),
+            "temporal_coverage": self.detect_missing_dates(),
+            "temporal_density": self.analyze_temporal_density(),
         }
