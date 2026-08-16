@@ -42,7 +42,7 @@ Year-only date probability & 0.00 & 0.20 & 0.55 \\
 \end{tabular}
 \end{table}
 
-The proposed evaluator and every external comparator consumed the same 16 N-Triples source files per profile. \path{ekg/tool-comparison/corrected-2026-08-07/input-manifest.json} lists each filename, byte size, and SHA-256 hash. The final bundle builder compares these entries with the input manifests embedded in the proposed-framework JSON and fails if any file differs. Database folders, prior results, and benchmark helper files are not included in the input hash.
+The proposed evaluator and every external comparator consumed the same 16 N-Triples source files per profile. The \texttt{input\_manifest} section of \path{ekg/tool-comparison/corrected-2026-08-07/comparator-summary.json} lists each filename, byte size, and SHA-256 hash. The final bundle builder compares these entries with the input manifests embedded in the proposed-framework JSON and fails if any file differs. Database folders, prior results, and benchmark helper files are not included in the input hash.
 
 \section{Repository Reproduction Entry Point}
 
@@ -75,9 +75,9 @@ The final suite contains 24 passing tests. It covers all 32 registered result-fi
 \section{External Comparator Reproducibility}
 \label{app:comparator_reproducibility}
 
-The external comparison uses native outputs and within-tool interpretation. No score is rescaled by the maximum among D1--D3, and no mean is formed across tools. The complete machine-readable record is \path{ekg/tool-comparison/corrected-2026-08-07/comparator-summary.json}; raw logs and outputs are stored beside it.
+The external comparison uses native outputs and within-tool interpretation. No score is rescaled by the maximum among D1--D3, and no mean is formed across tools. The public machine-readable record is \path{ekg/tool-comparison/corrected-2026-08-07/comparator-summary.json}. It contains the common input manifest, tool revisions, local patch hashes, extracted native values, failures, and hashes of the local raw outputs. The machine-specific raw logs and upstream comparator repositories were retained in the local research archive but are not bundled in the public repository.
 
-Table \ref{tab:appendix_comparator_versions} records the exact revisions and local execution adaptations needed to reproduce those native outputs.
+Table \ref{tab:appendix_comparator_versions} records the exact revisions and local execution adaptations used to produce those native outputs.
 
 \begin{table}[htbp]
 \centering
@@ -96,7 +96,7 @@ SANSA Stack & \texttt{5602abab29e5} & Apache-2.0 & Enabled local Spark execution
 \end{tabularx}
 \end{table}
 
-The reproducible command entry points are:
+The local helper programs used to prepare the common inputs, run Luzzu, and build the frozen summary were:
 
 \begin{verbatim}
 python ekg/tool-comparison/prepare_corrected_inputs.py
@@ -104,7 +104,7 @@ python ekg/tool-comparison/run_luzzu_corrected.py
 python ekg/tool-comparison/summarize_corrected_comparators.py
 \end{verbatim}
 
-RDFUnit, KGHeartBeat, and SANSA were invoked from their pinned local repositories. Their complete command output is retained in \path{ekg/tool-comparison/corrected-2026-08-07/}. The relevant files are \path{rdfunit-*.log}, \path{kgheartbeat-run.log}, and \path{sansa-*.log}. RDFUnit executed 196 generated tests and reported 192 successful test definitions for each profile. Luzzu produced 13 configured metrics for each profile. SANSA returned 14 attempted outputs and failed two metrics on non-literal nodes; those failures are retained rather than replaced. KGHeartBeat's generic overall score was 0.301, 0.304, and 0.307, which does not support the intended quality ordering. These details are why Chapter 4 compares native coverage and sensitivity rather than a common score.
+RDFUnit, KGHeartBeat, and SANSA were invoked from their pinned local repositories. These four third-party runs are not part of the public one-command reproduction workflow because they require separate upstream environments and the documented local adaptations. RDFUnit executed 196 generated tests and reported 192 successful test definitions for each profile. Luzzu produced 13 configured metrics for each profile. SANSA returned 14 attempted outputs and failed two metrics on non-literal nodes; those failures are retained in the frozen summary rather than replaced. KGHeartBeat's generic overall score was 0.301, 0.304, and 0.307, which does not support the intended quality ordering. These details are why Chapter 4 compares native coverage and sensitivity rather than a common score.
 
 \section{OEKG Cleaning and Complete Event-Layer Run}
 \label{app:oekg_run_details}

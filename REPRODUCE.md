@@ -76,4 +76,6 @@ Passing reproduction establishes that the implementation, input bytes, and decla
 
 ## External Comparator Evidence
 
-RDFUnit, KGHeartbeat, Luzzu, and SANSA used incompatible runtimes and documented local compatibility adaptations. Their pinned revisions, commands, patches, native outputs, failures, and raw logs are retained under `tool-comparison/corrected-2026-08-07/`. Verify mode checks the frozen comparator summary hash. The one-command workflow intentionally does not conceal those external environment differences behind a container or a common score.
+RDFUnit, KGHeartbeat, Luzzu, and SANSA used incompatible runtimes and documented local compatibility adaptations. The public `comparator-summary.json` records the common input hashes, pinned revisions, local patch hashes, native values, and failures. Verify mode checks that frozen summary's hash.
+
+The upstream comparator repositories and machine-specific raw logs are not bundled in this repository, and the one-command workflow does not rerun those four third-party tools. Repeating those runs requires obtaining the pinned upstream revisions and applying the adaptations described in Appendix A of the thesis. This boundary is stated explicitly rather than hiding different environments behind a container or converting incompatible outputs to a common score.

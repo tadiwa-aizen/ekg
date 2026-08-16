@@ -58,9 +58,9 @@ The definitive metric definitions are generated from `ekg-eval-cli/ekg_eval_cli/
 ## Main Directories
 
 - `ekg-eval-cli/` - Python command-line evaluator, locked dependencies, licence, and tests.
-- `synthetic-event-kg*/` - accepted D1-D3 RDF inputs.
+- `create_tiered_synthetic_eventkgs.py` - deterministic generator for the accepted D1-D3 RDF inputs used by `Quick`.
 - `final-frozen-evidence-2026-08-07/` - accepted first-party result bundle and manifest.
-- `tool-comparison/corrected-2026-08-07/` - comparator versions, commands, outputs, and failures.
+- `tool-comparison/corrected-2026-08-07/comparator-summary.json` - frozen machine-readable summary of the external-tool runs, including input hashes, tool revisions, local patch hashes, native values, and failures.
 - `chronographer-evaluation/` - prepared public ChronoGrapher RDF artefacts.
 - `real-oekg-evaluation/` - OEKG cleaning, provenance, and large-graph run records.
 - `docs/thesis/` - current thesis source mirror.
