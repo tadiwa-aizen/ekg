@@ -1,20 +1,7 @@
-<http://oekg.l3s.uni-hannover.de/schema/Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Role> .
-<http://oekg.l3s.uni-hannover.de/schema/LinkRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://oekg.l3s.uni-hannover.de/schema/Relation> .
-<http://oekg.l3s.uni-hannover.de/schema/MentionRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://oekg.l3s.uni-hannover.de/schema/Relation> .
-<http://oekg.l3s.uni-hannover.de/schema/links> <http://www.w3.org/2000/01/rdf-schema#domain> <http://oekg.l3s.uni-hannover.de/schema/LinkRelation> .
-<http://oekg.l3s.uni-hannover.de/schema/links> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://oekg.l3s.uni-hannover.de/schema/mentions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://oekg.l3s.uni-hannover.de/schema/MentionRelation> .
-<http://oekg.l3s.uni-hannover.de/schema/mentions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://oekg.l3s.uni-hannover.de/schema/extractedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticweb.cs.vu.nl/2009/11/sem/Core> .
-<http://oekg.l3s.uni-hannover.de/schema/extractedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource> .
-
-<http://oekg.l3s.uni-hannover.de/schema/unitDecade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/time#TemporalUnit> .
-<http://oekg.l3s.uni-hannover.de/schema/unitCentury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/time#TemporalUnit> .
-<http://oekg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://oekg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalUnit> .
-<http://oekg.l3s.uni-hannover.de/schema/endUnitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://oekg.l3s.uni-hannover.de/schema/endUnitType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalUnit> .
-
-<http://oekg.l3s.uni-hannover.de/schema/EventSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<http://oekg.l3s.uni-hannover.de/schema/EventSeriesEdition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<http://oekg.l3s.uni-hannover.de/schema/TextEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<http://semanticweb.cs.vu.nl/2009/11/sem/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/schema/TextEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/schema/MilitaryEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/schema/PoliticalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/schema/CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<http://semanticweb.cs.vu.nl/2009/11/sem/hasPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://semanticweb.cs.vu.nl/2009/11/sem/Place> .

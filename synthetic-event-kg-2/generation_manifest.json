@@ -1,0 +1,42 @@
+{
+  "generator": "create_tiered_synthetic_eventkgs.py",
+  "random_seed": 3000000,
+  "profile": {
+    "folder": "synthetic-event-kg-2",
+    "event_prefix": 3000000,
+    "text_prefix": 3500000,
+    "events": 120,
+    "text_events": 35,
+    "entities": 180,
+    "label_rate": 0.75,
+    "date_rate": 0.7,
+    "place_rate": 0.55,
+    "external_rate": 0.6,
+    "description_rate": 0.5,
+    "relation_rate": 0.65,
+    "relation_min": 1,
+    "relation_max": 3,
+    "unique_name_count": 55,
+    "near_variant_rate": 0.2,
+    "type_error_rate": 0.25,
+    "interval_rate": 0.6,
+    "invalid_interval_rate": 0.15,
+    "clustered_dates": false,
+    "year_only_rate": 0.2
+  },
+  "degradation_operations": {
+    "missing_labels": 0.25,
+    "missing_temporal_values": 0.30000000000000004,
+    "missing_places": 0.44999999999999996,
+    "missing_external_links": 0.4,
+    "missing_descriptions": 0.5,
+    "reduced_relations": 0.35,
+    "repeated_base_labels": 65,
+    "near_variant_rate_on_repeated_labels": 0.2,
+    "type_error_rate_on_place_links": 0.25,
+    "interval_rate": 0.6,
+    "invalid_interval_rate": 0.15,
+    "year_only_rate": 0.2,
+    "clustered_dates": false
+  }
+}

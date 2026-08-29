@@ -434,7 +434,7 @@ def generate(profile: Profile, output_root: Path = ROOT) -> None:
     (folder / "generation_manifest.json").write_text(
         json.dumps(
             {
-                "generator": str(Path(__file__).resolve()),
+                "generator": Path(__file__).name,
                 "random_seed": profile.event_prefix,
                 "profile": profile.__dict__,
                 "degradation_operations": {

@@ -52,6 +52,26 @@ function Get-FreeDiskGB {
     return [math]::Round($drive.AvailableFreeSpace / 1GB, 2)
 }
 
+function Assert-Python312 {
+    param([Parameter(Mandatory)] [string]$Executable)
+    $version = (& $Executable -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')" 2>&1 | Out-String).Trim()
+    if ($LASTEXITCODE -ne 0 -or $version -ne "3.12") {
+        throw "Exact reproduction requires Python 3.12; '$Executable' reported '$version'."
+    }
+}
+
+function Assert-Java17 {
+    $versionText = (& java -version 2>&1 | Out-String)
+    if ($LASTEXITCODE -ne 0 -or $versionText -notmatch 'version\s+"(?<first>\d+)(?:\.(?<second>\d+))?') {
+        throw "Could not determine the Java version from 'java -version'."
+    }
+    $first = [int]$Matches.first
+    $major = if ($first -eq 1 -and $Matches.second) { [int]$Matches.second } else { $first }
+    if ($major -lt 17) {
+        throw "Apache Jena/Fuseki reproduction requires Java 17 or later; Java $major was found."
+    }
+}
+
 function Ensure-ArchiveTool {
     param(
         [Parameter(Mandatory)] [string[]]$CandidateDirectories,
@@ -216,12 +236,15 @@ if ($Mode -eq "Verify") {
 if (-not (Get-Command java -ErrorAction SilentlyContinue)) {
     throw "Java is required for Apache Jena and Fuseki but was not found on PATH"
 }
+Assert-Java17
+Assert-Python312 "python"
 
 if ($SkipEnvironmentSetup) {
     $Python = "python"
 } else {
     $Python = Ensure-PythonEnvironment
 }
+Assert-Python312 $Python
 
 $script:JenaHome = Ensure-ArchiveTool `
     @((Join-Path $EkgRoot "apache-jena-5.6.0-full"), (Join-Path $EkgRoot "apache-jena-5.6.0")) `

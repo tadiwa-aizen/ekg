@@ -1,20 +1,8 @@
-<http://eventKG.l3s.uni-hannover.de/schema/Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Role> .
-<http://eventKG.l3s.uni-hannover.de/schema/LinkRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eventKG.l3s.uni-hannover.de/schema/Relation> .
-<http://eventKG.l3s.uni-hannover.de/schema/MentionRelation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eventKG.l3s.uni-hannover.de/schema/Relation> .
-<http://eventKG.l3s.uni-hannover.de/schema/links> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eventKG.l3s.uni-hannover.de/schema/LinkRelation> .
-<http://eventKG.l3s.uni-hannover.de/schema/links> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://eventKG.l3s.uni-hannover.de/schema/mentions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eventKG.l3s.uni-hannover.de/schema/MentionRelation> .
-<http://eventKG.l3s.uni-hannover.de/schema/mentions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<http://eventKG.l3s.uni-hannover.de/schema/extractedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://semanticweb.cs.vu.nl/2009/11/sem/Core> .
-<http://eventKG.l3s.uni-hannover.de/schema/extractedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource> .
-
-<http://eventKG.l3s.uni-hannover.de/schema/unitDecade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/time#TemporalUnit> .
-<http://eventKG.l3s.uni-hannover.de/schema/unitCentury> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/time#TemporalUnit> .
-<http://eventKG.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://eventKG.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalUnit> .
-<http://eventKG.l3s.uni-hannover.de/schema/endUnitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://eventKG.l3s.uni-hannover.de/schema/endUnitType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalUnit> .
-
-<http://eventKG.l3s.uni-hannover.de/schema/EventSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<http://eventKG.l3s.uni-hannover.de/schema/EventSeriesEdition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<http://eventKG.l3s.uni-hannover.de/schema/TextEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+@prefix sem: <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix ekgs: <https://eventkg.l3s.uni-hannover.de/schema/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ekgs:TextEvent rdfs:subClassOf sem:Event .
+ekgs:MilitaryEvent rdfs:subClassOf sem:Event .
+ekgs:PoliticalEvent rdfs:subClassOf sem:Event .
+ekgs:CulturalEvent rdfs:subClassOf sem:Event .
+sem:hasPlace rdfs:domain sem:Event ; rdfs:range sem:Place .

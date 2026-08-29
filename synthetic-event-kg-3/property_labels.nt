@@ -1,3 +1,5 @@
 <http://www.wikidata.org/prop/direct/P710> <http://www.w3.org/2000/01/rdf-schema#label> "participant"@en .
+<http://www.wikidata.org/prop/direct/P276> <http://www.w3.org/2000/01/rdf-schema#label> "location"@en .
+<http://www.wikidata.org/prop/direct/P17> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
 <http://www.wikidata.org/prop/direct/P26> <http://www.w3.org/2000/01/rdf-schema#label> "spouse"@en .
 <http://www.wikidata.org/prop/direct/P54> <http://www.w3.org/2000/01/rdf-schema#label> "member of"@en .

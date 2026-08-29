@@ -1,5 +1,17 @@
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000001> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000002> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000003> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000004> <http://www.w3.org/2000/01/rdf-schema#comment> "Comment."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000010> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Cedar Rescues."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000011> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Delta Assemblys."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000017> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Borealis Festivals."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000027> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Delta Assemblys."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000036> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Emerald Floods."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000037> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Frontier Summits."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000040> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Aurora Accords."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000050> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Cedar Rescues."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000056> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Aurora Accords."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000064> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Aurora Accords."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000071> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Harbour Forum."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000085> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Frontier Summit."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000090> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Cedar Rescue."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000091> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Delta Assembly."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000093> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Frontier Summit."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000098> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Cedar Rescue."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000099> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Delta Assembly."@en .

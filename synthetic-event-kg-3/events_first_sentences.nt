@@ -1,5 +1,11 @@
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://purl.org/dc/terms/description> "A thing happened."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000001> <http://purl.org/dc/terms/description> "A thing happened."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000002> <http://purl.org/dc/terms/description> "A thing happened."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000003> <http://purl.org/dc/terms/description> "A thing happened."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000004> <http://purl.org/dc/terms/description> "A thing happened."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000011> <http://purl.org/dc/terms/description> "First sentence for event 11."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000014> <http://purl.org/dc/terms/description> "First sentence for event 14."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000023> <http://purl.org/dc/terms/description> "First sentence for event 23."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000035> <http://purl.org/dc/terms/description> "First sentence for event 35."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000049> <http://purl.org/dc/terms/description> "First sentence for event 49."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000056> <http://purl.org/dc/terms/description> "First sentence for event 56."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000064> <http://purl.org/dc/terms/description> "First sentence for event 64."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000076> <http://purl.org/dc/terms/description> "First sentence for event 76."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000083> <http://purl.org/dc/terms/description> "First sentence for event 83."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000093> <http://purl.org/dc/terms/description> "First sentence for event 93."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000097> <http://purl.org/dc/terms/description> "First sentence for event 97."@en .

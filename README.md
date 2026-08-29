@@ -6,9 +6,11 @@ The evaluator reports a multidimensional intrinsic profile for RDF-based event-c
 
 ## Reproduce the Results
 
-From the repository root, run:
+Clone the public repository and run the recommended examiner workflow:
 
 ```powershell
+git clone https://github.com/tadiwa-aizen/ekg.git
+cd ekg
 .\reproduce.ps1 -Mode Quick
 ```
 
@@ -30,7 +32,7 @@ Two other modes are available:
 
 `Verify` checks the accepted source, input, result, test, comparator, table, and figure records without rerunning the evaluator. `Full` also reruns the three ChronoGrapher artefacts and the complete cleaned OEKG event layer. It may take several hours and needs about 20GB RAM and at least 80GB free working disk when OEKG must be prepared again.
 
-See [REPRODUCE.md](REPRODUCE.md) for prerequisites, data retrieval, expected output, and interpretation.
+See [REPRODUCE.md](REPRODUCE.md) for prerequisites, data retrieval, expected output, and interpretation. [RESULTS.md](RESULTS.md) provides a readable index of the accepted synthetic, comparator, OEKG, and ChronoGrapher evidence already stored in the repository.
 
 ## What a Passing Run Shows
 
@@ -60,6 +62,7 @@ The definitive metric definitions are generated from `ekg-eval-cli/ekg_eval_cli/
 - `ekg-eval-cli/` - Python command-line evaluator, locked dependencies, licence, and tests.
 - `create_tiered_synthetic_eventkgs.py` - deterministic generator for the accepted D1-D3 RDF inputs used by `Quick`.
 - `final-frozen-evidence-2026-08-07/` - accepted first-party result bundle and manifest.
+- `RESULTS.md` - concise, evidence-linked results index.
 - `tool-comparison/corrected-2026-08-07/comparator-summary.json` - frozen machine-readable summary of the external-tool runs, including input hashes, tool revisions, local patch hashes, native values, and failures.
 - `chronographer-evaluation/` - prepared public ChronoGrapher RDF artefacts.
 - `real-oekg-evaluation/` - OEKG cleaning, provenance, and large-graph run records.

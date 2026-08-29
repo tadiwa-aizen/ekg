@@ -1,60 +1,88 @@
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500000> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500000> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Aurora_Accord> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500001> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500001> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Borealis_Festival> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500001> <http://www.w3.org/2000/01/rdf-schema#label> "Text Borealis Festival"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500001> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1958"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500001> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500002> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500002> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Cedar_Rescue> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500002> <http://purl.org/dc/terms/description> "Text description for Text Cedar Rescue."@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500003> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500003> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Delta_Assembly> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500003> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1926-06-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500003> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500004> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500004> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Emerald_Flood> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500004> <http://www.w3.org/2000/01/rdf-schema#label> "Text Emerald Flood"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500005> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500005> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Frontier_Summit> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500005> <http://purl.org/dc/terms/description> "Text description for Text Frontier Summit."@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500006> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500006> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Granite_Biennale> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500006> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1959-04-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500006> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500007> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500007> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Harbour_Forum> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500007> <http://www.w3.org/2000/01/rdf-schema#label> "Text Harbour Forum"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500008> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500008> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Aurora_Accord> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500009> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500009> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Borealis_Festival> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500010> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500010> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Cedar_Rescue> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500010> <http://www.w3.org/2000/01/rdf-schema#label> "Text Cedar Rescue"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500011> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500011> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Delta_Assembly> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500011> <http://www.w3.org/2000/01/rdf-schema#label> "Text Delta Assembly"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500011> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1950"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500011> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500012> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500012> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Emerald_Flood> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500013> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500013> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Frontier_Summit> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500013> <http://www.w3.org/2000/01/rdf-schema#label> "Text Frontier Summit"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500013> <http://purl.org/dc/terms/description> "Text description for Text Frontier Summit."@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500014> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500014> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Granite_Biennale> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500014> <http://www.w3.org/2000/01/rdf-schema#label> "Text Granite Biennale"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500014> <http://purl.org/dc/terms/description> "Text description for Text Granite Biennale."@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500015> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500015> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Harbour_Forum> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500016> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500016> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Aurora_Accord> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500016> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1957"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500016> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500017> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500017> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Borealis_Festival> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500017> <http://www.w3.org/2000/01/rdf-schema#label> "Text Borealis Festival"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500018> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500018> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Cedar_Rescue> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500018> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1955-08-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500018> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500018> <http://purl.org/dc/terms/description> "Text description for Text Cedar Rescue."@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500019> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500019> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Delta_Assembly> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500019> <http://www.w3.org/2000/01/rdf-schema#label> "Text Delta Assembly"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500020> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500020> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Emerald_Flood> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500020> <http://www.w3.org/2000/01/rdf-schema#label> "Text Emerald Flood"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500021> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500021> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Frontier_Summit> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500022> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500022> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Granite_Biennale> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500022> <http://www.w3.org/2000/01/rdf-schema#label> "Text Granite Biennale"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500022> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1957"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500022> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitYear> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500023> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500023> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Harbour_Forum> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500023> <http://www.w3.org/2000/01/rdf-schema#label> "Text Harbour Forum"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500023> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "2014-06-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500023> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500023> <http://purl.org/dc/terms/description> "Text description for Text Harbour Forum."@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4500024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500024> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500025> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500026> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500027> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/War> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500028> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Election> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://eventkg.l3s.uni-hannover.de/schema/TextEvent> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500029> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500024> <https://eventkg.l3s.uni-hannover.de/schema/extractedFrom> <https://en.wikipedia.org/wiki/Text_Aurora_Accord> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500024> <http://semanticweb.cs.vu.nl/2009/11/sem/hasBeginTimeStamp> "1950-12-24"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500024> <https://eventkg.l3s.uni-hannover.de/schema/startUnitType> <http://www.w3.org/2006/time#unitDay> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500024> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4500024> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500024> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Text_Aurora_Accord> .

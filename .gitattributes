@@ -2,3 +2,9 @@
 final-frozen-evidence-2026-08-07/** -text
 tool-comparison/corrected-2026-08-07/comparator-summary.json -text
 docs/thesis/generated/*.tex -text
+
+# Preserve published RDF bytes across Windows, macOS, and Linux checkouts.
+synthetic-event-kg/** -text
+synthetic-event-kg-2/** -text
+synthetic-event-kg-3/** -text
+chronographer-evaluation/nt_utf8/**/*.nt -text

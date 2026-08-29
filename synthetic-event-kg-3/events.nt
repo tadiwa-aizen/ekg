@@ -1,229 +1,185 @@
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accord"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000000> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Aurora_Accord> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000001> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festival"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000002> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000002> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q99246> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000003> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000003> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assembly"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000004> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000004> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Flood"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000005> <http://www.w3.org/2000/01/rdf-schema#label> "Frontier Summit"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000006> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000007> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000007> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forum"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000008> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000009> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000009> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000009> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000009> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000009> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Borealis_Festivals> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000010> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000010> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Election> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000012> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000012> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000012> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000012> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Emerald_Floods> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000013> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000013> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000013> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000013> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Frontier_Summits> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000014> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000014> <http://www.w3.org/2000/01/rdf-schema#label> "Granite Biennales"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000015> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000016> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000017> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000017> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q331776> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000018> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000018> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000019> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000020> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000020> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000021> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000022> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000022> <http://www.w3.org/2000/01/rdf-schema#label> "Granite Biennales"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000023> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000023> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forums"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000024> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000024> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000025> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000026> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Election> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000027> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000027> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000028> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000028> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000031> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000032> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000032> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000034> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000035> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000036> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000036> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/War> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000038> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000038> <http://www.w3.org/2000/01/rdf-schema#label> "Granite Biennales"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000039> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000039> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000040> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000042> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000043> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000043> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000043> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000044> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/War> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000045> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000047> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Election> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000048> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000048> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000049> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000049> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/War> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000049> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000050> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000051> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000052> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000052> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Election> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000052> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000053> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000055> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000055> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forums"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000056> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000056> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q410386> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000057> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000057> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000058> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000058> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000059> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000060> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000060> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q500948> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000061> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000061> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Disaster> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000062> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000062> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q904682> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000064> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000065> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000065> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000065> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000065> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Borealis_Festivals> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000066> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000067> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000068> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000069> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000071> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000071> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forum"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000072> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000073> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000073> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000074> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000074> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescue"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000075> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assembly"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000076> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000076> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Flood"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000077> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000078> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000078> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000078> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000078> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Granite_Biennale> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000079> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000079> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forum"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000079> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000079> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000079> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Harbour_Forum> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000080> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000080> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000081> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000082> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000082> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q383364> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000084> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000084> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Flood"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000085> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000085> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000085> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Frontier_Summit> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000087> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000088> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000089> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000089> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festival"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000090> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000091> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000091> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assembly"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000092> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000092> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000093> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000093> <http://www.w3.org/2000/01/rdf-schema#label> "Frontier Summit"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000094> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000094> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000095> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000095> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000096> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000097> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000097> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000097> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000097> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000097> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Borealis_Festival> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000098> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000098> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000098> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q458239> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000098> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Disaster> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000098> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4000098> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000099> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000099> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000100> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000100> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q697503> .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000101> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000102> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000103> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000104> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000105> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000105> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festival"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000106> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000106> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescue"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000107> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000108> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000108> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q541490> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000108> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000109> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000110> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000111> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000112> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000112> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000113> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000113> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000114> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000115> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000116> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000116> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q262303> .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000116> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000117> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000117> <http://www.w3.org/2000/01/rdf-schema#label> "Frontier Summits"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000118> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
 <https://eventkg.l3s.uni-hannover.de/resource/event_4000119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticweb.cs.vu.nl/2009/11/sem/Event> .

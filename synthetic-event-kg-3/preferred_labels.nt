@@ -1,162 +1,125 @@
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000001> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000002> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000003> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000004> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000005> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000006> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000007> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000008> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000010> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000011> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000013> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000014> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000016> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000017> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000018> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000020> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000021> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000024> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000025> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000026> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000029> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000031> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000032> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000034> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000035> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000036> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000037> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000038> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000039> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000040> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000042> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000045> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000046> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000047> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000048> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000049> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000052> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000053> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000055> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000057> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000058> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000059> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000061> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000062> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000064> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000065> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000066> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000069> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000072> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000073> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000074> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000076> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000077> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000079> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000081> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000084> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000085> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000089> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000090> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000091> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000093> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000094> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000095> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000096> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000097> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000098> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000100> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000101> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000102> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000104> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000106> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000107> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000108> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000110> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000111> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000113> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000114> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000115> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000116> <http://www.w3.org/2000/01/rdf-schema#label> "Election"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000117> <http://www.w3.org/2000/01/rdf-schema#label> "War"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4000118> <http://www.w3.org/2000/01/rdf-schema#label> "Disaster"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_0> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_1> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_2> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_3> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_4> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_5> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_6> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_7> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_8> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_9> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_10> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_11> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_12> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_13> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_14> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_15> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_16> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_17> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_18> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_19> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_20> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_21> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_22> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_23> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_24> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_25> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_26> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_27> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_28> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_29> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_30> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_31> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_32> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_33> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_34> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_35> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_36> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_37> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_38> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_39> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_40> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_41> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_42> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_43> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_44> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_45> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_46> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_47> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_48> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_49> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_50> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_51> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_52> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_53> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_54> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_55> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_56> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_57> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_58> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_59> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_60> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_61> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_62> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_63> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_64> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_65> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_66> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_67> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_68> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_69> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_70> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_71> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_72> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_73> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_74> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_75> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_76> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_77> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_78> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
-<https://eventkg.l3s.uni-hannover.de/resource/entity_79> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000000> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accord"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000001> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festival"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000003> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assembly"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000004> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Flood"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000005> <http://www.w3.org/2000/01/rdf-schema#label> "Frontier Summit"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000007> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forum"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000008> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000009> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000014> <http://www.w3.org/2000/01/rdf-schema#label> "Granite Biennales"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000018> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000020> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000022> <http://www.w3.org/2000/01/rdf-schema#label> "Granite Biennales"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000023> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forums"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000024> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000027> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000028> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000032> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000034> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000038> <http://www.w3.org/2000/01/rdf-schema#label> "Granite Biennales"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000043> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000048> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000049> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000050> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000052> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000055> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forums"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000057> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000058> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescues"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000059> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000071> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forum"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000074> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescue"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000075> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assembly"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000076> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Flood"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000079> <http://www.w3.org/2000/01/rdf-schema#label> "Harbour Forum"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000084> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Flood"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000089> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festival"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000091> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assembly"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000093> <http://www.w3.org/2000/01/rdf-schema#label> "Frontier Summit"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000105> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festival"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000106> <http://www.w3.org/2000/01/rdf-schema#label> "Cedar Rescue"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000108> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000112> <http://www.w3.org/2000/01/rdf-schema#label> "Aurora Accords"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000113> <http://www.w3.org/2000/01/rdf-schema#label> "Borealis Festivals"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000115> <http://www.w3.org/2000/01/rdf-schema#label> "Delta Assemblys"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000116> <http://www.w3.org/2000/01/rdf-schema#label> "Emerald Floods"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4000117> <http://www.w3.org/2000/01/rdf-schema#label> "Frontier Summits"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_0> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 000"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_1> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 001"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_2> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 002"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_3> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 003"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_4> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 004"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_5> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 005"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_6> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 006"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_7> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 007"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_8> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 008"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_9> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 009"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_10> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 010"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_11> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 011"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_12> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 012"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_13> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 013"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_14> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 014"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_15> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 015"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_16> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 016"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_17> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 017"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_18> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 018"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_19> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 019"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_20> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 020"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_21> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 021"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_22> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 022"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_23> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 023"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_24> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 024"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_25> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 025"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_26> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 026"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_27> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 027"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_28> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 028"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_29> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 029"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_30> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 030"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_31> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 031"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_32> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 032"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_33> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 033"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_34> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 034"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_35> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 035"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_36> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 036"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_37> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 037"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_38> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 038"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_39> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 039"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_40> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 040"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_41> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 041"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_42> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 042"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_43> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 043"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_44> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 044"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_45> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 045"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_46> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 046"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_47> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 047"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_48> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 048"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_49> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 049"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_50> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 050"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_51> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 051"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_52> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 052"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_53> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 053"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_54> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 054"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_55> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 055"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_56> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 056"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_57> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 057"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_58> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 058"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_59> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 059"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_60> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 060"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_61> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 061"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_62> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 062"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_63> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 063"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_64> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 064"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_65> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 065"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_66> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 066"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_67> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 067"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_68> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 068"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_69> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 069"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_70> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 070"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_71> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 071"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_72> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 072"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_73> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 073"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_74> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 074"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_75> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 075"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_76> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 076"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_77> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 077"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_78> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 078"@en .
+<https://eventkg.l3s.uni-hannover.de/resource/entity_79> <http://www.w3.org/2000/01/rdf-schema#label> "Synthetic Entity 079"@en .

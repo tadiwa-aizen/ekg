@@ -9,7 +9,14 @@ The repository provides three non-destructive reproduction modes. Every mode wri
 - Java 17 or later on `PATH`
 - Internet access on first setup to install locked Python packages and, if absent, download Apache Jena/Fuseki
 
-From the `ekg` folder, run one of the following commands.
+Start from a clean clone:
+
+```powershell
+git clone https://github.com/tadiwa-aizen/ekg.git
+cd ekg
+```
+
+Then run one of the following commands. Quick mode uses ports 3041--3043 by default; if those ports are occupied, pass another base port, for example `-PortBase 3141`.
 
 ## Quick Reproduction
 
@@ -19,7 +26,7 @@ From the `ekg` folder, run one of the following commands.
 
 Quick mode:
 
-1. creates an isolated `.venv-reproduction` environment;
+1. checks for Python 3.12 and Java 17 or later, then creates an isolated `.venv-reproduction` environment;
 2. installs `requirements-lock.txt` and the pinned reproduction-only test dependency;
 3. locates or downloads Apache Jena 5.6.0 and Fuseki 5.6.0 and verifies their SHA-512 hashes;
 4. runs all 24 automated tests;
@@ -28,7 +35,7 @@ Quick mode:
 7. compares every named input file and SHA-256, the evaluator source hash, and all 32 core outputs with the frozen evidence;
 8. writes `reproduction-report.html`, `reproduction-report.md`, and `verification.json`.
 
-This is the recommended examiner and reviewer path.
+This is the recommended examiner and reviewer path. It does not depend on the tracked copies of the controlled datasets: it generates new inputs in a timestamped output folder and verifies their names and SHA-256 hashes against the frozen evidence.
 
 ## Evidence Verification Only
 

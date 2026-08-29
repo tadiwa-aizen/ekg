@@ -1,3 +1,4 @@
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500000> <http://purl.org/dc/terms/description> "Text event."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500001> <http://purl.org/dc/terms/description> "Text event."@en .
-<https://eventkg.l3s.uni-hannover.de/resource/event_4500002> <http://purl.org/dc/terms/description> "Text event."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500013> <http://purl.org/dc/terms/description> "Text-event description 13."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500014> <http://purl.org/dc/terms/description> "Text-event description 14."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500018> <http://purl.org/dc/terms/description> "Text-event description 18."@en .
+<https://eventkg.l3s.uni-hannover.de/resource/event_4500021> <http://purl.org/dc/terms/description> "Text-event description 21."@en .
